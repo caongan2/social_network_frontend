@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "8bc151cc-7add-4252-a914-9d8086f2eb9f"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -27,9 +30,27 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/color.css",
+              "src/assets/css/main.min.css",
+              "src/assets/css/page-tour.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/style.css",
+              "src/assets/css/toast-notification.css",
+              "src/assets/css/weather-icons.min.css",
+              "src/assets/css/weather-icon.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-stories.js",
+              "src/assets/js/locationpicker.jquery.js",
+              "src/assets/js/main.min.js",
+              "src/assets/js/map-init.js",
+              "src/assets/js/page-tour-init.js",
+              "src/assets/js/page-tourintro.js",
+              "src/assets/js/script.js",
+              "src/assets/js/toast-notificatons.js",
+              "src/assets/js/TweenMax.min.js"
+            ]
           },
           "configurations": {
             "production": {
