@@ -15,7 +15,6 @@ export class AuthService {
 
   setHeader(){
     let token = JSON.parse(<string>localStorage.getItem('token'));
-
     return new HttpHeaders().set('Authorization','Bearer' + token);
   }
 
