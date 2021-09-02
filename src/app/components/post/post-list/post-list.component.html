@@ -1,5 +1,5 @@
 <div class="central-meta item">
-<div class="user-post">
+<div class="user-post" *ngFor="let post of posts">
   <div class="friend-info">
     <figure>
       <img src="images/resources/nearly1.jpg" alt="">
@@ -22,9 +22,8 @@
       <span><i class="fa fa-globe"></i> published: September,15 2020 19:PM </span>
     </div>
     <div class="post-meta">
-      <p>
-        Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-        semper libero.
+      <p >
+        {{post.content}}
       </p>
       <figure>
         <div class="img-bunch">

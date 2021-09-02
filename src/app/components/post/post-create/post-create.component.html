@@ -7,51 +7,62 @@
     </figure>
     <div class="newpst-input">
       <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
-        <textarea rows="2" placeholder="Share some what you are thinking?" formControlName="content" [ngClass]="(content?.invalid && (content?.dirty || content?.touched)) ? 'is-invalid' : '' "></textarea>
+        <div class="form-control">
+          <select formControlName="is_public">
+            <option [ngValue]="is_public">Public</option>
+            <option [ngValue]="!is_public">Private</option>
+          </select>
+        </div>
+
+        <textarea rows="2" placeholder="Share some what you are thinking?" formControlName="content"
+                  [ngClass]="(content?.invalid && content?.dirty) ? 'is-invalid' : ''"></textarea>
         <div *ngIf="content?.invalid && (content?.dirty || content?.touched) ">
           <p *ngIf="content?.errors?.required" class="text-danger">
             Không được để trống
           </p>
         </div>
-      </form>
-    </div>
-    <div class="attachments">
-      <ul>
-        <li>
+        <div class="attachments">
+          <ul>
+            <li>
 													<span class="add-loc">
 														<i class="fa fa-map-marker"></i>
 													</span>
-        </li>
-        <li>
-          <i class="fa fa-music"></i>
-          <label class="fileContainer">
-            <input type="file">
-          </label>
-        </li>
-        <li>
-          <i class="fa fa-image"></i>
-          <label class="fileContainer">
-            <input type="file">
-          </label>
-        </li>
-        <li>
-          <i class="fa fa-video-camera"></i>
-          <label class="fileContainer">
-            <input type="file">
-          </label>
-        </li>
-        <li>
-          <i class="fa fa-camera"></i>
-          <label class="fileContainer">
-            <input type="file">
-          </label>
-        </li>
-        <li class="preview-btn">
-          <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
-        </li>
-      </ul>
-      <button class="post-btn" type="submit" data-ripple="" >Post</button>
+            </li>
+            <li>
+              <i class="fa fa-music"></i>
+              <label class="fileContainer">
+                <input type="file">
+              </label>
+            </li>
+            <li>
+              <i class="fa fa-image"></i>
+              <label class="fileContainer">
+                <input type="file">
+              </label>
+            </li>
+            <li>
+              <i class="fa fa-video-camera"></i>
+              <label class="fileContainer">
+                <input type="file">
+              </label>
+            </li>
+            <li>
+              <i class="fa fa-camera"></i>
+              <label class="fileContainer">
+                <input type="file">
+              </label>
+            </li>
+            <li class="preview-btn">
+              <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
+            </li>
+          </ul>
+          <button #element class="post-btn" type="submit" data-ripple="" (click)="getStatus(element.value)">Post
+          </button>
+        </div>
+
+      </form>
     </div>
+
     <div class="add-location-post">
       <span>Drag map point to selected area</span>
       <div class="row">
