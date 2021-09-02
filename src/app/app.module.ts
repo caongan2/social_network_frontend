@@ -18,6 +18,7 @@ import {PostModule} from "./components/post/post.module";
 import {UserModule} from "./components/user/user.module";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     SectionLeftComponent,
     SectionRightComponent,
     StoryComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
