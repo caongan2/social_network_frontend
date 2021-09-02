@@ -26,6 +26,10 @@ export class AuthService {
     return this.http.post(environment.url_api + "auth/register", data, {headers: this.setHeader()} )
   }
 
+  getUser() {
+    return localStorage.getItem('userLogin')
+  }
+
   logout() {
     return this.http.post(environment.url_api + "auth/logout", null, {headers: this.setHeader()})
   }

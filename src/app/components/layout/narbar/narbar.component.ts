@@ -9,10 +9,13 @@ import {Router} from "@angular/router";
 })
 export class NarbarComponent implements OnInit {
 
+  user: any
+
   constructor(private authService: AuthService,
               private router: Router) { }
 
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser())
   }
 
 
