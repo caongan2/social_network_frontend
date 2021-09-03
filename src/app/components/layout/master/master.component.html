@@ -30,16 +30,8 @@
                 <app-section-left></app-section-left>
               </div><!-- sidebar -->
               <div class="col-lg-6">
-                <div>
-                    <app-post-create></app-post-create>
-                </div>
-                <!-- add post new box -->
-                <div class="central-meta">
-                  <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
-                  <app-story></app-story>
-                </div><!-- top stories -->
                 <div class="loadMore">
-                  <app-post-list></app-post-list>
+                  <router-outlet></router-outlet>
                 </div>
               </div><!-- centerl meta -->
               <div class="col-lg-3">
