@@ -4,7 +4,7 @@
 <div class="top-area">
   <div class="main-menu">
 				<span>
-			    	<i class="fa fa-braille"></i>
+			    	<i>{{user.name}}</i>
 			    </span>
   </div>
   <div class="top-search">
@@ -515,7 +515,7 @@
     </li>
   </ul>
   <div class="user-img">
-    <h5>Jack Carter</h5>
+    <i class="fas fa-power-off" (click)="logout()"></i>
     <img src="images/resources/admin.jpg" alt="">
     <span class="status f-online"></span>
     <div class="user-setting">
