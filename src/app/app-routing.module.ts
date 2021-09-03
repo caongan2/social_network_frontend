@@ -25,7 +25,7 @@ const routes: Routes = [
         component: MasterComponent,
         children:[
           {
-            path:'list',
+            path:'',
             component:PostListComponent
           }
         ]
