@@ -1,12 +1,12 @@
-
+<p>post-create works!</p>
 <div class="central-meta postbox">
-  <span class="create-post">My post</span>
+  <span class="create-post">Create post</span>
   <div class="new-postbox">
     <figure>
       <img src="images/resources/admin.jpg" alt="">
     </figure>
     <div class="newpst-input">
-      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+      <form *ngIf="formUpdate" [formGroup]="formUpdate" (ngSubmit)="submit()">
         <div class="form-control">
           <select formControlName="is_public">
             <option [ngValue]="is_public">Public</option>
@@ -56,7 +56,7 @@
               <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
             </li>
           </ul>
-          <button #element class="post-btn" type="submit" data-ripple="" (click)="getStatus(element.value)">Post
+          <button  class="post-btn" type="submit" data-ripple="" >Post
           </button>
         </div>
 
@@ -81,3 +81,4 @@
     </div>
   </div>
 </div>
+
