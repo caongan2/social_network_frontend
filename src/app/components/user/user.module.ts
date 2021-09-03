@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    UpdateProfileComponent
+  ],
   imports: [
     CommonModule
   ]
