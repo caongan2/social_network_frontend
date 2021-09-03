@@ -39,13 +39,14 @@ import { RegisterComponent } from './components/register/register.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        PostModule,
         UserModule,
         HttpClientModule,
         ReactiveFormsModule
     ],
     providers: [],
     exports: [
-        StoryComponent
+        StoryComponent,
     ],
     bootstrap: [AppComponent]
 })

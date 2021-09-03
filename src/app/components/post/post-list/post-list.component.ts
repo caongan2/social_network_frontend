@@ -21,4 +21,12 @@ export class PostListComponent implements OnInit {
       this.posts = res;
     });
   }
+
+
+  submit(event:any){
+    let data = event.target?.value;
+    this.postService.create(data).subscribe(res => {
+      console.log(res);
+    })
+  }
 }

@@ -28,7 +28,7 @@ export class PostDeleteComponent implements OnInit {
   deletePost(){
     if (confirm('Are you sure?')){
       this.postService.delete(this.id).subscribe(res => {
-        this.router.navigate(['admin/home']);
+        this.router.navigate(['admin/home/posts']);
       })
     }
   }
