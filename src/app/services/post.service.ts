@@ -16,9 +16,12 @@ export class PostService {
     return this.httpClient.get(environment.url_api + 'posts/getAll',{headers: this.authService.setHeader()});
   }
 
+<<<<<<< HEAD
   getPostById(id:number):Observable<any>{
     return this.httpClient.get(environment.url_api + 'posts/' + id + '/showPost',{headers:this.authService.setHeader()});
   }
+=======
+>>>>>>> 3a261c2372ed32d732d15e10bd780d254728e721
 
   getPostByUser(id:number): Observable<any>{
     return this.httpClient.get(environment.url_api + 'posts/' + id + '/getPostByUser',{headers: this.authService.setHeader()});

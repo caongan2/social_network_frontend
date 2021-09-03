@@ -43,12 +43,4 @@ export class PostCreateComponent implements OnInit {
   get content() {
     return this.formCreatePost?.get('content');
   }
-
-
-  // getStatus(value: any) {
-  //   this.toastr.success('Create Post successfully','Create Post');
-  //   value = this.formCreatePost?.value;
-  //   console.log(value);
-  // }
-
 }

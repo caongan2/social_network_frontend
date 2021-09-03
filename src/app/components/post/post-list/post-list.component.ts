@@ -17,6 +17,7 @@ export class PostListComponent implements OnInit {
   ngOnInit(): void {
     this.user = JSON.parse(<string>this.authService.getUser());
     this.getAll();
+    this.user = JSON.parse(<string>this.authService.getUser())
   }
 
   getAll() {
@@ -24,12 +25,4 @@ export class PostListComponent implements OnInit {
       this.posts = res;
     });
   }
-
-
-  // submit(event:any){
-  //   let data = event.target?.value;
-  //   this.postService.create(data).subscribe(res => {
-  //     console.log(res);
-  //   })
-  // }
 }
