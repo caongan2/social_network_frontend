@@ -20,7 +20,7 @@ export class PostDeleteComponent implements OnInit {
   }
 
   getPost(){
-    this.postService.getPostByUser(this.id).subscribe(res => {
+    this.postService.getPostById(this.id).subscribe(res => {
       this.post = res;
     })
   }
