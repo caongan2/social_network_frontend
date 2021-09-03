@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {PostService} from "../../../services/post.service";
 import {Router} from "@angular/router";
 import {AuthService} from "../../../services/auth.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-post-create',
@@ -18,7 +19,8 @@ export class PostCreateComponent implements OnInit {
   constructor(private postService: PostService,
               private fb: FormBuilder,
               private router: Router,
-              private authService: AuthService) {
+              private authService: AuthService,
+              private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -32,6 +34,7 @@ export class PostCreateComponent implements OnInit {
 
   submit() {
     let data = this.formCreatePost?.value;
+    this.toastr.success('Create Post successfully','Create Post');
     return this.postService.create(data).subscribe(res => {
       this.router.navigate(['admin/home/posts']);
     })
@@ -42,9 +45,10 @@ export class PostCreateComponent implements OnInit {
   }
 
 
-  getStatus(value: any) {
-    value = this.formCreatePost?.value;
-    console.log(value);
-  }
+  // getStatus(value: any) {
+  //   this.toastr.success('Create Post successfully','Create Post');
+  //   value = this.formCreatePost?.value;
+  //   console.log(value);
+  // }
 
 }

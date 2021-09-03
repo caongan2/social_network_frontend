@@ -26,10 +26,10 @@ export class PostListComponent implements OnInit {
   }
 
 
-  submit(event:any){
-    let data = event.target?.value;
-    this.postService.create(data).subscribe(res => {
-      console.log(res);
-    })
-  }
+  // submit(event:any){
+  //   let data = event.target?.value;
+  //   this.postService.create(data).subscribe(res => {
+  //     console.log(res);
+  //   })
+  // }
 }

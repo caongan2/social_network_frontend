@@ -38,7 +38,8 @@
               "src/assets/css/style.css",
               "src/assets/css/toast-notification.css",
               "src/assets/css/weather-icons.min.css",
-              "src/assets/css/weather-icon.css"
+              "src/assets/css/weather-icon.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/js/jquery-stories.js",

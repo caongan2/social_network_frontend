@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthService} from "../../../services/auth.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-post-update',
@@ -18,7 +19,8 @@ export class PostUpdateComponent implements OnInit {
               private fb: FormBuilder,
               private router: Router,
               private authService: AuthService,
-              private activatedRoute: ActivatedRoute) { }
+              private activatedRoute: ActivatedRoute,
+              private toastr: ToastrService) { }
 
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
@@ -35,6 +37,7 @@ export class PostUpdateComponent implements OnInit {
 
   submit() {
     let data = this.formUpdate?.value;
+    this.toastr.success('Update Post successfully','Update Post');
     return this.postService.update(data,this.id).subscribe(res => {
       this.router.navigate(['admin/home/posts']);
     })
