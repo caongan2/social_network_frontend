@@ -23,7 +23,8 @@ export class NarbarComponent implements OnInit {
     this.authService.logout().subscribe(res => {
       localStorage.clear()
       this.router.navigate(['']).then(r => {
-        console.log('Success')
+        console.log(res)
+        // console.log('Success')
       }).catch(error => {
         console.log("Logout error")
       })

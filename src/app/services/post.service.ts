@@ -16,6 +16,7 @@ export class PostService {
     return this.httpClient.get(environment.url_api + 'posts/getAll',{headers: this.authService.setHeader()});
   }
 
+
   getPostByUser(id:number): Observable<any>{
     return this.httpClient.get(environment.url_api + 'posts/' + id + '/getPostByUser',{headers: this.authService.setHeader()});
   }
