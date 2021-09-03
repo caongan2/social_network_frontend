@@ -4,6 +4,8 @@ import { PostCreateComponent } from './post-create/post-create.component';
 import {PostListComponent} from "./post-list/post-list.component";
 import {RouterModule, Routes} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
+import { PostUpdateComponent } from './post-update/post-update.component';
+import { PostDeleteComponent } from './post-delete/post-delete.component';
 
 const routes: Routes = [
   {
@@ -13,6 +15,14 @@ const routes: Routes = [
   {
     path: 'create',
     component: PostCreateComponent,
+  },
+  {
+    path: ':id/update',
+    component: PostUpdateComponent,
+  },
+  {
+    path: ':id/delete',
+    component: PostDeleteComponent,
   }
 ]
 
@@ -20,7 +30,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
+    PostUpdateComponent,
+    PostDeleteComponent
   ],
   exports: [
     PostCreateComponent,

@@ -16,6 +16,10 @@ export class PostService {
     return this.httpClient.get(environment.url_api + 'posts/getAll',{headers: this.authService.setHeader()});
   }
 
+  getPostByUser(id:number): Observable<any>{
+    return this.httpClient.get(environment.url_api + 'posts/' + id + '/getPostByUser',{headers: this.authService.setHeader()});
+  }
+
   create(data:any):Observable<any>{
     return this.httpClient.post(environment.url_api + 'posts/create',data,{headers: this.authService.setHeader()});
   }
@@ -27,6 +31,5 @@ export class PostService {
   delete(id:number):Observable<any>{
     return this.httpClient.delete(environment.url_api + 'posts/' + id + '/delete',{headers: this.authService.setHeader()});
   }
-
 }
 
