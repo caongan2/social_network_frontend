@@ -25,11 +25,11 @@ const routes: Routes = [
         component: MasterComponent,
         children:[
           {
-            path:'list',
-            component:PostListComponent
+            path: 'posts',
+            loadChildren: () => import('./components/post/post.module').then(m => m.PostModule),
           }
         ]
-      }
+      },
     ],
     canActivate: [AuthGuard]
 

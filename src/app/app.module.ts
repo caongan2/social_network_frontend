@@ -8,7 +8,6 @@ import { NarbarComponent } from './components/layout/narbar/narbar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { SidebarLeftComponent } from './components/layout/sidebar-left/sidebar-left.component';
 import { SidebarRightComponent } from './components/layout/sidebar-right/sidebar-right.component';
-import { PostListComponent } from './components/post/post-list/post-list.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { LeftMenuComponent } from './components/layout/left-menu/left-menu.component';
 import { SectionLeftComponent } from './components/layout/section-left/section-left.component';
@@ -22,31 +21,33 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MasterComponent,
-    NarbarComponent,
-    FooterComponent,
-    SidebarLeftComponent,
-    SidebarRightComponent,
-    PostListComponent,
-    HeaderComponent,
-    LeftMenuComponent,
-    SectionLeftComponent,
-    SectionRightComponent,
-    StoryComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PostModule,
-    UserModule,
-    HttpClientModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MasterComponent,
+        NarbarComponent,
+        FooterComponent,
+        SidebarLeftComponent,
+        SidebarRightComponent,
+        HeaderComponent,
+        LeftMenuComponent,
+        SectionLeftComponent,
+        SectionRightComponent,
+        StoryComponent,
+        LoginComponent,
+        RegisterComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        PostModule,
+        UserModule,
+        HttpClientModule,
+        ReactiveFormsModule
+    ],
+    providers: [],
+    exports: [
+        StoryComponent,
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
