@@ -21,30 +21,32 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MasterComponent,
-    NarbarComponent,
-    FooterComponent,
-    SidebarLeftComponent,
-    SidebarRightComponent,
-    HeaderComponent,
-    LeftMenuComponent,
-    SectionLeftComponent,
-    SectionRightComponent,
-    StoryComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PostModule,
-    UserModule,
-    HttpClientModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MasterComponent,
+        NarbarComponent,
+        FooterComponent,
+        SidebarLeftComponent,
+        SidebarRightComponent,
+        HeaderComponent,
+        LeftMenuComponent,
+        SectionLeftComponent,
+        SectionRightComponent,
+        StoryComponent,
+        LoginComponent,
+        RegisterComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        UserModule,
+        HttpClientModule,
+        ReactiveFormsModule
+    ],
+    providers: [],
+    exports: [
+        StoryComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
