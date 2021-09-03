@@ -33,7 +33,7 @@ export class PostCreateComponent implements OnInit {
   submit() {
     let data = this.formCreatePost?.value;
     return this.postService.create(data).subscribe(res => {
-      this.router.navigate(['admin/home']);
+      this.router.navigate(['admin/home/posts']);
     })
   }
 
