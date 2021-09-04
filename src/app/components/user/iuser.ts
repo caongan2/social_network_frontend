@@ -3,5 +3,5 @@ export interface Iuser {
   phone: string;
   address: string;
   interest: string;
-  birthdate: string;
+  birth_date: string;
 }

@@ -1,11 +1,12 @@
+<p>post-create works!</p>
 <div class="central-meta postbox">
-  <span class="create-post">My post</span>
+  <span class="create-post">Create post</span>
   <div class="new-postbox">
     <figure>
       <img src="images/resources/admin.jpg" alt="">
     </figure>
-    <div class="attachments">
-      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+    <div class="newpst-input">
+      <form *ngIf="formUpdate" [formGroup]="formUpdate" (ngSubmit)="submit()">
         <div class="form-control">
           <select formControlName="is_public">
             <option [ngValue]="is_public">Public</option>
@@ -17,7 +18,7 @@
                   [ngClass]="(content?.invalid && content?.dirty) ? 'is-invalid' : ''"></textarea>
         <div *ngIf="content?.invalid && (content?.dirty || content?.touched) ">
           <p *ngIf="content?.errors?.required" class="text-danger">
-            Can not be blank
+            Không được để trống
           </p>
         </div>
         <div class="attachments">
@@ -55,9 +56,10 @@
               <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
             </li>
           </ul>
-          <button #element class="post-btn" type="submit" data-ripple="" (click)="getStatus(element.value)">Post
+          <button  class="post-btn" type="submit" data-ripple="" >Post
           </button>
         </div>
+
       </form>
     </div>
 
@@ -79,3 +81,4 @@
     </div>
   </div>
 </div>
+
