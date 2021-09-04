@@ -39,6 +39,7 @@
               "src/assets/css/toast-notification.css",
               "src/assets/css/weather-icons.min.css",
               "src/assets/css/weather-icon.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/assets/css/calendar.css",
               "src/assets/css/color-pink.css",
               "src/assets/css/eventCalendar.css",

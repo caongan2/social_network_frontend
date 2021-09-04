@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-post-delete',
@@ -20,17 +21,13 @@ export class PostDeleteComponent implements OnInit {
   }
 
   getPost(){
-    this.postService.getPostByUser(this.id).subscribe(res => {
+    console.log(this.id)
+    this.postService.getPostById(this.id).subscribe(res => {
       this.post = res;
+      console.log(res);
     })
   }
 
-  deletePost(){
-    if (confirm('Are you sure?')){
-      this.postService.delete(this.id).subscribe(res => {
-        this.router.navigate(['admin/home/posts']);
-      })
-    }
-  }
+
 
 }

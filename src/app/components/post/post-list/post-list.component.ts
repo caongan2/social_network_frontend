@@ -1,6 +1,8 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
+import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-post-list',
@@ -9,13 +11,15 @@ import {AuthService} from "../../../services/auth.service";
 })
 export class PostListComponent implements OnInit {
   posts: any = [];
-  user: any
+  user:any;
   constructor(private postService: PostService,
-              private authService: AuthService) {}
+              private authService: AuthService,
+              private router:Router,
+              private toastr: ToastrService)  {}
 
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser());
     this.getAll();
-    this.user = JSON.parse(<string>this.authService.getUser())
   }
 
   getAll() {
@@ -24,11 +28,13 @@ export class PostListComponent implements OnInit {
     });
   }
 
-
-  submit(event:any){
-    let data = event.target?.value;
-    this.postService.create(data).subscribe(res => {
-      console.log(res);
-    })
+  deletePost(id:number){
+    if(confirm("Are you sure about that ?")){
+      this.postService.delete(id).subscribe(res => {
+        this.toastr.success('Delete Post successfully','Delete Post');
+        this.getAll();
+        this.router.navigate(['admin/home/posts']);
+      })
+    }
   }
 }
