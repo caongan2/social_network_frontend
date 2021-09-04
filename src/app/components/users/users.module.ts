@@ -12,6 +12,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { UserSidebarLeftComponent } from './user-sidebar-left/user-sidebar-left.component';
 import { UserSidebarRightComponent } from './user-sidebar-right/user-sidebar-right.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'photo',
     component:UserPhotoComponent
+  },
+   {
+    path: 'change-password',
+    component: ChangePasswordComponent
   },
 
 ];
@@ -51,7 +56,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule,
-
+    ReactiveFormsModule
   ]
 })
 export class UsersModule { }

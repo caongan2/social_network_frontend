@@ -4,6 +4,7 @@ import {LoginComponent} from "./components/login/login.component";
 import {MasterComponent} from "./components/layout/master/master.component";
 import {AuthGuard} from "./auth.guard";
 import {RegisterComponent} from "./components/register/register.component";
+import { ChangePasswordComponent } from './components/users/change-password/change-password.component';
 const routes: Routes = [
   {
     path: '',
@@ -26,12 +27,13 @@ const routes: Routes = [
             path: 'posts',
             loadChildren: () => import('./components/post/post.module').then(m => m.PostModule),
           },
+       
         ]
       },
     ],
     canActivate: [AuthGuard]
-
-  }
+  },
+ 
 ];
 
 @NgModule({
