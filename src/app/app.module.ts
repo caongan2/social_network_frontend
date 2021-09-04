@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {ToastrModule} from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,9 @@ import {PostModule} from "./components/post/post.module";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
+
 
 @NgModule({
     declarations: [
@@ -43,7 +46,10 @@ import {UsersModule} from "./components/users/users.module";
         PostModule,
         HttpClientModule,
         ReactiveFormsModule,
-        UsersModule
+        BrowserAnimationsModule,
+        UsersModule,
+        ToastrModule.forRoot()
+
     ],
     providers: [],
   exports: [

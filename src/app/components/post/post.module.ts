@@ -11,10 +11,12 @@ const routes: Routes = [
   {
     path: '',
     component: PostListComponent,
-  },
-  {
-    path: 'create',
-    component: PostCreateComponent,
+    children:[
+      {
+        path: 'create',
+        component: PostCreateComponent,
+      }
+    ]
   },
   {
     path: ':id/update',
