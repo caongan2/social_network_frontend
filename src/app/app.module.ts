@@ -15,10 +15,10 @@ import { SectionRightComponent } from './components/layout/section-right/section
 import { StoryComponent } from './components/layout/story/story.component';
 import { LoginComponent } from './components/login/login.component';
 import {PostModule} from "./components/post/post.module";
-import {UserModule} from "./components/user/user.module";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
+import {UsersModule} from "./components/users/users.module";
 
 @NgModule({
     declarations: [
@@ -34,20 +34,23 @@ import { RegisterComponent } from './components/register/register.component';
         SectionRightComponent,
         StoryComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         PostModule,
-        UserModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        UsersModule
     ],
     providers: [],
-    exports: [
-        StoryComponent,
-    ],
+  exports: [
+    StoryComponent,
+    SidebarLeftComponent,
+    SidebarRightComponent,
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
