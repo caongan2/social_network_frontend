@@ -11,6 +11,7 @@ import {UserProfileComponent} from "./user-profile/user-profile.component";
 import {RouterModule, Routes} from "@angular/router";
 import { UserSidebarLeftComponent } from './user-sidebar-left/user-sidebar-left.component';
 import { UserSidebarRightComponent } from './user-sidebar-right/user-sidebar-right.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
 const routes: Routes = [
@@ -44,7 +45,8 @@ const routes: Routes = [
     UserProfileBannerComponent,
     UserProfileComponent,
     UserSidebarLeftComponent,
-    UserSidebarRightComponent
+    UserSidebarRightComponent,
+    ChangePasswordComponent
   ],
   imports: [
     CommonModule,
