@@ -35,7 +35,7 @@ export class PostCreateComponent implements OnInit {
 
   getAll() {
     return this.postService.getAll().subscribe(res => {
-      this.posts = res
+      this.posts = res;
     });
   }
 
@@ -44,7 +44,7 @@ export class PostCreateComponent implements OnInit {
     return this.postService.create(data).subscribe(res => {
        this.toastr.success('Create Post successfully','Create Post');
        this.getAll();
-       this.router.navigate(['admin/home/posts']);
+       this.refresh();
     })
 
   }
@@ -56,5 +56,10 @@ export class PostCreateComponent implements OnInit {
   get isPublic(){
     return this.formCreatePost?.get('is_public');
   }
+
+  refresh(): void {
+    window.location.reload();
+  }
+
 
 }
