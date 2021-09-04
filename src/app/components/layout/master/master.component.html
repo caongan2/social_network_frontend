@@ -11,7 +11,7 @@
 
   <div class="fixed-sidebar right">
     <app-sidebar-right></app-sidebar-right>
-  </div><!-- right sidebar user chat -->
+  </div><!-- right sidebar users chat -->
 
   <div class="fixed-sidebar left">
     <app-sidebar-left></app-sidebar-left>
@@ -30,16 +30,9 @@
                 <app-section-left></app-section-left>
               </div><!-- sidebar -->
               <div class="col-lg-6">
-                <div>
-                    <app-post-create></app-post-create>
-                </div>
-                <!-- add post new box -->
-                <div class="central-meta">
-                  <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
-                  <app-story></app-story>
-                </div><!-- top stories -->
+                <app-story></app-story>
                 <div class="loadMore">
-                  <app-post-list></app-post-list>
+                  <router-outlet></router-outlet>
                 </div>
               </div><!-- centerl meta -->
               <div class="col-lg-3">

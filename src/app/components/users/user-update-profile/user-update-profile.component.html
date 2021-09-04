@@ -1,0 +1,85 @@
+<div class="tab-pane " id="edit-profile" >
+  <div class="set-title">
+    <h5>Edit Profile</h5>
+    <span>People on Pitnik will get to know you with the info below</span>
+  </div>
+  <div class="setting-meta">
+    <div class="change-photo">
+      <figure><img src="assets/images/resources/admin2.jpg" alt=""></figure>
+      <div class="edit-img">
+        <form class="edit-phto">
+
+          <label class="fileContainer">
+            <i class="fa fa-camera-retro"></i>
+            Chage DP
+            <input type="file">
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="stg-form-area">
+    <form *ngIf="formEditProfile" [formGroup]="formEditProfile" (ngSubmit)="submit()" class="c-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control " formControlName="name" id="name" >
+        <div *ngIf="name?.invalid && (name?.dirty || name?.touched) ">
+          <p *ngIf="name?.errors?.minlength" class="text-danger">
+            Field name must be between 2 to 50 charaters
+          </p>
+          <p *ngIf="name?.errors?.maxlength" class="text-danger">
+            Field name must be between 2 to 50 charaters
+          </p>
+          <p *ngIf="name?.errors?.pattern" class="text-danger">
+            It's not format of field name
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control" formControlName="phone" id="phone">
+        <div *ngIf="phone?.invalid && phone?.dirty ">
+          <p *ngIf="phone?.errors?.pattern" class="text-danger">
+            It's not phone format
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea formControlName="address"  class="form-control" id="address" cols="30" rows="3"></textarea>
+        <div *ngIf="address?.invalid && address?.dirty ">
+          <p *ngIf="address?.errors?.minlength" class="text-danger">
+            Field address can not less than 2 characters
+          </p>
+          <div *ngIf="address?.invalid && address?.dirty ">
+            <p *ngIf="address?.errors?.maxlength" class="text-danger">
+              Field address can not more than 50 characters
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="interest">Interest</label>
+        <input type="text" formControlName="interest" class="form-control" id="interest">
+        <div *ngIf="interest?.invalid && interest?.dirty ">
+          <p *ngIf="interest?.errors?.minlength" class="text-danger">
+            Field interest can not less than 2 characters
+          </p>
+          <div *ngIf="interest?.invalid && interest?.dirty ">
+            <p *ngIf="interest?.errors?.maxlength" class="text-danger">
+              Field interest can not more than 50 characters
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input type="date" formControlName="birth_date" class="form-control" id="birthdate">
+      </div>
+      <div>
+        <button type="submit" (click)="back()" data-ripple="">Back</button>
+        <button type="submit" [disabled]="formEditProfile?.invalid" data-ripple="">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
