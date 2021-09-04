@@ -35,5 +35,6 @@ export class PostService {
   delete(id:number):Observable<any>{
     return this.httpClient.delete(environment.url_api + 'posts/' + id + '/delete',{headers: this.authService.setHeader()});
   }
+
 }
 

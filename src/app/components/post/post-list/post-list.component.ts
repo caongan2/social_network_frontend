@@ -19,6 +19,7 @@ export class PostListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.user = JSON.parse(<string>this.authService.getUser());
     this.getAll();
   }
