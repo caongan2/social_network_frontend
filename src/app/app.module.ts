@@ -16,11 +16,12 @@ import { SectionRightComponent } from './components/layout/section-right/section
 import { StoryComponent } from './components/layout/story/story.component';
 import { LoginComponent } from './components/login/login.component';
 import {PostModule} from "./components/post/post.module";
-import {UserModule} from "./components/user/user.module";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {UsersModule} from "./components/users/users.module";
+
 
 @NgModule({
     declarations: [
@@ -36,22 +37,26 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
         SectionRightComponent,
         StoryComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         PostModule,
-        UserModule,
         HttpClientModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
+        UsersModule,
         ToastrModule.forRoot()
+
     ],
     providers: [],
-    exports: [
-        StoryComponent,
-    ],
+  exports: [
+    StoryComponent,
+    SidebarLeftComponent,
+    SidebarRightComponent,
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

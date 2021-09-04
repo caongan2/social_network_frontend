@@ -13112,8 +13112,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(../fonts/fa-brands-400.html);
-  src: url(../fonts/fa-brands-400d41d.html?#iefix) format("embedded-opentype"), url(../fonts/fa-brands-401.html) format("woff2"), url(../fonts/fa-brands-402.html) format("woff"), url(../fonts/fa-brands-403.html) format("truetype"), url(../fonts/fa-brands-404.html#fontawesome) format("svg")
+  src: url(src/assets/fonts/fa-brands-400.html);
+  src: url(src/assets/fonts/fa-brands-400d41d.html?#iefix) format("embedded-opentype"), url(src/assets/fonts/fa-brands-401.html) format("woff2"), url(src/assets/fonts/fa-brands-402.html) format("woff"), url(src/assets/fonts/fa-brands-403.html) format("truetype"), url(src/assets/fonts/fa-brands-404.html#fontawesome) format("svg")
 }
 
 .fab {
@@ -13125,8 +13125,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(../fonts/fa-regular-400.html);
-  src: url(../fonts/fa-regular-400d41d.html?#iefix) format("embedded-opentype"), url(../fonts/fa-regular-401.html) format("woff2"), url(../fonts/fa-regular-402.html) format("woff"), url(../fonts/fa-regular-403.html) format("truetype"), url(../fonts/fa-regular-404.html#fontawesome) format("svg")
+  src: url(src/assets/fonts/fa-regular-400.html);
+  src: url(src/assets/fonts/fa-regular-400d41d.html?#iefix) format("embedded-opentype"), url(src/assets/fonts/fa-regular-401.html) format("woff2"), url(src/assets/fonts/fa-regular-402.html) format("woff"), url(src/assets/fonts/fa-regular-403.html) format("truetype"), url(src/assets/fonts/fa-regular-404.html#fontawesome) format("svg")
 }
 
 .far {
@@ -13139,8 +13139,8 @@
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(../fonts/fa-solid-900.html);
-  src: url(../fonts/fa-solid-900d41d.html?#iefix) format("embedded-opentype"), url(../fonts/fa-solid-901.html) format("woff2"), url(../fonts/fa-solid-902.html) format("woff"), url(../fonts/fa-solid-903.html) format("truetype"), url(../fonts/fa-solid-904.html#fontawesome) format("svg")
+  src: url(src/assets/fonts/fa-solid-900.html);
+  src: url(src/assets/fonts/fa-solid-900d41d.html?#iefix) format("embedded-opentype"), url(src/assets/fonts/fa-solid-901.html) format("woff2"), url(src/assets/fonts/fa-solid-902.html) format("woff"), url(src/assets/fonts/fa-solid-903.html) format("truetype"), url(src/assets/fonts/fa-solid-904.html#fontawesome) format("svg")
 }
 
 .fa, .fas {
@@ -13157,8 +13157,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(../fonts/fa-brands-400.html);
-  src: url(../fonts/fa-brands-400d41d.html?#iefix) format("embedded-opentype"), url(../fonts/fa-brands-401.html) format("woff2"), url(../fonts/fa-brands-402.html) format("woff"), url(../fonts/fa-brands-403.html) format("truetype"), url(../fonts/fa-brands-404.html#fontawesome) format("svg")
+  src: url(src/assets/fonts/fa-brands-400.html);
+  src: url(src/assets/fonts/fa-brands-400d41d.html?#iefix) format("embedded-opentype"), url(src/assets/fonts/fa-brands-401.html) format("woff2"), url(src/assets/fonts/fa-brands-402.html) format("woff"), url(src/assets/fonts/fa-brands-403.html) format("truetype"), url(src/assets/fonts/fa-brands-404.html#fontawesome) format("svg")
 }
 
 .fab {
@@ -13174,8 +13174,8 @@
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(../fonts/fa-solid-900.html);
-  src: url(../fonts/fa-solid-900d41d.html?#iefix) format("embedded-opentype"), url(../fonts/fa-solid-901.html) format("woff2"), url(../fonts/fa-solid-902.html) format("woff"), url(../fonts/fa-solid-903.html) format("truetype"), url(../fonts/fa-solid-904.html#fontawesome) format("svg")
+  src: url(src/assets/fonts/fa-solid-900.html);
+  src: url(src/assets/fonts/fa-solid-900d41d.html?#iefix) format("embedded-opentype"), url(src/assets/fonts/fa-solid-901.html) format("woff2"), url(src/assets/fonts/fa-solid-902.html) format("woff"), url(src/assets/fonts/fa-solid-903.html) format("truetype"), url(src/assets/fonts/fa-solid-904.html#fontawesome) format("svg")
 }
 
 .fa, .fas {
@@ -13189,8 +13189,8 @@
  */
 @font-face {
   font-family: FontAwesome;
-  src: url(../fonts/fontawesome-webfont3e6e.eot?v=4.7.0);
-  src: url(../fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont3e6e.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont3e6e.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont3e6e.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular) format('svg');
+  src: url(src/assets/fonts/fontawesome-webfont3e6e.eot?v=4.7.0);
+  src: url(src/assets/fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(src/assets/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0) format('woff2'), url(src/assets/fonts/fontawesome-webfont3e6e.woff?v=4.7.0) format('woff'), url(src/assets/fonts/fontawesome-webfont3e6e.ttf?v=4.7.0) format('truetype'), url(src/assets/fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular) format('svg');
   font-weight: 400;
   font-style: normal
 }
@@ -17986,7 +17986,7 @@ body .ui-tooltip {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color src/assets/images/Emoji", "Segoe UI src/assets/images/Emoji", "Segoe UI Symbol", "Noto Color src/assets/images/Emoji";
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -18007,7 +18007,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color src/assets/images/Emoji", "Segoe UI src/assets/images/Emoji", "Segoe UI Symbol", "Noto Color src/assets/images/Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -24085,7 +24085,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color src/assets/images/Emoji", "Segoe UI src/assets/images/Emoji", "Segoe UI Symbol", "Noto Color src/assets/images/Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -24198,7 +24198,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color src/assets/images/Emoji", "Segoe UI src/assets/images/Emoji", "Segoe UI Symbol", "Noto Color src/assets/images/Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -35193,7 +35193,7 @@ em.mm-counter + a.mm-next + label.mm-check + a, em.mm-counter + a.mm-next + labe
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url(src/assets/images/owl.video.play.html) no-repeat;
+  background: url(owl.video.play.html) no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -35344,7 +35344,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: block;
   width: 12px;
   height: 12px;
-  background: url(src/assets/images/chosen-sprite.png) -42px 1px no-repeat;
+  background: url(chosen-sprite.png) -42px 1px no-repeat;
   font-size: 1px
 }
 
@@ -35369,7 +35369,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: block;
   width: 100%;
   height: 100%;
-  background: url(src/assets/images/chosen-sprite.png) no-repeat 0 2px
+  background: url(chosen-sprite.png) no-repeat 0 2px
 }
 
 .chosen-container-single .chosen-search {
@@ -35387,8 +35387,8 @@ This file is generated by `grunt build`, do not edit it by hand.
   height: auto;
   outline: 0;
   border: 1px solid #aaa;
-  background: #fff url(src/assets/images/chosen-sprite.png) no-repeat 100% -20px;
-  background: url(src/assets/images/chosen-sprite.png) no-repeat 100% -20px;
+  background: #fff url(chosen-sprite.png) no-repeat 100% -20px;
+  background: url(chosen-sprite.png) no-repeat 100% -20px;
   font-size: 1em;
   font-family: sans-serif;
   line-height: normal;
@@ -35545,7 +35545,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: block;
   width: 12px;
   height: 12px;
-  background: url(src/assets/images/chosen-sprite.png) -42px 1px no-repeat;
+  background: url(chosen-sprite.png) -42px 1px no-repeat;
   font-size: 1px
 }
 
@@ -35701,8 +35701,8 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .chosen-rtl .chosen-search input[type=text] {
   padding: 4px 5px 4px 20px;
-  background: #fff url(src/assets/images/chosen-sprite.png) no-repeat -30px -20px;
-  background: url(src/assets/images/chosen-sprite.png) no-repeat -30px -20px;
+  background: #fff url(chosen-sprite.png) no-repeat -30px -20px;
+  background: url(chosen-sprite.png) no-repeat -30px -20px;
   direction: rtl
 }
 
@@ -36447,11 +36447,11 @@ This file is generated by `grunt build`, do not edit it by hand.
   margin-top: -120px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(src/assets/images/strip-skins/strip/error.svg)
+  background-image: url(strip-skins/strip/error.svg)
 }
 
 .strp-no-svg .strp-error {
-  background-image: url(src/assets/images/strip-skins/strip/error.png)
+  background-image: url(strip-skins/strip/error.png)
 }
 
 .strp-spinner-move {
@@ -36553,20 +36553,20 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 .strp-window-skin-strip .strp-nav-previous .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/previous.svg)
+  background-image: url(strip-skins/strip/previous.svg)
 }
 
 .strp-window-skin-strip .strp-nav-next .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/next.svg)
+  background-image: url(strip-skins/strip/next.svg)
 }
 
 .strp-window-skin-strip.strp-no-svg .strp-nav-previous .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/previous-faded.png);
+  background-image: url(strip-skins/strip/previous-faded.png);
   opacity: 1
 }
 
 .strp-window-skin-strip.strp-no-svg .strp-nav-next .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/next-faded.png);
+  background-image: url(strip-skins/strip/next-faded.png);
   opacity: 1
 }
 
@@ -36583,11 +36583,11 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-previous .strp-nav-button-icon, .strp-window-skin-strip.strp-no-svg .strp-nav.strp-nav-previous:hover .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/previous.png)
+  background-image: url(strip-skins/strip/previous.png)
 }
 
 .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-next .strp-nav-button-icon, .strp-window-skin-strip.strp-no-svg .strp-nav.strp-nav-next:hover .strp-nav-button-icon {
-  background-image: url(src/assets/images/strip-skins/strip/next.png)
+  background-image: url(strip-skins/strip/next.png)
 }
 
 @media all and (max-width: 375px) and (orientation: portrait), all and (max-height: 375px) and (max-width: 667px) {
@@ -36599,27 +36599,27 @@ This file is generated by `grunt build`, do not edit it by hand.
   }
 
   .strp-window-skin-strip .strp-nav-previous .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/previous-small.svg)
+    background-image: url(strip-skins/strip/previous-small.svg)
   }
 
   .strp-window-skin-strip .strp-nav-next .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/next-small.svg)
+    background-image: url(strip-skins/strip/next-small.svg)
   }
 
   .strp-window-skin-strip.strp-no-svg .strp-nav-previous .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/previous-small-faded.png)
+    background-image: url(strip-skins/strip/previous-small-faded.png)
   }
 
   .strp-window-skin-strip.strp-no-svg .strp-nav-next .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/next-small-faded.png)
+    background-image: url(strip-skins/strip/next-small-faded.png)
   }
 
   .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-previous .strp-nav-button-icon, .strp-window-skin-strip.strp-no-svg .strp-nav.strp-nav-previous:hover .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/previous-small.png)
+    background-image: url(strip-skins/strip/previous-small.png)
   }
 
   .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-next .strp-nav-button-icon, .strp-window-skin-strip.strp-no-svg .strp-nav.strp-nav-next:hover .strp-nav-button-icon {
-    background-image: url(src/assets/images/strip-skins/strip/next-small.png)
+    background-image: url(strip-skins/strip/next-small.png)
   }
 
   .strp-no-overlap .strp-container {
@@ -36640,7 +36640,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 .strp-window-skin-strip .strp-close .strp-close-icon {
-  background-image: url(src/assets/images/strip-skins/strip/close.svg);
+  background-image: url(strip-skins/strip/close.svg);
   opacity: .8
 }
 
@@ -36653,7 +36653,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 .strp-window-skin-strip.strp-no-svg .strp-close .strp-close-icon {
-  background-image: url(src/assets/images/strip-skins/strip/close.png);
+  background-image: url(strip-skins/strip/close.png);
   opacity: 1
 }
 
@@ -36671,3523 +36671,3523 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 .em--1 {
-  background-image: url(src/assets/images/emoji/-1.png)
+  background-image: url(src/assets/css/emoji/-1.png)
 }
 
 .em-100 {
-  background-image: url(src/assets/images/emoji/100.png)
+  background-image: url(src/assets/css/emoji/100.png)
 }
 
 .em-1234 {
-  background-image: url(src/assets/images/emoji/1234.png)
+  background-image: url(src/assets/css/emoji/1234.png)
 }
 
 .em-8ball {
-  background-image: url(src/assets/images/emoji/8ball.png)
+  background-image: url(src/assets/css/emoji/8ball.png)
 }
 
 .em-a {
-  background-image: url(src/assets/images/emoji/a.png)
+  background-image: url(src/assets/css/emoji/a.png)
 }
 
 .em-ab {
-  background-image: url(src/assets/images/emoji/ab.png)
+  background-image: url(src/assets/css/emoji/ab.png)
 }
 
 .em-abc {
-  background-image: url(src/assets/images/emoji/abc.png)
+  background-image: url(src/assets/css/emoji/abc.png)
 }
 
 .em-abcd {
-  background-image: url(src/assets/images/emoji/abcd.png)
+  background-image: url(src/assets/css/emoji/abcd.png)
 }
 
 .em-accept {
-  background-image: url(src/assets/images/emoji/accept.png)
+  background-image: url(src/assets/css/emoji/accept.png)
 }
 
 .em-aerial_tramway {
-  background-image: url(src/assets/images/emoji/aerial_tramway.png)
+  background-image: url(src/assets/css/emoji/aerial_tramway.png)
 }
 
 .em-airplane {
-  background-image: url(src/assets/images/emoji/airplane.png)
+  background-image: url(src/assets/css/emoji/airplane.png)
 }
 
 .em-alarm_clock {
-  background-image: url(src/assets/images/emoji/alarm_clock.png)
+  background-image: url(src/assets/css/emoji/alarm_clock.png)
 }
 
 .em-alien {
-  background-image: url(src/assets/images/emoji/alien.png)
+  background-image: url(src/assets/css/emoji/alien.png)
 }
 
 .em-ambulance {
-  background-image: url(src/assets/images/emoji/ambulance.png)
+  background-image: url(src/assets/css/emoji/ambulance.png)
 }
 
 .em-anchor {
-  background-image: url(src/assets/images/emoji/anchor.png)
+  background-image: url(src/assets/css/emoji/anchor.png)
 }
 
 .em-angel {
-  background-image: url(src/assets/images/emoji/angel.png)
+  background-image: url(src/assets/css/emoji/angel.png)
 }
 
 .em-anger {
-  background-image: url(src/assets/images/emoji/anger.png)
+  background-image: url(src/assets/css/emoji/anger.png)
 }
 
 .em-angry {
-  background-image: url(src/assets/images/emoji/angry.png)
+  background-image: url(src/assets/css/emoji/angry.png)
 }
 
 .em-anguished {
-  background-image: url(src/assets/images/emoji/anguished.png)
+  background-image: url(src/assets/css/emoji/anguished.png)
 }
 
 .em-ant {
-  background-image: url(src/assets/images/emoji/ant.png)
+  background-image: url(src/assets/css/emoji/ant.png)
 }
 
 .em-apple {
-  background-image: url(src/assets/images/emoji/apple.png)
+  background-image: url(src/assets/css/emoji/apple.png)
 }
 
 .em-aquarius {
-  background-image: url(src/assets/images/emoji/aquarius.png)
+  background-image: url(src/assets/css/emoji/aquarius.png)
 }
 
 .em-aries {
-  background-image: url(src/assets/images/emoji/aries.png)
+  background-image: url(src/assets/css/emoji/aries.png)
 }
 
 .em-arrow_backward {
-  background-image: url(src/assets/images/emoji/arrow_backward.png)
+  background-image: url(src/assets/css/emoji/arrow_backward.png)
 }
 
 .em-arrow_double_down {
-  background-image: url(src/assets/images/emoji/arrow_double_down.png)
+  background-image: url(src/assets/css/emoji/arrow_double_down.png)
 }
 
 .em-arrow_double_up {
-  background-image: url(src/assets/images/emoji/arrow_double_up.png)
+  background-image: url(src/assets/css/emoji/arrow_double_up.png)
 }
 
 .em-arrow_down {
-  background-image: url(src/assets/images/emoji/arrow_down.png)
+  background-image: url(src/assets/css/emoji/arrow_down.png)
 }
 
 .em-arrow_down_small {
-  background-image: url(src/assets/images/emoji/arrow_down_small.png)
+  background-image: url(src/assets/css/emoji/arrow_down_small.png)
 }
 
 .em-arrow_forward {
-  background-image: url(src/assets/images/emoji/arrow_forward.png)
+  background-image: url(src/assets/css/emoji/arrow_forward.png)
 }
 
 .em-arrow_heading_down {
-  background-image: url(src/assets/images/emoji/arrow_heading_down.png)
+  background-image: url(src/assets/css/emoji/arrow_heading_down.png)
 }
 
 .em-arrow_heading_up {
-  background-image: url(src/assets/images/emoji/arrow_heading_up.png)
+  background-image: url(src/assets/css/emoji/arrow_heading_up.png)
 }
 
 .em-arrow_left {
-  background-image: url(src/assets/images/emoji/arrow_left.png)
+  background-image: url(src/assets/css/emoji/arrow_left.png)
 }
 
 .em-arrow_lower_left {
-  background-image: url(src/assets/images/emoji/arrow_lower_left.png)
+  background-image: url(src/assets/css/emoji/arrow_lower_left.png)
 }
 
 .em-arrow_lower_right {
-  background-image: url(src/assets/images/emoji/arrow_lower_right.png)
+  background-image: url(src/assets/css/emoji/arrow_lower_right.png)
 }
 
 .em-arrow_right {
-  background-image: url(src/assets/images/emoji/arrow_right.png)
+  background-image: url(src/assets/css/emoji/arrow_right.png)
 }
 
 .em-arrow_right_hook {
-  background-image: url(src/assets/images/emoji/arrow_right_hook.png)
+  background-image: url(src/assets/css/emoji/arrow_right_hook.png)
 }
 
 .em-arrow_up {
-  background-image: url(src/assets/images/emoji/arrow_up.png)
+  background-image: url(src/assets/css/emoji/arrow_up.png)
 }
 
 .em-arrow_up_down {
-  background-image: url(src/assets/images/emoji/arrow_up_down.png)
+  background-image: url(src/assets/css/emoji/arrow_up_down.png)
 }
 
 .em-arrow_up_small {
-  background-image: url(src/assets/images/emoji/arrow_up_small.png)
+  background-image: url(src/assets/css/emoji/arrow_up_small.png)
 }
 
 .em-arrow_upper_left {
-  background-image: url( src/assets/images/emoji/arrow_upper_left.png)
+  background-image: url(src/assets/css/emoji/arrow_upper_left.png)
 }
 
 .em-arrow_upper_right {
-  background-image: url( src/assets/images/emoji/arrow_upper_right.png)
+  background-image: url(src/assets/css/emoji/arrow_upper_right.png)
 }
 
 .em-arrows_clockwise {
-  background-image: url(src/assets/images/emoji/arrows_clockwise.png)
+  background-image: url(src/assets/css/emoji/arrows_clockwise.png)
 }
 
 .em-arrows_counterclockwise {
-  background-image: url(src/assets/images/emoji/arrows_counterclockwise.png)
+  background-image: url(src/assets/css/emoji/arrows_counterclockwise.png)
 }
 
 .em-art {
-  background-image: url(src/assets/images/emoji/art.png)
+  background-image: url(src/assets/css/emoji/art.png)
 }
 
 .em-articulated_lorry {
-  background-image: url(src/assets/images/emoji/articulated_lorry.png)
+  background-image: url(src/assets/css/emoji/articulated_lorry.png)
 }
 
 .em-astonished {
-  background-image: url(src/assets/images/emoji/astonished.png)
+  background-image: url(src/assets/css/emoji/astonished.png)
 }
 
 .em-atm {
-  background-image: url(src/assets/images/emoji/atm.png)
+  background-image: url(src/assets/css/emoji/atm.png)
 }
 
 .em-b {
-  background-image: url(src/assets/images/emoji/b.png)
+  background-image: url(src/assets/css/emoji/b.png)
 }
 
 .em-baby {
-  background-image: url(src/assets/images/emoji/baby.png)
+  background-image: url(src/assets/css/emoji/baby.png)
 }
 
 .em-baby_bottle {
-  background-image: url(src/assets/images/emoji/baby_bottle.png)
+  background-image: url(src/assets/css/emoji/baby_bottle.png)
 }
 
 .em-baby_chick {
-  background-image: url(src/assets/images/emoji/baby_chick.png)
+  background-image: url(src/assets/css/emoji/baby_chick.png)
 }
 
 .em-baby_symbol {
-  background-image: url(src/assets/images/emoji/baby_symbol.png)
+  background-image: url(src/assets/css/emoji/baby_symbol.png)
 }
 
 .em-back {
-  background-image: url(src/assets/images/emoji/back.png)
+  background-image: url(src/assets/css/emoji/back.png)
 }
 
 .em-baggage_claim {
-  background-image: url(src/assets/images/emoji/baggage_claim.png)
+  background-image: url(src/assets/css/emoji/baggage_claim.png)
 }
 
 .em-balloon {
-  background-image: url(src/assets/images/emoji/balloon.png)
+  background-image: url(src/assets/css/emoji/balloon.png)
 }
 
 .em-ballot_box_with_check {
-  background-image: url(src/assets/images/emoji/ballot_box_with_check.png)
+  background-image: url(src/assets/css/emoji/ballot_box_with_check.png)
 }
 
 .em-bamboo {
-  background-image: url(src/assets/images/emoji/bamboo.png)
+  background-image: url(src/assets/css/emoji/bamboo.png)
 }
 
 .em-banana {
-  background-image: url(src/assets/images/emoji/banana.png)
+  background-image: url(src/assets/css/emoji/banana.png)
 }
 
 .em-bangbang {
-  background-image: url(src/assets/images/emoji/bangbang.png)
+  background-image: url(src/assets/css/emoji/bangbang.png)
 }
 
 .em-bank {
-  background-image: url(src/assets/images/emoji/bank.png)
+  background-image: url(src/assets/css/emoji/bank.png)
 }
 
 .em-bar_chart {
-  background-image: url(src/assets/images/emoji/bar_chart.png)
+  background-image: url(src/assets/css/emoji/bar_chart.png)
 }
 
 .em-barber {
-  background-image: url(src/assets/images/emoji/barber.png)
+  background-image: url(src/assets/css/emoji/barber.png)
 }
 
 .em-baseball {
-  background-image: url(src/assets/images/emoji/baseball.png)
+  background-image: url(src/assets/css/emoji/baseball.png)
 }
 
 .em-basketball {
-  background-image: url(src/assets/images/emoji/basketball.png)
+  background-image: url(src/assets/css/emoji/basketball.png)
 }
 
 .em-bath {
-  background-image: url(src/assets/images/emoji/bath.png)
+  background-image: url(src/assets/css/emoji/bath.png)
 }
 
 .em-bathtub {
-  background-image: url(src/assets/images/emoji/bathtub.png)
+  background-image: url(src/assets/css/emoji/bathtub.png)
 }
 
 .em-battery {
-  background-image: url(src/assets/images/emoji/battery.png)
+  background-image: url(src/assets/css/emoji/battery.png)
 }
 
 .em-bear {
-  background-image: url(src/assets/images/emoji/bear.png)
+  background-image: url(src/assets/css/emoji/bear.png)
 }
 
 .em-bee {
-  background-image: url(src/assets/images/emoji/bee.png)
+  background-image: url(src/assets/css/emoji/bee.png)
 }
 
 .em-beer {
-  background-image: url(src/assets/images/emoji/beer.png)
+  background-image: url(src/assets/css/emoji/beer.png)
 }
 
 .em-beers {
-  background-image: url(src/assets/images/emoji/beers.png)
+  background-image: url(src/assets/css/emoji/beers.png)
 }
 
 .em-beetle {
-  background-image: url(src/assets/images/emoji/beetle.png)
+  background-image: url(src/assets/css/emoji/beetle.png)
 }
 
 .em-beginner {
-  background-image: url(src/assets/images/emoji/beginner.png)
+  background-image: url(src/assets/css/emoji/beginner.png)
 }
 
 .em-bell {
-  background-image: url(src/assets/images/emoji/bell.png)
+  background-image: url(src/assets/css/emoji/bell.png)
 }
 
 .em-bento {
-  background-image: url(src/assets/images/emoji/bento.png)
+  background-image: url(src/assets/css/emoji/bento.png)
 }
 
 .em-bicyclist {
-  background-image: url(src/assets/images/emoji/bicyclist.png)
+  background-image: url(src/assets/css/emoji/bicyclist.png)
 }
 
 .em-bike {
-  background-image: url(src/assets/images/emoji/bike.png)
+  background-image: url(src/assets/css/emoji/bike.png)
 }
 
 .em-bikini {
-  background-image: url(src/assets/images/emoji/bikini.png)
+  background-image: url(src/assets/css/emoji/bikini.png)
 }
 
 .em-bird {
-  background-image: url(src/assets/images/emoji/bird.png)
+  background-image: url(src/assets/css/emoji/bird.png)
 }
 
 .em-birthday {
-  background-image: url(src/assets/images/emoji/birthday.png)
+  background-image: url(src/assets/css/emoji/birthday.png)
 }
 
 .em-black_circle {
-  background-image: url(src/assets/images/emoji/black_circle.png)
+  background-image: url(src/assets/css/emoji/black_circle.png)
 }
 
 .em-black_joker {
-  background-image: url(src/assets/images/emoji/black_joker.png)
+  background-image: url(src/assets/css/emoji/black_joker.png)
 }
 
 .em-black_medium_small_square {
-  background-image: url(src/assets/images/emoji/black_medium_small_square.png)
+  background-image: url(src/assets/css/emoji/black_medium_small_square.png)
 }
 
 .em-black_medium_square {
-  background-image: url(src/assets/images/emoji/black_medium_square.png)
+  background-image: url(src/assets/css/emoji/black_medium_square.png)
 }
 
 .em-black_nib {
-  background-image: url(src/assets/images/emoji/black_nib.png)
+  background-image: url(src/assets/css/emoji/black_nib.png)
 }
 
 .em-black_small_square {
-  background-image: url(src/assets/images/emoji/black_small_square.png)
+  background-image: url(src/assets/css/emoji/black_small_square.png)
 }
 
 .em-black_square {
-  background-image: url(src/assets/images/emoji/black_square.png)
+  background-image: url(src/assets/css/emoji/black_square.png)
 }
 
 .em-black_square_button {
-  background-image: url(src/assets/images/emoji/black_square_button.png)
+  background-image: url(src/assets/css/emoji/black_square_button.png)
 }
 
 .em-blossom {
-  background-image: url(src/assets/images/emoji/blossom.png)
+  background-image: url(src/assets/css/emoji/blossom.png)
 }
 
 .em-blowfish {
-  background-image: url(src/assets/images/emoji/blowfish.png)
+  background-image: url(src/assets/css/emoji/blowfish.png)
 }
 
 .em-blue_book {
-  background-image: url(src/assets/images/emoji/blue_book.png)
+  background-image: url(src/assets/css/emoji/blue_book.png)
 }
 
 .em-blue_car {
-  background-image: url(src/assets/images/emoji/blue_car.png)
+  background-image: url(src/assets/css/emoji/blue_car.png)
 }
 
 .em-blue_heart {
-  background-image: url(src/assets/images/emoji/blue_heart.png)
+  background-image: url(src/assets/css/emoji/blue_heart.png)
 }
 
 .em-blush {
-  background-image: url(src/assets/images/emoji/blush.png)
+  background-image: url(src/assets/css/emoji/blush.png)
 }
 
 .em-boar {
-  background-image: url(src/assets/images/emoji/boar.png)
+  background-image: url(src/assets/css/emoji/boar.png)
 }
 
 .em-boat {
-  background-image: url(src/assets/images/emoji/boat.png)
+  background-image: url(src/assets/css/emoji/boat.png)
 }
 
 .em-bomb {
-  background-image: url(src/assets/images/emoji/bomb.png)
+  background-image: url(src/assets/css/emoji/bomb.png)
 }
 
 .em-book {
-  background-image: url(src/assets/images/emoji/book.png)
+  background-image: url(src/assets/css/emoji/book.png)
 }
 
 .em-bookmark {
-  background-image: url(src/assets/images/emoji/bookmark.png)
+  background-image: url(src/assets/css/emoji/bookmark.png)
 }
 
 .em-bookmark_tabs {
-  background-image: url(src/assets/images/emoji/bookmark_tabs.png)
+  background-image: url(src/assets/css/emoji/bookmark_tabs.png)
 }
 
 .em-books {
-  background-image: url(src/assets/images/emoji/books.png)
+  background-image: url(src/assets/css/emoji/books.png)
 }
 
 .em-boom {
-  background-image: url(src/assets/images/emoji/boom.png)
+  background-image: url(src/assets/css/emoji/boom.png)
 }
 
 .em-boot {
-  background-image: url(src/assets/images/emoji/boot.png)
+  background-image: url(src/assets/css/emoji/boot.png)
 }
 
 .em-bouquet {
-  background-image: url(src/assets/images/emoji/bouquet.png)
+  background-image: url(src/assets/css/emoji/bouquet.png)
 }
 
 .em-bow {
-  background-image: url(src/assets/images/emoji/bow.png)
+  background-image: url(src/assets/css/emoji/bow.png)
 }
 
 .em-bowling {
-  background-image: url(src/assets/images/emoji/bowling.png)
+  background-image: url(src/assets/css/emoji/bowling.png)
 }
 
 .em-bowtie {
-  background-image: url(src/assets/images/emoji/bowtie.png)
+  background-image: url(src/assets/css/emoji/bowtie.png)
 }
 
 .em-boy {
-  background-image: url(src/assets/images/emoji/boy.png)
+  background-image: url(src/assets/css/emoji/boy.png)
 }
 
 .em-bread {
-  background-image: url(src/assets/images/emoji/bread.png)
+  background-image: url(src/assets/css/emoji/bread.png)
 }
 
 .em-bride_with_veil {
-  background-image: url(src/assets/images/emoji/bride_with_veil.png)
+  background-image: url(src/assets/css/emoji/bride_with_veil.png)
 }
 
 .em-bridge_at_night {
-  background-image: url(src/assets/images/emoji/bridge_at_night.png)
+  background-image: url(src/assets/css/emoji/bridge_at_night.png)
 }
 
 .em-briefcase {
-  background-image: url(src/assets/images/emoji/briefcase.png)
+  background-image: url(src/assets/css/emoji/briefcase.png)
 }
 
 .em-broken_heart {
-  background-image: url(src/assets/images/emoji/broken_heart.png)
+  background-image: url(src/assets/css/emoji/broken_heart.png)
 }
 
 .em-bug {
-  background-image: url(src/assets/images/emoji/bug.png)
+  background-image: url(src/assets/css/emoji/bug.png)
 }
 
 .em-bulb {
-  background-image: url(src/assets/images/emoji/bulb.png)
+  background-image: url(src/assets/css/emoji/bulb.png)
 }
 
 .em-bullettrain_front {
-  background-image: url(src/assets/images/emoji/bullettrain_front.png)
+  background-image: url(src/assets/css/emoji/bullettrain_front.png)
 }
 
 .em-bullettrain_side {
-  background-image: url(src/assets/images/emoji/bullettrain_side.png)
+  background-image: url(src/assets/css/emoji/bullettrain_side.png)
 }
 
 .em-bus {
-  background-image: url(src/assets/images/emoji/bus.png)
+  background-image: url(src/assets/css/emoji/bus.png)
 }
 
 .em-busstop {
-  background-image: url(src/assets/images/emoji/busstop.png)
+  background-image: url(src/assets/css/emoji/busstop.png)
 }
 
 .em-bust_in_silhouette {
-  background-image: url(src/assets/images/emoji/bust_in_silhouette.png)
+  background-image: url(src/assets/css/emoji/bust_in_silhouette.png)
 }
 
 .em-busts_in_silhouette {
-  background-image: url(src/assets/images/emoji/busts_in_silhouette.png)
+  background-image: url(src/assets/css/emoji/busts_in_silhouette.png)
 }
 
 .em-cactus {
-  background-image: url(src/assets/images/emoji/cactus.png)
+  background-image: url(src/assets/css/emoji/cactus.png)
 }
 
 .em-cake {
-  background-image: url(src/assets/images/emoji/cake.png)
+  background-image: url(src/assets/css/emoji/cake.png)
 }
 
 .em-calendar {
-  background-image: url(src/assets/images/emoji/calendar.png)
+  background-image: url(src/assets/css/emoji/calendar.png)
 }
 
 .em-calling {
-  background-image: url(src/assets/images/emoji/calling.png)
+  background-image: url(src/assets/css/emoji/calling.png)
 }
 
 .em-camel {
-  background-image: url(src/assets/images/emoji/camel.png)
+  background-image: url(src/assets/css/emoji/camel.png)
 }
 
 .em-camera {
-  background-image: url(src/assets/images/emoji/camera.png)
+  background-image: url(src/assets/css/emoji/camera.png)
 }
 
 .em-cancer {
-  background-image: url(src/assets/images/emoji/cancer.png)
+  background-image: url(src/assets/css/emoji/cancer.png)
 }
 
 .em-candy {
-  background-image: url(src/assets/images/emoji/candy.png)
+  background-image: url(src/assets/css/emoji/candy.png)
 }
 
 .em-capital_abcd {
-  background-image: url(src/assets/images/emoji/capital_abcd.png)
+  background-image: url(src/assets/css/emoji/capital_abcd.png)
 }
 
 .em-capricorn {
-  background-image: url(src/assets/images/emoji/capricorn.png)
+  background-image: url(src/assets/css/emoji/capricorn.png)
 }
 
 .em-car {
-  background-image: url(src/assets/images/emoji/car.png)
+  background-image: url(src/assets/css/emoji/car.png)
 }
 
 .em-card_index {
-  background-image: url(src/assets/images/emoji/card_index.png)
+  background-image: url(src/assets/css/emoji/card_index.png)
 }
 
 .em-carousel_horse {
-  background-image: url(src/assets/images/emoji/carousel_horse.png)
+  background-image: url(src/assets/css/emoji/carousel_horse.png)
 }
 
 .em-cat {
-  background-image: url(src/assets/images/emoji/cat.png)
+  background-image: url(src/assets/css/emoji/cat.png)
 }
 
 .em-cat2 {
-  background-image: url(src/assets/images/emoji/cat2.png)
+  background-image: url(src/assets/css/emoji/cat2.png)
 }
 
 .em-cd {
-  background-image: url(src/assets/images/emoji/cd.png)
+  background-image: url(src/assets/css/emoji/cd.png)
 }
 
 .em-chart {
-  background-image: url(src/assets/images/emoji/chart.png)
+  background-image: url(src/assets/css/emoji/chart.png)
 }
 
 .em-chart_with_downwards_trend {
-  background-image: url(src/assets/images/emoji/chart_with_downwards_trend.png)
+  background-image: url(src/assets/css/emoji/chart_with_downwards_trend.png)
 }
 
 .em-chart_with_upwards_trend {
-  background-image: url(src/assets/images/emoji/chart_with_upwards_trend.png)
+  background-image: url(src/assets/css/emoji/chart_with_upwards_trend.png)
 }
 
 .em-checkered_flag {
-  background-image: url(src/assets/images/emoji/checkered_flag.png)
+  background-image: url(src/assets/css/emoji/checkered_flag.png)
 }
 
 .em-cherries {
-  background-image: url(src/assets/images/emoji/cherries.png)
+  background-image: url(src/assets/css/emoji/cherries.png)
 }
 
 .em-cherry_blossom {
-  background-image: url(src/assets/images/emoji/cherry_blossom.png)
+  background-image: url(src/assets/css/emoji/cherry_blossom.png)
 }
 
 .em-chestnut {
-  background-image: url(src/assets/images/emoji/chestnut.png)
+  background-image: url(src/assets/css/emoji/chestnut.png)
 }
 
 .em-chicken {
-  background-image: url(src/assets/images/emoji/chicken.png)
+  background-image: url(src/assets/css/emoji/chicken.png)
 }
 
 .em-children_crossing {
-  background-image: url(src/assets/images/emoji/children_crossing.png)
+  background-image: url(src/assets/css/emoji/children_crossing.png)
 }
 
 .em-chocolate_bar {
-  background-image: url(src/assets/images/emoji/chocolate_bar.png)
+  background-image: url(src/assets/css/emoji/chocolate_bar.png)
 }
 
 .em-christmas_tree {
-  background-image: url(src/assets/images/emoji/christmas_tree.png)
+  background-image: url(src/assets/css/emoji/christmas_tree.png)
 }
 
 .em-church {
-  background-image: url(src/assets/images/emoji/church.png)
+  background-image: url(src/assets/css/emoji/church.png)
 }
 
 .em-cinema {
-  background-image: url(src/assets/images/emoji/cinema.png)
+  background-image: url(src/assets/css/emoji/cinema.png)
 }
 
 .em-circus_tent {
-  background-image: url(src/assets/images/emoji/circus_tent.png)
+  background-image: url(src/assets/css/emoji/circus_tent.png)
 }
 
 .em-city_sunrise {
-  background-image: url(src/assets/images/emoji/city_sunrise.png)
+  background-image: url(src/assets/css/emoji/city_sunrise.png)
 }
 
 .em-city_sunset {
-  background-image: url(src/assets/images/emoji/city_sunset.png)
+  background-image: url(src/assets/css/emoji/city_sunset.png)
 }
 
 .em-cl {
-  background-image: url(src/assets/images/emoji/cl.png)
+  background-image: url(src/assets/css/emoji/cl.png)
 }
 
 .em-clap {
-  background-image: url(src/assets/images/emoji/clap.png)
+  background-image: url(src/assets/css/emoji/clap.png)
 }
 
 .em-clapper {
-  background-image: url(src/assets/images/emoji/clapper.png)
+  background-image: url(src/assets/css/emoji/clapper.png)
 }
 
 .em-clipboard {
-  background-image: url(src/assets/images/emoji/clipboard.png)
+  background-image: url(src/assets/css/emoji/clipboard.png)
 }
 
 .em-clock1 {
-  background-image: url(src/assets/images/emoji/clock1.png)
+  background-image: url(src/assets/css/emoji/clock1.png)
 }
 
 .em-clock10 {
-  background-image: url(src/assets/images/emoji/clock10.png)
+  background-image: url(src/assets/css/emoji/clock10.png)
 }
 
 .em-clock1030 {
-  background-image: url(src/assets/images/emoji/clock1030.png)
+  background-image: url(src/assets/css/emoji/clock1030.png)
 }
 
 .em-clock11 {
-  background-image: url(src/assets/images/emoji/clock11.png)
+  background-image: url(src/assets/css/emoji/clock11.png)
 }
 
 .em-clock1130 {
-  background-image: url(src/assets/images/emoji/clock1130.png)
+  background-image: url(src/assets/css/emoji/clock1130.png)
 }
 
 .em-clock12 {
-  background-image: url(src/assets/images/emoji/clock12.png)
+  background-image: url(src/assets/css/emoji/clock12.png)
 }
 
 .em-clock1230 {
-  background-image: url(src/assets/images/emoji/clock1230.png)
+  background-image: url(src/assets/css/emoji/clock1230.png)
 }
 
 .em-clock130 {
-  background-image: url(src/assets/images/emoji/clock130.png)
+  background-image: url(src/assets/css/emoji/clock130.png)
 }
 
 .em-clock2 {
-  background-image: url(src/assets/images/emoji/clock2.png)
+  background-image: url(src/assets/css/emoji/clock2.png)
 }
 
 .em-clock230 {
-  background-image: url(src/assets/images/emoji/clock230.png)
+  background-image: url(src/assets/css/emoji/clock230.png)
 }
 
 .em-clock3 {
-  background-image: url(src/assets/images/emoji/clock3.png)
+  background-image: url(src/assets/css/emoji/clock3.png)
 }
 
 .em-clock330 {
-  background-image: url(src/assets/images/emoji/clock330.png)
+  background-image: url(src/assets/css/emoji/clock330.png)
 }
 
 .em-clock4 {
-  background-image: url(src/assets/images/emoji/clock4.png)
+  background-image: url(src/assets/css/emoji/clock4.png)
 }
 
 .em-clock430 {
-  background-image: url(src/assets/images/emoji/clock430.png)
+  background-image: url(src/assets/css/emoji/clock430.png)
 }
 
 .em-clock5 {
-  background-image: url(src/assets/images/emoji/clock5.png)
+  background-image: url(src/assets/css/emoji/clock5.png)
 }
 
 .em-clock530 {
-  background-image: url(src/assets/images/emoji/clock530.png)
+  background-image: url(src/assets/css/emoji/clock530.png)
 }
 
 .em-clock6 {
-  background-image: url(src/assets/images/emoji/clock6.png)
+  background-image: url(src/assets/css/emoji/clock6.png)
 }
 
 .em-clock630 {
-  background-image: url(src/assets/images/emoji/clock630.png)
+  background-image: url(src/assets/css/emoji/clock630.png)
 }
 
 .em-clock7 {
-  background-image: url(src/assets/images/emoji/clock7.png)
+  background-image: url(src/assets/css/emoji/clock7.png)
 }
 
 .em-clock730 {
-  background-image: url(src/assets/images/emoji/clock730.png)
+  background-image: url(src/assets/css/emoji/clock730.png)
 }
 
 .em-clock8 {
-  background-image: url(src/assets/images/emoji/clock8.png)
+  background-image: url(src/assets/css/emoji/clock8.png)
 }
 
 .em-clock830 {
-  background-image: url(src/assets/images/emoji/clock830.png)
+  background-image: url(src/assets/css/emoji/clock830.png)
 }
 
 .em-clock9 {
-  background-image: url(src/assets/images/emoji/clock9.png)
+  background-image: url(src/assets/css/emoji/clock9.png)
 }
 
 .em-clock930 {
-  background-image: url(src/assets/images/emoji/clock930.png)
+  background-image: url(src/assets/css/emoji/clock930.png)
 }
 
 .em-closed_book {
-  background-image: url(src/assets/images/emoji/closed_book.png)
+  background-image: url(src/assets/css/emoji/closed_book.png)
 }
 
 .em-closed_lock_with_key {
-  background-image: url(src/assets/images/emoji/closed_lock_with_key.png)
+  background-image: url(src/assets/css/emoji/closed_lock_with_key.png)
 }
 
 .em-closed_umbrella {
-  background-image: url(src/assets/images/emoji/closed_umbrella.png)
+  background-image: url(src/assets/css/emoji/closed_umbrella.png)
 }
 
 .em-cloud {
-  background-image: url(src/assets/images/emoji/cloud.png)
+  background-image: url(src/assets/css/emoji/cloud.png)
 }
 
 .em-clubs {
-  background-image: url(src/assets/images/emoji/clubs.png)
+  background-image: url(src/assets/css/emoji/clubs.png)
 }
 
 .em-cn {
-  background-image: url(src/assets/images/emoji/cn.png)
+  background-image: url(src/assets/css/emoji/cn.png)
 }
 
 .em-cocktail {
-  background-image: url(src/assets/images/emoji/cocktail.png)
+  background-image: url(src/assets/css/emoji/cocktail.png)
 }
 
 .em-coffee {
-  background-image: url(src/assets/images/emoji/coffee.png)
+  background-image: url(src/assets/css/emoji/coffee.png)
 }
 
 .em-cold_sweat {
-  background-image: url(src/assets/images/emoji/cold_sweat.png)
+  background-image: url(src/assets/css/emoji/cold_sweat.png)
 }
 
 .em-collision {
-  background-image: url(src/assets/images/emoji/collision.png)
+  background-image: url(src/assets/css/emoji/collision.png)
 }
 
 .em-computer {
-  background-image: url(src/assets/images/emoji/computer.png)
+  background-image: url(src/assets/css/emoji/computer.png)
 }
 
 .em-confetti_ball {
-  background-image: url(src/assets/images/emoji/confetti_ball.png)
+  background-image: url(src/assets/css/emoji/confetti_ball.png)
 }
 
 .em-confounded {
-  background-image: url(src/assets/images/emoji/confounded.png)
+  background-image: url(src/assets/css/emoji/confounded.png)
 }
 
 .em-confused {
-  background-image: url(src/assets/images/emoji/confused.png)
+  background-image: url(src/assets/css/emoji/confused.png)
 }
 
 .em-congratulations {
-  background-image: url(src/assets/images/emoji/congratulations.png)
+  background-image: url(src/assets/css/emoji/congratulations.png)
 }
 
 .em-construction {
-  background-image: url(src/assets/images/emoji/construction.png)
+  background-image: url(src/assets/css/emoji/construction.png)
 }
 
 .em-construction_worker {
-  background-image: url(src/assets/images/emoji/construction_worker.png)
+  background-image: url(src/assets/css/emoji/construction_worker.png)
 }
 
 .em-convenience_store {
-  background-image: url(src/assets/images/emoji/convenience_store.png)
+  background-image: url(src/assets/css/emoji/convenience_store.png)
 }
 
 .em-cookie {
-  background-image: url(src/assets/images/emoji/cookie.png)
+  background-image: url(src/assets/css/emoji/cookie.png)
 }
 
 .em-cool {
-  background-image: url(src/assets/images/emoji/cool.png)
+  background-image: url(src/assets/css/emoji/cool.png)
 }
 
 .em-cop {
-  background-image: url(src/assets/images/emoji/cop.png)
+  background-image: url(src/assets/css/emoji/cop.png)
 }
 
 .em-copyright {
-  background-image: url(src/assets/images/emoji/copyright.png)
+  background-image: url(src/assets/css/emoji/copyright.png)
 }
 
 .em-corn {
-  background-image: url(src/assets/images/emoji/corn.png)
+  background-image: url(src/assets/css/emoji/corn.png)
 }
 
 .em-couple {
-  background-image: url(src/assets/images/emoji/couple.png)
+  background-image: url(src/assets/css/emoji/couple.png)
 }
 
 .em-couple_with_heart {
-  background-image: url(src/assets/images/emoji/couple_with_heart.png)
+  background-image: url(src/assets/css/emoji/couple_with_heart.png)
 }
 
 .em-couplekiss {
-  background-image: url(src/assets/images/emoji/couplekiss.png)
+  background-image: url(src/assets/css/emoji/couplekiss.png)
 }
 
 .em-cow {
-  background-image: url(src/assets/images/emoji/cow.png)
+  background-image: url(src/assets/css/emoji/cow.png)
 }
 
 .em-cow2 {
-  background-image: url(src/assets/images/emoji/cow2.png)
+  background-image: url(src/assets/css/emoji/cow2.png)
 }
 
 .em-credit_card {
-  background-image: url(src/assets/images/emoji/credit_card.png)
+  background-image: url(src/assets/css/emoji/credit_card.png)
 }
 
 .em-crocodile {
-  background-image: url(src/assets/images/emoji/crocodile.png)
+  background-image: url(src/assets/css/emoji/crocodile.png)
 }
 
 .em-crossed_flags {
-  background-image: url(src/assets/images/emoji/crossed_flags.png)
+  background-image: url(src/assets/css/emoji/crossed_flags.png)
 }
 
 .em-crown {
-  background-image: url(src/assets/images/emoji/crown.png)
+  background-image: url(src/assets/css/emoji/crown.png)
 }
 
 .em-cry {
-  background-image: url(src/assets/images/emoji/cry.png)
+  background-image: url(src/assets/css/emoji/cry.png)
 }
 
 .em-crying_cat_face {
-  background-image: url(src/assets/images/emoji/crying_cat_face.png)
+  background-image: url(src/assets/css/emoji/crying_cat_face.png)
 }
 
 .em-crystal_ball {
-  background-image: url(src/assets/images/emoji/crystal_ball.png)
+  background-image: url(src/assets/css/emoji/crystal_ball.png)
 }
 
 .em-cupid {
-  background-image: url(src/assets/images/emoji/cupid.png)
+  background-image: url(src/assets/css/emoji/cupid.png)
 }
 
 .em-curly_loop {
-  background-image: url(src/assets/images/emoji/curly_loop.png)
+  background-image: url(src/assets/css/emoji/curly_loop.png)
 }
 
 .em-currency_exchange {
-  background-image: url(src/assets/images/emoji/currency_exchange.png)
+  background-image: url(src/assets/css/emoji/currency_exchange.png)
 }
 
 .em-curry {
-  background-image: url(src/assets/images/emoji/curry.png)
+  background-image: url(src/assets/css/emoji/curry.png)
 }
 
 .em-custard {
-  background-image: url(src/assets/images/emoji/custard.png)
+  background-image: url(src/assets/css/emoji/custard.png)
 }
 
 .em-customs {
-  background-image: url(src/assets/images/emoji/customs.png)
+  background-image: url(src/assets/css/emoji/customs.png)
 }
 
 .em-cyclone {
-  background-image: url(src/assets/images/emoji/cyclone.png)
+  background-image: url(src/assets/css/emoji/cyclone.png)
 }
 
 .em-dancer {
-  background-image: url(src/assets/images/emoji/dancer.png)
+  background-image: url(src/assets/css/emoji/dancer.png)
 }
 
 .em-dancers {
-  background-image: url(src/assets/images/emoji/dancers.png)
+  background-image: url(src/assets/css/emoji/dancers.png)
 }
 
 .em-dango {
-  background-image: url(src/assets/images/emoji/dango.png)
+  background-image: url(src/assets/css/emoji/dango.png)
 }
 
 .em-dart {
-  background-image: url(src/assets/images/emoji/dart.png)
+  background-image: url(src/assets/css/emoji/dart.png)
 }
 
 .em-dash {
-  background-image: url(src/assets/images/emoji/dash.png)
+  background-image: url(src/assets/css/emoji/dash.png)
 }
 
 .em-date {
-  background-image: url(src/assets/images/emoji/date.png)
+  background-image: url(src/assets/css/emoji/date.png)
 }
 
 .em-de {
-  background-image: url(src/assets/images/emoji/de.png)
+  background-image: url(src/assets/css/emoji/de.png)
 }
 
 .em-deciduous_tree {
-  background-image: url(src/assets/images/emoji/deciduous_tree.png)
+  background-image: url(src/assets/css/emoji/deciduous_tree.png)
 }
 
 .em-department_store {
-  background-image: url(src/assets/images/emoji/department_store.png)
+  background-image: url(src/assets/css/emoji/department_store.png)
 }
 
 .em-diamond_shape_with_a_dot_inside {
-  background-image: url(src/assets/images/emoji/diamond_shape_with_a_dot_inside.png)
+  background-image: url(src/assets/css/emoji/diamond_shape_with_a_dot_inside.png)
 }
 
 .em-diamonds {
-  background-image: url(src/assets/images/emoji/diamonds.png)
+  background-image: url(src/assets/css/emoji/diamonds.png)
 }
 
 .em-disappointed {
-  background-image: url(src/assets/images/emoji/disappointed.png)
+  background-image: url(src/assets/css/emoji/disappointed.png)
 }
 
 .em-disappointed_relieved {
-  background-image: url(src/assets/images/emoji/disappointed_relieved.png)
+  background-image: url(src/assets/css/emoji/disappointed_relieved.png)
 }
 
 .em-dizzy {
-  background-image: url(src/assets/images/emoji/dizzy.png)
+  background-image: url(src/assets/css/emoji/dizzy.png)
 }
 
 .em-dizzy_face {
-  background-image: url(src/assets/images/emoji/dizzy_face.png)
+  background-image: url(src/assets/css/emoji/dizzy_face.png)
 }
 
 .em-do_not_litter {
-  background-image: url(src/assets/images/emoji/do_not_litter.png)
+  background-image: url(src/assets/css/emoji/do_not_litter.png)
 }
 
 .em-dog {
-  background-image: url(src/assets/images/emoji/dog.png)
+  background-image: url(src/assets/css/emoji/dog.png)
 }
 
 .em-dog2 {
-  background-image: url(src/assets/images/emoji/dog2.png)
+  background-image: url(src/assets/css/emoji/dog2.png)
 }
 
 .em-dollar {
-  background-image: url(src/assets/images/emoji/dollar.png)
+  background-image: url(src/assets/css/emoji/dollar.png)
 }
 
 .em-dolls {
-  background-image: url(src/assets/images/emoji/dolls.png)
+  background-image: url(src/assets/css/emoji/dolls.png)
 }
 
 .em-dolphin {
-  background-image: url(src/assets/images/emoji/dolphin.png)
+  background-image: url(src/assets/css/emoji/dolphin.png)
 }
 
 .em-donut {
-  background-image: url(src/assets/images/emoji/donut.png)
+  background-image: url(src/assets/css/emoji/donut.png)
 }
 
 .em-door {
-  background-image: url(src/assets/images/emoji/door.png)
+  background-image: url(src/assets/css/emoji/door.png)
 }
 
 .em-doughnut {
-  background-image: url(src/assets/images/emoji/doughnut.png)
+  background-image: url(src/assets/css/emoji/doughnut.png)
 }
 
 .em-dragon {
-  background-image: url(src/assets/images/emoji/dragon.png)
+  background-image: url(src/assets/css/emoji/dragon.png)
 }
 
 .em-dragon_face {
-  background-image: url(src/assets/images/emoji/dragon_face.png)
+  background-image: url(src/assets/css/emoji/dragon_face.png)
 }
 
 .em-dress {
-  background-image: url(src/assets/images/emoji/dress.png)
+  background-image: url(src/assets/css/emoji/dress.png)
 }
 
 .em-dromedary_camel {
-  background-image: url(src/assets/images/emoji/dromedary_camel.png)
+  background-image: url(src/assets/css/emoji/dromedary_camel.png)
 }
 
 .em-droplet {
-  background-image: url(src/assets/images/emoji/droplet.png)
+  background-image: url(src/assets/css/emoji/droplet.png)
 }
 
 .em-dvd {
-  background-image: url(src/assets/images/emoji/dvd.png)
+  background-image: url(src/assets/css/emoji/dvd.png)
 }
 
 .em-e-mail {
-  background-image: url(src/assets/images/emoji/e-mail.png)
+  background-image: url(src/assets/css/emoji/e-mail.png)
 }
 
 .em-ear {
-  background-image: url(src/assets/images/emoji/ear.png)
+  background-image: url(src/assets/css/emoji/ear.png)
 }
 
 .em-ear_of_rice {
-  background-image: url(src/assets/images/emoji/ear_of_rice.png)
+  background-image: url(src/assets/css/emoji/ear_of_rice.png)
 }
 
 .em-earth_africa {
-  background-image: url(src/assets/images/emoji/earth_africa.png)
+  background-image: url(src/assets/css/emoji/earth_africa.png)
 }
 
 .em-earth_americas {
-  background-image: url(src/assets/images/emoji/earth_americas.png)
+  background-image: url(src/assets/css/emoji/earth_americas.png)
 }
 
 .em-earth_asia {
-  background-image: url(src/assets/images/emoji/earth_asia.png)
+  background-image: url(src/assets/css/emoji/earth_asia.png)
 }
 
 .em-egg {
-  background-image: url(src/assets/images/emoji/egg.png)
+  background-image: url(src/assets/css/emoji/egg.png)
 }
 
 .em-eggplant {
-  background-image: url(src/assets/images/emoji/eggplant.png)
+  background-image: url(src/assets/css/emoji/eggplant.png)
 }
 
 .em-eight {
-  background-image: url(src/assets/images/emoji/eight.png)
+  background-image: url(src/assets/css/emoji/eight.png)
 }
 
 .em-eight_pointed_black_star {
-  background-image: url(src/assets/images/emoji/eight_pointed_black_star.png)
+  background-image: url(src/assets/css/emoji/eight_pointed_black_star.png)
 }
 
 .em-eight_spoked_asterisk {
-  background-image: url(src/assets/images/emoji/eight_spoked_asterisk.png)
+  background-image: url(src/assets/css/emoji/eight_spoked_asterisk.png)
 }
 
 .em-electric_plug {
-  background-image: url(src/assets/images/emoji/electric_plug.png)
+  background-image: url(src/assets/css/emoji/electric_plug.png)
 }
 
 .em-elephant {
-  background-image: url(src/assets/images/emoji/elephant.png)
+  background-image: url(src/assets/css/emoji/elephant.png)
 }
 
 .em-email {
-  background-image: url(src/assets/images/emoji/email.png)
+  background-image: url(src/assets/css/emoji/email.png)
 }
 
 .em-end {
-  background-image: url(src/assets/images/emoji/end.png)
+  background-image: url(src/assets/css/emoji/end.png)
 }
 
 .em-envelope {
-  background-image: url(src/assets/images/emoji/envelope.png)
+  background-image: url(src/assets/css/emoji/envelope.png)
 }
 
 .em-es {
-  background-image: url(src/assets/images/emoji/es.png)
+  background-image: url(src/assets/css/emoji/es.png)
 }
 
 .em-euro {
-  background-image: url(src/assets/images/emoji/euro.png)
+  background-image: url(src/assets/css/emoji/euro.png)
 }
 
 .em-european_castle {
-  background-image: url(src/assets/images/emoji/european_castle.png)
+  background-image: url(src/assets/css/emoji/european_castle.png)
 }
 
 .em-european_post_office {
-  background-image: url(src/assets/images/emoji/european_post_office.png)
+  background-image: url(src/assets/css/emoji/european_post_office.png)
 }
 
 .em-evergreen_tree {
-  background-image: url(src/assets/images/emoji/evergreen_tree.png)
+  background-image: url(src/assets/css/emoji/evergreen_tree.png)
 }
 
 .em-exclamation {
-  background-image: url(src/assets/images/emoji/exclamation.png)
+  background-image: url(src/assets/css/emoji/exclamation.png)
 }
 
 .em-expressionless {
-  background-image: url(src/assets/images/emoji/expressionless.png)
+  background-image: url(src/assets/css/emoji/expressionless.png)
 }
 
 .em-eyeglasses {
-  background-image: url(src/assets/images/emoji/eyeglasses.png)
+  background-image: url(src/assets/css/emoji/eyeglasses.png)
 }
 
 .em-eyes {
-  background-image: url(src/assets/images/emoji/eyes.png)
+  background-image: url(src/assets/css/emoji/eyes.png)
 }
 
 .em-facepunch {
-  background-image: url(src/assets/images/emoji/facepunch.png)
+  background-image: url(src/assets/css/emoji/facepunch.png)
 }
 
 .em-factory {
-  background-image: url(src/assets/images/emoji/factory.png)
+  background-image: url(src/assets/css/emoji/factory.png)
 }
 
 .em-fallen_leaf {
-  background-image: url(src/assets/images/emoji/fallen_leaf.png)
+  background-image: url(src/assets/css/emoji/fallen_leaf.png)
 }
 
 .em-family {
-  background-image: url(src/assets/images/emoji/family.png)
+  background-image: url(src/assets/css/emoji/family.png)
 }
 
 .em-fast_forward {
-  background-image: url(src/assets/images/emoji/fast_forward.png)
+  background-image: url(src/assets/css/emoji/fast_forward.png)
 }
 
 .em-fax {
-  background-image: url(src/assets/images/emoji/fax.png)
+  background-image: url(src/assets/css/emoji/fax.png)
 }
 
 .em-fearful {
-  background-image: url(src/assets/images/emoji/fearful.png)
+  background-image: url(src/assets/css/emoji/fearful.png)
 }
 
 .em-feelsgood {
-  background-image: url(src/assets/images/emoji/feelsgood.png)
+  background-image: url(src/assets/css/emoji/feelsgood.png)
 }
 
 .em-feet {
-  background-image: url(src/assets/images/emoji/feet.png)
+  background-image: url(src/assets/css/emoji/feet.png)
 }
 
 .em-ferris_wheel {
-  background-image: url(src/assets/images/emoji/ferris_wheel.png)
+  background-image: url(src/assets/css/emoji/ferris_wheel.png)
 }
 
 .em-file_folder {
-  background-image: url(src/assets/images/emoji/file_folder.png)
+  background-image: url(src/assets/css/emoji/file_folder.png)
 }
 
 .em-finnadie {
-  background-image: url(src/assets/images/emoji/finnadie.png)
+  background-image: url(src/assets/css/emoji/finnadie.png)
 }
 
 .em-fire {
-  background-image: url(src/assets/images/emoji/fire.png)
+  background-image: url(src/assets/css/emoji/fire.png)
 }
 
 .em-fire_engine {
-  background-image: url(src/assets/images/emoji/fire_engine.png)
+  background-image: url(src/assets/css/emoji/fire_engine.png)
 }
 
 .em-fireworks {
-  background-image: url(src/assets/images/emoji/fireworks.png)
+  background-image: url(src/assets/css/emoji/fireworks.png)
 }
 
 .em-first_quarter_moon {
-  background-image: url(src/assets/images/emoji/first_quarter_moon.png)
+  background-image: url(src/assets/css/emoji/first_quarter_moon.png)
 }
 
 .em-first_quarter_moon_with_face {
-  background-image: url(src/assets/images/emoji/first_quarter_moon_with_face.png)
+  background-image: url(src/assets/css/emoji/first_quarter_moon_with_face.png)
 }
 
 .em-fish {
-  background-image: url(src/assets/images/emoji/fish.png)
+  background-image: url(src/assets/css/emoji/fish.png)
 }
 
 .em-fish_cake {
-  background-image: url(src/assets/images/emoji/fish_cake.png)
+  background-image: url(src/assets/css/emoji/fish_cake.png)
 }
 
 .em-fishing_pole_and_fish {
-  background-image: url(src/assets/images/emoji/fishing_pole_and_fish.png)
+  background-image: url(src/assets/css/emoji/fishing_pole_and_fish.png)
 }
 
 .em-fist {
-  background-image: url(src/assets/images/emoji/fist.png)
+  background-image: url(src/assets/css/emoji/fist.png)
 }
 
 .em-five {
-  background-image: url(src/assets/images/emoji/five.png)
+  background-image: url(src/assets/css/emoji/five.png)
 }
 
 .em-flags {
-  background-image: url(src/assets/images/emoji/flags.png)
+  background-image: url(src/assets/css/emoji/flags.png)
 }
 
 .em-flashlight {
-  background-image: url(src/assets/images/emoji/flashlight.png)
+  background-image: url(src/assets/css/emoji/flashlight.png)
 }
 
 .em-floppy_disk {
-  background-image: url(src/assets/images/emoji/floppy_disk.png)
+  background-image: url(src/assets/css/emoji/floppy_disk.png)
 }
 
 .em-flower_playing_cards {
-  background-image: url(src/assets/images/emoji/flower_playing_cards.png)
+  background-image: url(src/assets/css/emoji/flower_playing_cards.png)
 }
 
 .em-flushed {
-  background-image: url(src/assets/images/emoji/flushed.png)
+  background-image: url(src/assets/css/emoji/flushed.png)
 }
 
 .em-foggy {
-  background-image: url(src/assets/images/emoji/foggy.png)
+  background-image: url(src/assets/css/emoji/foggy.png)
 }
 
 .em-football {
-  background-image: url(src/assets/images/emoji/football.png)
+  background-image: url(src/assets/css/emoji/football.png)
 }
 
 .em-fork_and_knife {
-  background-image: url(src/assets/images/emoji/fork_and_knife.png)
+  background-image: url(src/assets/css/emoji/fork_and_knife.png)
 }
 
 .em-fountain {
-  background-image: url(src/assets/images/emoji/fountain.png)
+  background-image: url(src/assets/css/emoji/fountain.png)
 }
 
 .em-four {
-  background-image: url(src/assets/images/emoji/four.png)
+  background-image: url(src/assets/css/emoji/four.png)
 }
 
 .em-four_leaf_clover {
-  background-image: url(src/assets/images/emoji/four_leaf_clover.png)
+  background-image: url(src/assets/css/emoji/four_leaf_clover.png)
 }
 
 .em-fr {
-  background-image: url(src/assets/images/emoji/fr.png)
+  background-image: url(src/assets/css/emoji/fr.png)
 }
 
 .em-free {
-  background-image: url(src/assets/images/emoji/free.png)
+  background-image: url(src/assets/css/emoji/free.png)
 }
 
 .em-fried_shrimp {
-  background-image: url(src/assets/images/emoji/fried_shrimp.png)
+  background-image: url(src/assets/css/emoji/fried_shrimp.png)
 }
 
 .em-fries {
-  background-image: url(src/assets/images/emoji/fries.png)
+  background-image: url(src/assets/css/emoji/fries.png)
 }
 
 .em-frog {
-  background-image: url(src/assets/images/emoji/frog.png)
+  background-image: url(src/assets/css/emoji/frog.png)
 }
 
 .em-frowning {
-  background-image: url(src/assets/images/emoji/frowning.png)
+  background-image: url(src/assets/css/emoji/frowning.png)
 }
 
 .em-fu {
-  background-image: url(src/assets/images/emoji/fu.png)
+  background-image: url(src/assets/css/emoji/fu.png)
 }
 
 .em-fuelpump {
-  background-image: url(src/assets/images/emoji/fuelpump.png)
+  background-image: url(src/assets/css/emoji/fuelpump.png)
 }
 
 .em-full_moon {
-  background-image: url(src/assets/images/emoji/full_moon.png)
+  background-image: url(src/assets/css/emoji/full_moon.png)
 }
 
 .em-full_moon_with_face {
-  background-image: url(src/assets/images/emoji/full_moon_with_face.png)
+  background-image: url(src/assets/css/emoji/full_moon_with_face.png)
 }
 
 .em-game_die {
-  background-image: url(src/assets/images/emoji/game_die.png)
+  background-image: url(src/assets/css/emoji/game_die.png)
 }
 
 .em-gb {
-  background-image: url(src/assets/images/emoji/gb.png)
+  background-image: url(src/assets/css/emoji/gb.png)
 }
 
 .em-gem {
-  background-image: url(src/assets/images/emoji/gem.png)
+  background-image: url(src/assets/css/emoji/gem.png)
 }
 
 .em-gemini {
-  background-image: url(src/assets/images/emoji/gemini.png)
+  background-image: url(src/assets/css/emoji/gemini.png)
 }
 
 .em-ghost {
-  background-image: url(src/assets/images/emoji/ghost.png)
+  background-image: url(src/assets/css/emoji/ghost.png)
 }
 
 .em-gift {
-  background-image: url(src/assets/images/emoji/gift.png)
+  background-image: url(src/assets/css/emoji/gift.png)
 }
 
 .em-gift_heart {
-  background-image: url(src/assets/images/emoji/gift_heart.png)
+  background-image: url(src/assets/css/emoji/gift_heart.png)
 }
 
 .em-girl {
-  background-image: url(src/assets/images/emoji/girl.png)
+  background-image: url(src/assets/css/emoji/girl.png)
 }
 
 .em-globe_with_meridians {
-  background-image: url(src/assets/images/emoji/globe_with_meridians.png)
+  background-image: url(src/assets/css/emoji/globe_with_meridians.png)
 }
 
 .em-goat {
-  background-image: url(src/assets/images/emoji/goat.png)
+  background-image: url(src/assets/css/emoji/goat.png)
 }
 
 .em-goberserk {
-  background-image: url(src/assets/images/emoji/goberserk.png)
+  background-image: url(src/assets/css/emoji/goberserk.png)
 }
 
 .em-godmode {
-  background-image: url(src/assets/images/emoji/godmode.png)
+  background-image: url(src/assets/css/emoji/godmode.png)
 }
 
 .em-golf {
-  background-image: url(src/assets/images/emoji/golf.png)
+  background-image: url(src/assets/css/emoji/golf.png)
 }
 
 .em-grapes {
-  background-image: url(src/assets/images/emoji/grapes.png)
+  background-image: url(src/assets/css/emoji/grapes.png)
 }
 
 .em-green_apple {
-  background-image: url(src/assets/images/emoji/green_apple.png)
+  background-image: url(src/assets/css/emoji/green_apple.png)
 }
 
 .em-green_book {
-  background-image: url(src/assets/images/emoji/green_book.png)
+  background-image: url(src/assets/css/emoji/green_book.png)
 }
 
 .em-green_heart {
-  background-image: url(src/assets/images/emoji/green_heart.png)
+  background-image: url(src/assets/css/emoji/green_heart.png)
 }
 
 .em-grey_exclamation {
-  background-image: url(src/assets/images/emoji/grey_exclamation.png)
+  background-image: url(src/assets/css/emoji/grey_exclamation.png)
 }
 
 .em-grey_question {
-  background-image: url(src/assets/images/emoji/grey_question.png)
+  background-image: url(src/assets/css/emoji/grey_question.png)
 }
 
 .em-grimacing {
-  background-image: url(src/assets/images/emoji/grimacing.png)
+  background-image: url(src/assets/css/emoji/grimacing.png)
 }
 
 .em-grin {
-  background-image: url(src/assets/images/emoji/grin.png)
+  background-image: url(src/assets/css/emoji/grin.png)
 }
 
 .em-grinning {
-  background-image: url(src/assets/images/emoji/grinning.png)
+  background-image: url(src/assets/css/emoji/grinning.png)
 }
 
 .em-guardsman {
-  background-image: url(src/assets/images/emoji/guardsman.png)
+  background-image: url(src/assets/css/emoji/guardsman.png)
 }
 
 .em-guitar {
-  background-image: url(src/assets/images/emoji/guitar.png)
+  background-image: url(src/assets/css/emoji/guitar.png)
 }
 
 .em-gun {
-  background-image: url(src/assets/images/emoji/gun.png)
+  background-image: url(src/assets/css/emoji/gun.png)
 }
 
 .em-haircut {
-  background-image: url(src/assets/images/emoji/haircut.png)
+  background-image: url(src/assets/css/emoji/haircut.png)
 }
 
 .em-hamburger {
-  background-image: url(src/assets/images/emoji/hamburger.png)
+  background-image: url(src/assets/css/emoji/hamburger.png)
 }
 
 .em-hammer {
-  background-image: url(src/assets/images/emoji/hammer.png)
+  background-image: url(src/assets/css/emoji/hammer.png)
 }
 
 .em-hamster {
-  background-image: url(src/assets/images/emoji/hamster.png)
+  background-image: url(src/assets/css/emoji/hamster.png)
 }
 
 .em-hand {
-  background-image: url(src/assets/images/emoji/hand.png)
+  background-image: url(src/assets/css/emoji/hand.png)
 }
 
 .em-handbag {
-  background-image: url(src/assets/images/emoji/handbag.png)
+  background-image: url(src/assets/css/emoji/handbag.png)
 }
 
 .em-hankey {
-  background-image: url(src/assets/images/emoji/hankey.png)
+  background-image: url(src/assets/css/emoji/hankey.png)
 }
 
 .em-hash {
-  background-image: url(src/assets/images/emoji/hash.png)
+  background-image: url(src/assets/css/emoji/hash.png)
 }
 
 .em-hatched_chick {
-  background-image: url(src/assets/images/emoji/hatched_chick.png)
+  background-image: url(src/assets/css/emoji/hatched_chick.png)
 }
 
 .em-hatching_chick {
-  background-image: url(src/assets/images/emoji/hatching_chick.png)
+  background-image: url(src/assets/css/emoji/hatching_chick.png)
 }
 
 .em-headphones {
-  background-image: url(src/assets/images/emoji/headphones.png)
+  background-image: url(src/assets/css/emoji/headphones.png)
 }
 
 .em-hear_no_evil {
-  background-image: url(src/assets/images/emoji/hear_no_evil.png)
+  background-image: url(src/assets/css/emoji/hear_no_evil.png)
 }
 
 .em-heart {
-  background-image: url(src/assets/images/emoji/heart.png)
+  background-image: url(src/assets/css/emoji/heart.png)
 }
 
 .em-heart_decoration {
-  background-image: url(src/assets/images/emoji/heart_decoration.png)
+  background-image: url(src/assets/css/emoji/heart_decoration.png)
 }
 
 .em-heart_eyes {
-  background-image: url(src/assets/images/emoji/heart_eyes.png)
+  background-image: url(src/assets/css/emoji/heart_eyes.png)
 }
 
 .em-heart_eyes_cat {
-  background-image: url(src/assets/images/emoji/heart_eyes_cat.png)
+  background-image: url(src/assets/css/emoji/heart_eyes_cat.png)
 }
 
 .em-heartbeat {
-  background-image: url(src/assets/images/emoji/heartbeat.png)
+  background-image: url(src/assets/css/emoji/heartbeat.png)
 }
 
 .em-heartpulse {
-  background-image: url(src/assets/images/emoji/heartpulse.png)
+  background-image: url(src/assets/css/emoji/heartpulse.png)
 }
 
 .em-hearts {
-  background-image: url(src/assets/images/emoji/hearts.png)
+  background-image: url(src/assets/css/emoji/hearts.png)
 }
 
 .em-heavy_check_mark {
-  background-image: url(src/assets/images/emoji/heavy_check_mark.png)
+  background-image: url(src/assets/css/emoji/heavy_check_mark.png)
 }
 
 .em-heavy_division_sign {
-  background-image: url(src/assets/images/emoji/heavy_division_sign.png)
+  background-image: url(src/assets/css/emoji/heavy_division_sign.png)
 }
 
 .em-heavy_dollar_sign {
-  background-image: url(src/assets/images/emoji/heavy_dollar_sign.png)
+  background-image: url(src/assets/css/emoji/heavy_dollar_sign.png)
 }
 
 .em-heavy_exclamation_mark {
-  background-image: url(src/assets/images/emoji/heavy_exclamation_mark.png)
+  background-image: url(src/assets/css/emoji/heavy_exclamation_mark.png)
 }
 
 .em-heavy_minus_sign {
-  background-image: url(src/assets/images/emoji/heavy_minus_sign.png)
+  background-image: url(src/assets/css/emoji/heavy_minus_sign.png)
 }
 
 .em-heavy_multiplication_x {
-  background-image: url(src/assets/images/emoji/heavy_multiplication_x.png)
+  background-image: url(src/assets/css/emoji/heavy_multiplication_x.png)
 }
 
 .em-heavy_plus_sign {
-  background-image: url(src/assets/images/emoji/heavy_plus_sign.png)
+  background-image: url(src/assets/css/emoji/heavy_plus_sign.png)
 }
 
 .em-helicopter {
-  background-image: url(src/assets/images/emoji/helicopter.png)
+  background-image: url(src/assets/css/emoji/helicopter.png)
 }
 
 .em-herb {
-  background-image: url(src/assets/images/emoji/herb.png)
+  background-image: url(src/assets/css/emoji/herb.png)
 }
 
 .em-hibiscus {
-  background-image: url(src/assets/images/emoji/hibiscus.png)
+  background-image: url(src/assets/css/emoji/hibiscus.png)
 }
 
 .em-high_brightness {
-  background-image: url(src/assets/images/emoji/high_brightness.png)
+  background-image: url(src/assets/css/emoji/high_brightness.png)
 }
 
 .em-high_heel {
-  background-image: url(src/assets/images/emoji/high_heel.png)
+  background-image: url(src/assets/css/emoji/high_heel.png)
 }
 
 .em-hocho {
-  background-image: url(src/assets/images/emoji/hocho.png)
+  background-image: url(src/assets/css/emoji/hocho.png)
 }
 
 .em-honey_pot {
-  background-image: url(src/assets/images/emoji/honey_pot.png)
+  background-image: url(src/assets/css/emoji/honey_pot.png)
 }
 
 .em-honeybee {
-  background-image: url(src/assets/images/emoji/honeybee.png)
+  background-image: url(src/assets/css/emoji/honeybee.png)
 }
 
 .em-horse {
-  background-image: url(src/assets/images/emoji/horse.png)
+  background-image: url(src/assets/css/emoji/horse.png)
 }
 
 .em-horse_racing {
-  background-image: url(src/assets/images/emoji/horse_racing.png)
+  background-image: url(src/assets/css/emoji/horse_racing.png)
 }
 
 .em-hospital {
-  background-image: url(src/assets/images/emoji/hospital.png)
+  background-image: url(src/assets/css/emoji/hospital.png)
 }
 
 .em-hotel {
-  background-image: url(src/assets/images/emoji/hotel.png)
+  background-image: url(src/assets/css/emoji/hotel.png)
 }
 
 .em-hotsprings {
-  background-image: url(src/assets/images/emoji/hotsprings.png)
+  background-image: url(src/assets/css/emoji/hotsprings.png)
 }
 
 .em-hourglass {
-  background-image: url(src/assets/images/emoji/hourglass.png)
+  background-image: url(src/assets/css/emoji/hourglass.png)
 }
 
 .em-hourglass_flowing_sand {
-  background-image: url(src/assets/images/emoji/hourglass_flowing_sand.png)
+  background-image: url(src/assets/css/emoji/hourglass_flowing_sand.png)
 }
 
 .em-house {
-  background-image: url(src/assets/images/emoji/house.png)
+  background-image: url(src/assets/css/emoji/house.png)
 }
 
 .em-house_with_garden {
-  background-image: url(src/assets/images/emoji/house_with_garden.png)
+  background-image: url(src/assets/css/emoji/house_with_garden.png)
 }
 
 .em-hurtrealbad {
-  background-image: url(src/assets/images/emoji/hurtrealbad.png)
+  background-image: url(src/assets/css/emoji/hurtrealbad.png)
 }
 
 .em-hushed {
-  background-image: url(src/assets/images/emoji/hushed.png)
+  background-image: url(src/assets/css/emoji/hushed.png)
 }
 
 .em-ice_cream {
-  background-image: url(src/assets/images/emoji/ice_cream.png)
+  background-image: url(src/assets/css/emoji/ice_cream.png)
 }
 
 .em-icecream {
-  background-image: url(src/assets/images/emoji/icecream.png)
+  background-image: url(src/assets/css/emoji/icecream.png)
 }
 
 .em-id {
-  background-image: url(src/assets/images/emoji/id.png)
+  background-image: url(src/assets/css/emoji/id.png)
 }
 
 .em-ideograph_advantage {
-  background-image: url(src/assets/images/emoji/ideograph_advantage.png)
+  background-image: url(src/assets/css/emoji/ideograph_advantage.png)
 }
 
 .em-imp {
-  background-image: url(src/assets/images/emoji/imp.png)
+  background-image: url(src/assets/css/emoji/imp.png)
 }
 
 .em-inbox_tray {
-  background-image: url(src/assets/images/emoji/inbox_tray.png)
+  background-image: url(src/assets/css/emoji/inbox_tray.png)
 }
 
 .em-incoming_envelope {
-  background-image: url(src/assets/images/emoji/incoming_envelope.png)
+  background-image: url(src/assets/css/emoji/incoming_envelope.png)
 }
 
 .em-information_desk_person {
-  background-image: url(src/assets/images/emoji/information_desk_person.png)
+  background-image: url(src/assets/css/emoji/information_desk_person.png)
 }
 
 .em-information_source {
-  background-image: url(src/assets/images/emoji/information_source.png)
+  background-image: url(src/assets/css/emoji/information_source.png)
 }
 
 .em-innocent {
-  background-image: url(src/assets/images/emoji/innocent.png)
+  background-image: url(src/assets/css/emoji/innocent.png)
 }
 
 .em-interrobang {
-  background-image: url(src/assets/images/emoji/interrobang.png)
+  background-image: url(src/assets/css/emoji/interrobang.png)
 }
 
 .em-iphone {
-  background-image: url(src/assets/images/emoji/iphone.png)
+  background-image: url(src/assets/css/emoji/iphone.png)
 }
 
 .em-it {
-  background-image: url(src/assets/images/emoji/it.png)
+  background-image: url(src/assets/css/emoji/it.png)
 }
 
 .em-izakaya_lantern {
-  background-image: url(src/assets/images/emoji/izakaya_lantern.png)
+  background-image: url(src/assets/css/emoji/izakaya_lantern.png)
 }
 
 .em-jack_o_lantern {
-  background-image: url(src/assets/images/emoji/jack_o_lantern.png)
+  background-image: url(src/assets/css/emoji/jack_o_lantern.png)
 }
 
 .em-japan {
-  background-image: url(src/assets/images/emoji/japan.png)
+  background-image: url(src/assets/css/emoji/japan.png)
 }
 
 .em-japanese_castle {
-  background-image: url(src/assets/images/emoji/japanese_castle.png)
+  background-image: url(src/assets/css/emoji/japanese_castle.png)
 }
 
 .em-japanese_goblin {
-  background-image: url(src/assets/images/emoji/japanese_goblin.png)
+  background-image: url(src/assets/css/emoji/japanese_goblin.png)
 }
 
 .em-japanese_ogre {
-  background-image: url(src/assets/images/emoji/japanese_ogre.png)
+  background-image: url(src/assets/css/emoji/japanese_ogre.png)
 }
 
 .em-jeans {
-  background-image: url(src/assets/images/emoji/jeans.png)
+  background-image: url(src/assets/css/emoji/jeans.png)
 }
 
 .em-joy {
-  background-image: url(src/assets/images/emoji/joy.png)
+  background-image: url(src/assets/css/emoji/joy.png)
 }
 
 .em-joy_cat {
-  background-image: url(src/assets/images/emoji/joy_cat.png)
+  background-image: url(src/assets/css/emoji/joy_cat.png)
 }
 
 .em-jp {
-  background-image: url(src/assets/images/emoji/jp.png)
+  background-image: url(src/assets/css/emoji/jp.png)
 }
 
 .em-key {
-  background-image: url(src/assets/images/emoji/key.png)
+  background-image: url(src/assets/css/emoji/key.png)
 }
 
 .em-keycap_ten {
-  background-image: url(src/assets/images/emoji/keycap_ten.png)
+  background-image: url(src/assets/css/emoji/keycap_ten.png)
 }
 
 .em-kimono {
-  background-image: url(src/assets/images/emoji/kimono.png)
+  background-image: url(src/assets/css/emoji/kimono.png)
 }
 
 .em-kiss {
-  background-image: url(src/assets/images/emoji/kiss.png)
+  background-image: url(src/assets/css/emoji/kiss.png)
 }
 
 .em-kissing {
-  background-image: url(src/assets/images/emoji/kissing.png)
+  background-image: url(src/assets/css/emoji/kissing.png)
 }
 
 .em-kissing_cat {
-  background-image: url(src/assets/images/emoji/kissing_cat.png)
+  background-image: url(src/assets/css/emoji/kissing_cat.png)
 }
 
 .em-kissing_closed_eyes {
-  background-image: url(src/assets/images/emoji/kissing_closed_eyes.png)
+  background-image: url(src/assets/css/emoji/kissing_closed_eyes.png)
 }
 
 .em-kissing_face {
-  background-image: url(src/assets/images/emoji/kissing_face.png)
+  background-image: url(src/assets/css/emoji/kissing_face.png)
 }
 
 .em-kissing_heart {
-  background-image: url(src/assets/images/emoji/kissing_heart.png)
+  background-image: url(src/assets/css/emoji/kissing_heart.png)
 }
 
 .em-kissing_smiling_eyes {
-  background-image: url(src/assets/images/emoji/kissing_smiling_eyes.png)
+  background-image: url(src/assets/css/emoji/kissing_smiling_eyes.png)
 }
 
 .em-koala {
-  background-image: url(src/assets/images/emoji/koala.png)
+  background-image: url(src/assets/css/emoji/koala.png)
 }
 
 .em-koko {
-  background-image: url(src/assets/images/emoji/koko.png)
+  background-image: url(src/assets/css/emoji/koko.png)
 }
 
 .em-kr {
-  background-image: url(src/assets/images/emoji/kr.png)
+  background-image: url(src/assets/css/emoji/kr.png)
 }
 
 .em-large_blue_circle {
-  background-image: url(src/assets/images/emoji/large_blue_circle.png)
+  background-image: url(src/assets/css/emoji/large_blue_circle.png)
 }
 
 .em-large_blue_diamond {
-  background-image: url(src/assets/images/emoji/large_blue_diamond.png)
+  background-image: url(src/assets/css/emoji/large_blue_diamond.png)
 }
 
 .em-large_orange_diamond {
-  background-image: url(src/assets/images/emoji/large_orange_diamond.png)
+  background-image: url(src/assets/css/emoji/large_orange_diamond.png)
 }
 
 .em-last_quarter_moon {
-  background-image: url(src/assets/images/emoji/last_quarter_moon.png)
+  background-image: url(src/assets/css/emoji/last_quarter_moon.png)
 }
 
 .em-last_quarter_moon_with_face {
-  background-image: url(src/assets/images/emoji/last_quarter_moon_with_face.png)
+  background-image: url(src/assets/css/emoji/last_quarter_moon_with_face.png)
 }
 
 .em-laughing {
-  background-image: url(src/assets/images/emoji/laughing.png)
+  background-image: url(src/assets/css/emoji/laughing.png)
 }
 
 .em-leaves {
-  background-image: url(src/assets/images/emoji/leaves.png)
+  background-image: url(src/assets/css/emoji/leaves.png)
 }
 
 .em-ledger {
-  background-image: url(src/assets/images/emoji/ledger.png)
+  background-image: url(src/assets/css/emoji/ledger.png)
 }
 
 .em-left_luggage {
-  background-image: url(src/assets/images/emoji/left_luggage.png)
+  background-image: url(src/assets/css/emoji/left_luggage.png)
 }
 
 .em-left_right_arrow {
-  background-image: url(src/assets/images/emoji/left_right_arrow.png)
+  background-image: url(src/assets/css/emoji/left_right_arrow.png)
 }
 
 .em-leftwards_arrow_with_hook {
-  background-image: url(src/assets/images/emoji/leftwards_arrow_with_hook.png)
+  background-image: url(src/assets/css/emoji/leftwards_arrow_with_hook.png)
 }
 
 .em-lemon {
-  background-image: url(src/assets/images/emoji/lemon.png)
+  background-image: url(src/assets/css/emoji/lemon.png)
 }
 
 .em-leo {
-  background-image: url(src/assets/images/emoji/leo.png)
+  background-image: url(src/assets/css/emoji/leo.png)
 }
 
 .em-leopard {
-  background-image: url(src/assets/images/emoji/leopard.png)
+  background-image: url(src/assets/css/emoji/leopard.png)
 }
 
 .em-libra {
-  background-image: url(src/assets/images/emoji/libra.png)
+  background-image: url(src/assets/css/emoji/libra.png)
 }
 
 .em-light_rail {
-  background-image: url(src/assets/images/emoji/light_rail.png)
+  background-image: url(src/assets/css/emoji/light_rail.png)
 }
 
 .em-link {
-  background-image: url(src/assets/images/emoji/link.png)
+  background-image: url(src/assets/css/emoji/link.png)
 }
 
 .em-lips {
-  background-image: url(src/assets/images/emoji/lips.png)
+  background-image: url(src/assets/css/emoji/lips.png)
 }
 
 .em-lipstick {
-  background-image: url(src/assets/images/emoji/lipstick.png)
+  background-image: url(src/assets/css/emoji/lipstick.png)
 }
 
 .em-lock {
-  background-image: url(src/assets/images/emoji/lock.png)
+  background-image: url(src/assets/css/emoji/lock.png)
 }
 
 .em-lock_with_ink_pen {
-  background-image: url(src/assets/images/emoji/lock_with_ink_pen.png)
+  background-image: url(src/assets/css/emoji/lock_with_ink_pen.png)
 }
 
 .em-lollipop {
-  background-image: url(src/assets/images/emoji/lollipop.png)
+  background-image: url(src/assets/css/emoji/lollipop.png)
 }
 
 .em-loop {
-  background-image: url(src/assets/images/emoji/loop.png)
+  background-image: url(src/assets/css/emoji/loop.png)
 }
 
 .em-loudspeaker {
-  background-image: url(src/assets/images/emoji/loudspeaker.png)
+  background-image: url(src/assets/css/emoji/loudspeaker.png)
 }
 
 .em-love_hotel {
-  background-image: url(src/assets/images/emoji/love_hotel.png)
+  background-image: url(src/assets/css/emoji/love_hotel.png)
 }
 
 .em-love_letter {
-  background-image: url(src/assets/images/emoji/love_letter.png)
+  background-image: url(src/assets/css/emoji/love_letter.png)
 }
 
 .em-low_brightness {
-  background-image: url(src/assets/images/emoji/low_brightness.png)
+  background-image: url(src/assets/css/emoji/low_brightness.png)
 }
 
 .em-m {
-  background-image: url(src/assets/images/emoji/m.png)
+  background-image: url(src/assets/css/emoji/m.png)
 }
 
 .em-mag {
-  background-image: url(src/assets/images/emoji/mag.png)
+  background-image: url(src/assets/css/emoji/mag.png)
 }
 
 .em-mag_right {
-  background-image: url(src/assets/images/emoji/mag_right.png)
+  background-image: url(src/assets/css/emoji/mag_right.png)
 }
 
 .em-mahjong {
-  background-image: url(src/assets/images/emoji/mahjong.png)
+  background-image: url(src/assets/css/emoji/mahjong.png)
 }
 
 .em-mailbox {
-  background-image: url(src/assets/images/emoji/mailbox.png)
+  background-image: url(src/assets/css/emoji/mailbox.png)
 }
 
 .em-mailbox_closed {
-  background-image: url(src/assets/images/emoji/mailbox_closed.png)
+  background-image: url(src/assets/css/emoji/mailbox_closed.png)
 }
 
 .em-mailbox_with_mail {
-  background-image: url(src/assets/images/emoji/mailbox_with_mail.png)
+  background-image: url(src/assets/css/emoji/mailbox_with_mail.png)
 }
 
 .em-mailbox_with_no_mail {
-  background-image: url(src/assets/images/emoji/mailbox_with_no_mail.png)
+  background-image: url(src/assets/css/emoji/mailbox_with_no_mail.png)
 }
 
 .em-man {
-  background-image: url(src/assets/images/emoji/man.png)
+  background-image: url(src/assets/css/emoji/man.png)
 }
 
 .em-man_with_gua_pi_mao {
-  background-image: url(src/assets/images/emoji/man_with_gua_pi_mao.png)
+  background-image: url(src/assets/css/emoji/man_with_gua_pi_mao.png)
 }
 
 .em-man_with_turban {
-  background-image: url(src/assets/images/emoji/man_with_turban.png)
+  background-image: url(src/assets/css/emoji/man_with_turban.png)
 }
 
 .em-mans_shoe {
-  background-image: url(src/assets/images/emoji/mans_shoe.png)
+  background-image: url(src/assets/css/emoji/mans_shoe.png)
 }
 
 .em-maple_leaf {
-  background-image: url(src/assets/images/emoji/maple_leaf.png)
+  background-image: url(src/assets/css/emoji/maple_leaf.png)
 }
 
 .em-mask {
-  background-image: url(src/assets/images/emoji/mask.png)
+  background-image: url(src/assets/css/emoji/mask.png)
 }
 
 .em-massage {
-  background-image: url(src/assets/images/emoji/massage.png)
+  background-image: url(src/assets/css/emoji/massage.png)
 }
 
 .em-meat_on_bone {
-  background-image: url(src/assets/images/emoji/meat_on_bone.png)
+  background-image: url(src/assets/css/emoji/meat_on_bone.png)
 }
 
 .em-mega {
-  background-image: url(src/assets/images/emoji/mega.png)
+  background-image: url(src/assets/css/emoji/mega.png)
 }
 
 .em-melon {
-  background-image: url(src/assets/images/emoji/melon.png)
+  background-image: url(src/assets/css/emoji/melon.png)
 }
 
 .em-memo {
-  background-image: url(src/assets/images/emoji/memo.png)
+  background-image: url(src/assets/css/emoji/memo.png)
 }
 
 .em-mens {
-  background-image: url(src/assets/images/emoji/mens.png)
+  background-image: url(src/assets/css/emoji/mens.png)
 }
 
 .em-metal {
-  background-image: url(src/assets/images/emoji/metal.png)
+  background-image: url(src/assets/css/emoji/metal.png)
 }
 
 .em-metro {
-  background-image: url(src/assets/images/emoji/metro.png)
+  background-image: url(src/assets/css/emoji/metro.png)
 }
 
 .em-microphone {
-  background-image: url(src/assets/images/emoji/microphone.png)
+  background-image: url(src/assets/css/emoji/microphone.png)
 }
 
 .em-microscope {
-  background-image: url(src/assets/images/emoji/microscope.png)
+  background-image: url(src/assets/css/emoji/microscope.png)
 }
 
 .em-milky_way {
-  background-image: url(src/assets/images/emoji/milky_way.png)
+  background-image: url(src/assets/css/emoji/milky_way.png)
 }
 
 .em-minibus {
-  background-image: url(src/assets/images/emoji/minibus.png)
+  background-image: url(src/assets/css/emoji/minibus.png)
 }
 
 .em-minidisc {
-  background-image: url(src/assets/images/emoji/minidisc.png)
+  background-image: url(src/assets/css/emoji/minidisc.png)
 }
 
 .em-mobile_phone_off {
-  background-image: url(src/assets/images/emoji/mobile_phone_off.png)
+  background-image: url(src/assets/css/emoji/mobile_phone_off.png)
 }
 
 .em-money_with_wings {
-  background-image: url(src/assets/images/emoji/money_with_wings.png)
+  background-image: url(src/assets/css/emoji/money_with_wings.png)
 }
 
 .em-moneybag {
-  background-image: url(src/assets/images/emoji/moneybag.png)
+  background-image: url(src/assets/css/emoji/moneybag.png)
 }
 
 .em-monkey {
-  background-image: url(src/assets/images/emoji/monkey.png)
+  background-image: url(src/assets/css/emoji/monkey.png)
 }
 
 .em-monkey_face {
-  background-image: url(src/assets/images/emoji/monkey_face.png)
+  background-image: url(src/assets/css/emoji/monkey_face.png)
 }
 
 .em-monorail {
-  background-image: url(src/assets/images/emoji/monorail.png)
+  background-image: url(src/assets/css/emoji/monorail.png)
 }
 
 .em-moon {
-  background-image: url(src/assets/images/emoji/moon.png)
+  background-image: url(src/assets/css/emoji/moon.png)
 }
 
 .em-mortar_board {
-  background-image: url(src/assets/images/emoji/mortar_board.png)
+  background-image: url(src/assets/css/emoji/mortar_board.png)
 }
 
 .em-mount_fuji {
-  background-image: url(src/assets/images/emoji/mount_fuji.png)
+  background-image: url(src/assets/css/emoji/mount_fuji.png)
 }
 
 .em-mountain_bicyclist {
-  background-image: url(src/assets/images/emoji/mountain_bicyclist.png)
+  background-image: url(src/assets/css/emoji/mountain_bicyclist.png)
 }
 
 .em-mountain_cableway {
-  background-image: url(src/assets/images/emoji/mountain_cableway.png)
+  background-image: url(src/assets/css/emoji/mountain_cableway.png)
 }
 
 .em-mountain_railway {
-  background-image: url(src/assets/images/emoji/mountain_railway.png)
+  background-image: url(src/assets/css/emoji/mountain_railway.png)
 }
 
 .em-mouse {
-  background-image: url(src/assets/images/emoji/mouse.png)
+  background-image: url(src/assets/css/emoji/mouse.png)
 }
 
 .em-mouse2 {
-  background-image: url(src/assets/images/emoji/mouse2.png)
+  background-image: url(src/assets/css/emoji/mouse2.png)
 }
 
 .em-movie_camera {
-  background-image: url(src/assets/images/emoji/movie_camera.png)
+  background-image: url(src/assets/css/emoji/movie_camera.png)
 }
 
 .em-moyai {
-  background-image: url(src/assets/images/emoji/moyai.png)
+  background-image: url(src/assets/css/emoji/moyai.png)
 }
 
 .em-muscle {
-  background-image: url(src/assets/images/emoji/muscle.png)
+  background-image: url(src/assets/css/emoji/muscle.png)
 }
 
 .em-mushroom {
-  background-image: url(src/assets/images/emoji/mushroom.png)
+  background-image: url(src/assets/css/emoji/mushroom.png)
 }
 
 .em-musical_keyboard {
-  background-image: url(src/assets/images/emoji/musical_keyboard.png)
+  background-image: url(src/assets/css/emoji/musical_keyboard.png)
 }
 
 .em-musical_note {
-  background-image: url(src/assets/images/emoji/musical_note.png)
+  background-image: url(src/assets/css/emoji/musical_note.png)
 }
 
 .em-musical_score {
-  background-image: url(src/assets/images/emoji/musical_score.png)
+  background-image: url(src/assets/css/emoji/musical_score.png)
 }
 
 .em-mute {
-  background-image: url(src/assets/images/emoji/mute.png)
+  background-image: url(src/assets/css/emoji/mute.png)
 }
 
 .em-nail_care {
-  background-image: url(src/assets/images/emoji/nail_care.png)
+  background-image: url(src/assets/css/emoji/nail_care.png)
 }
 
 .em-name_badge {
-  background-image: url(src/assets/images/emoji/name_badge.png)
+  background-image: url(src/assets/css/emoji/name_badge.png)
 }
 
 .em-neckbeard {
-  background-image: url(src/assets/images/emoji/neckbeard.png)
+  background-image: url(src/assets/css/emoji/neckbeard.png)
 }
 
 .em-necktie {
-  background-image: url(src/assets/images/emoji/necktie.png)
+  background-image: url(src/assets/css/emoji/necktie.png)
 }
 
 .em-negative_squared_cross_mark {
-  background-image: url(src/assets/images/emoji/negative_squared_cross_mark.png)
+  background-image: url(src/assets/css/emoji/negative_squared_cross_mark.png)
 }
 
 .em-neutral_face {
-  background-image: url(src/assets/images/emoji/neutral_face.png)
+  background-image: url(src/assets/css/emoji/neutral_face.png)
 }
 
 .em-new {
-  background-image: url(src/assets/images/emoji/new.png)
+  background-image: url(src/assets/css/emoji/new.png)
 }
 
 .em-new_moon {
-  background-image: url(src/assets/images/emoji/new_moon.png)
+  background-image: url(src/assets/css/emoji/new_moon.png)
 }
 
 .em-new_moon_with_face {
-  background-image: url(src/assets/images/emoji/new_moon_with_face.png)
+  background-image: url(src/assets/css/emoji/new_moon_with_face.png)
 }
 
 .em-newspaper {
-  background-image: url(src/assets/images/emoji/newspaper.png)
+  background-image: url(src/assets/css/emoji/newspaper.png)
 }
 
 .em-ng {
-  background-image: url(src/assets/images/emoji/ng.png)
+  background-image: url(src/assets/css/emoji/ng.png)
 }
 
 .em-nine {
-  background-image: url(src/assets/images/emoji/nine.png)
+  background-image: url(src/assets/css/emoji/nine.png)
 }
 
 .em-no_bell {
-  background-image: url(src/assets/images/emoji/no_bell.png)
+  background-image: url(src/assets/css/emoji/no_bell.png)
 }
 
 .em-no_bicycles {
-  background-image: url(src/assets/images/emoji/no_bicycles.png)
+  background-image: url(src/assets/css/emoji/no_bicycles.png)
 }
 
 .em-no_entry {
-  background-image: url(src/assets/images/emoji/no_entry.png)
+  background-image: url(src/assets/css/emoji/no_entry.png)
 }
 
 .em-no_entry_sign {
-  background-image: url(src/assets/images/emoji/no_entry_sign.png)
+  background-image: url(src/assets/css/emoji/no_entry_sign.png)
 }
 
 .em-no_good {
-  background-image: url(src/assets/images/emoji/no_good.png)
+  background-image: url(src/assets/css/emoji/no_good.png)
 }
 
 .em-no_mobile_phones {
-  background-image: url(src/assets/images/emoji/no_mobile_phones.png)
+  background-image: url(src/assets/css/emoji/no_mobile_phones.png)
 }
 
 .em-no_mouth {
-  background-image: url(src/assets/images/emoji/no_mouth.png)
+  background-image: url(src/assets/css/emoji/no_mouth.png)
 }
 
 .em-no_pedestrians {
-  background-image: url(src/assets/images/emoji/no_pedestrians.png)
+  background-image: url(src/assets/css/emoji/no_pedestrians.png)
 }
 
 .em-no_smoking {
-  background-image: url(src/assets/images/emoji/no_smoking.png)
+  background-image: url(src/assets/css/emoji/no_smoking.png)
 }
 
 .em-non-potable_water {
-  background-image: url(src/assets/images/emoji/non-potable_water.png)
+  background-image: url(src/assets/css/emoji/non-potable_water.png)
 }
 
 .em-nose {
-  background-image: url(src/assets/images/emoji/nose.png)
+  background-image: url(src/assets/css/emoji/nose.png)
 }
 
 .em-notebook {
-  background-image: url(src/assets/images/emoji/notebook.png)
+  background-image: url(src/assets/css/emoji/notebook.png)
 }
 
 .em-notebook_with_decorative_cover {
-  background-image: url(src/assets/images/emoji/notebook_with_decorative_cover.png)
+  background-image: url(src/assets/css/emoji/notebook_with_decorative_cover.png)
 }
 
 .em-notes {
-  background-image: url(src/assets/images/emoji/notes.png)
+  background-image: url(src/assets/css/emoji/notes.png)
 }
 
 .em-nut_and_bolt {
-  background-image: url(src/assets/images/emoji/nut_and_bolt.png)
+  background-image: url(src/assets/css/emoji/nut_and_bolt.png)
 }
 
 .em-o {
-  background-image: url(src/assets/images/emoji/o.png)
+  background-image: url(src/assets/css/emoji/o.png)
 }
 
 .em-o2 {
-  background-image: url(src/assets/images/emoji/o2.png)
+  background-image: url(src/assets/css/emoji/o2.png)
 }
 
 .em-ocean {
-  background-image: url(src/assets/images/emoji/ocean.png)
+  background-image: url(src/assets/css/emoji/ocean.png)
 }
 
 .em-octocat {
-  background-image: url(src/assets/images/emoji/octocat.png)
+  background-image: url(src/assets/css/emoji/octocat.png)
 }
 
 .em-octopus {
-  background-image: url(src/assets/images/emoji/octopus.png)
+  background-image: url(src/assets/css/emoji/octopus.png)
 }
 
 .em-oden {
-  background-image: url(src/assets/images/emoji/oden.png)
+  background-image: url(src/assets/css/emoji/oden.png)
 }
 
 .em-office {
-  background-image: url(src/assets/images/emoji/office.png)
+  background-image: url(src/assets/css/emoji/office.png)
 }
 
 .em-ok {
-  background-image: url(src/assets/images/emoji/ok.png)
+  background-image: url(src/assets/css/emoji/ok.png)
 }
 
 .em-ok_hand {
-  background-image: url(src/assets/images/emoji/ok_hand.png)
+  background-image: url(src/assets/css/emoji/ok_hand.png)
 }
 
 .em-ok_woman {
-  background-image: url(src/assets/images/emoji/ok_woman.png)
+  background-image: url(src/assets/css/emoji/ok_woman.png)
 }
 
 .em-older_man {
-  background-image: url(src/assets/images/emoji/older_man.png)
+  background-image: url(src/assets/css/emoji/older_man.png)
 }
 
 .em-older_woman {
-  background-image: url(src/assets/images/emoji/older_woman.png)
+  background-image: url(src/assets/css/emoji/older_woman.png)
 }
 
 .em-on {
-  background-image: url(src/assets/images/emoji/on.png)
+  background-image: url(src/assets/css/emoji/on.png)
 }
 
 .em-oncoming_automobile {
-  background-image: url(src/assets/images/emoji/oncoming_automobile.png)
+  background-image: url(src/assets/css/emoji/oncoming_automobile.png)
 }
 
 .em-oncoming_bus {
-  background-image: url(src/assets/images/emoji/oncoming_bus.png)
+  background-image: url(src/assets/css/emoji/oncoming_bus.png)
 }
 
 .em-oncoming_police_car {
-  background-image: url(src/assets/images/emoji/oncoming_police_car.png)
+  background-image: url(src/assets/css/emoji/oncoming_police_car.png)
 }
 
 .em-oncoming_taxi {
-  background-image: url(src/assets/images/emoji/oncoming_taxi.png)
+  background-image: url(src/assets/css/emoji/oncoming_taxi.png)
 }
 
 .em-one {
-  background-image: url(src/assets/images/emoji/one.png)
+  background-image: url(src/assets/css/emoji/one.png)
 }
 
 .em-open_file_folder {
-  background-image: url(src/assets/images/emoji/open_file_folder.png)
+  background-image: url(src/assets/css/emoji/open_file_folder.png)
 }
 
 .em-open_hands {
-  background-image: url(src/assets/images/emoji/open_hands.png)
+  background-image: url(src/assets/css/emoji/open_hands.png)
 }
 
 .em-open_mouth {
-  background-image: url(src/assets/images/emoji/open_mouth.png)
+  background-image: url(src/assets/css/emoji/open_mouth.png)
 }
 
 .em-ophiuchus {
-  background-image: url(src/assets/images/emoji/ophiuchus.png)
+  background-image: url(src/assets/css/emoji/ophiuchus.png)
 }
 
 .em-orange_book {
-  background-image: url(src/assets/images/emoji/orange_book.png)
+  background-image: url(src/assets/css/emoji/orange_book.png)
 }
 
 .em-outbox_tray {
-  background-image: url(src/assets/images/emoji/outbox_tray.png)
+  background-image: url(src/assets/css/emoji/outbox_tray.png)
 }
 
 .em-ox {
-  background-image: url(src/assets/images/emoji/ox.png)
+  background-image: url(src/assets/css/emoji/ox.png)
 }
 
 .em-package {
-  background-image: url(src/assets/images/emoji/package.png)
+  background-image: url(src/assets/css/emoji/package.png)
 }
 
 .em-page_facing_up {
-  background-image: url(src/assets/images/emoji/page_facing_up.png)
+  background-image: url(src/assets/css/emoji/page_facing_up.png)
 }
 
 .em-page_with_curl {
-  background-image: url(src/assets/images/emoji/page_with_curl.png)
+  background-image: url(src/assets/css/emoji/page_with_curl.png)
 }
 
 .em-pager {
-  background-image: url(src/assets/images/emoji/pager.png)
+  background-image: url(src/assets/css/emoji/pager.png)
 }
 
 .em-palm_tree {
-  background-image: url(src/assets/images/emoji/palm_tree.png)
+  background-image: url(src/assets/css/emoji/palm_tree.png)
 }
 
 .em-panda_face {
-  background-image: url(src/assets/images/emoji/panda_face.png)
+  background-image: url(src/assets/css/emoji/panda_face.png)
 }
 
 .em-paperclip {
-  background-image: url(src/assets/images/emoji/paperclip.png)
+  background-image: url(src/assets/css/emoji/paperclip.png)
 }
 
 .em-parking {
-  background-image: url(src/assets/images/emoji/parking.png)
+  background-image: url(src/assets/css/emoji/parking.png)
 }
 
 .em-part_alternation_mark {
-  background-image: url(src/assets/images/emoji/part_alternation_mark.png)
+  background-image: url(src/assets/css/emoji/part_alternation_mark.png)
 }
 
 .em-partly_sunny {
-  background-image: url(src/assets/images/emoji/partly_sunny.png)
+  background-image: url(src/assets/css/emoji/partly_sunny.png)
 }
 
 .em-passport_control {
-  background-image: url(src/assets/images/emoji/passport_control.png)
+  background-image: url(src/assets/css/emoji/passport_control.png)
 }
 
 .em-paw_prints {
-  background-image: url(src/assets/images/emoji/paw_prints.png)
+  background-image: url(src/assets/css/emoji/paw_prints.png)
 }
 
 .em-peach {
-  background-image: url(src/assets/images/emoji/peach.png)
+  background-image: url(src/assets/css/emoji/peach.png)
 }
 
 .em-pear {
-  background-image: url(src/assets/images/emoji/pear.png)
+  background-image: url(src/assets/css/emoji/pear.png)
 }
 
 .em-pencil {
-  background-image: url(src/assets/images/emoji/pencil.png)
+  background-image: url(src/assets/css/emoji/pencil.png)
 }
 
 .em-pencil2 {
-  background-image: url(src/assets/images/emoji/pencil2.png)
+  background-image: url(src/assets/css/emoji/pencil2.png)
 }
 
 .em-penguin {
-  background-image: url(src/assets/images/emoji/penguin.png)
+  background-image: url(src/assets/css/emoji/penguin.png)
 }
 
 .em-pensive {
-  background-image: url(src/assets/images/emoji/pensive.png)
+  background-image: url(src/assets/css/emoji/pensive.png)
 }
 
 .em-performing_arts {
-  background-image: url(src/assets/images/emoji/performing_arts.png)
+  background-image: url(src/assets/css/emoji/performing_arts.png)
 }
 
 .em-persevere {
-  background-image: url(src/assets/images/emoji/persevere.png)
+  background-image: url(src/assets/css/emoji/persevere.png)
 }
 
 .em-person_frowning {
-  background-image: url(src/assets/images/emoji/person_frowning.png)
+  background-image: url(src/assets/css/emoji/person_frowning.png)
 }
 
 .em-person_with_blond_hair {
-  background-image: url(src/assets/images/emoji/person_with_blond_hair.png)
+  background-image: url(src/assets/css/emoji/person_with_blond_hair.png)
 }
 
 .em-person_with_pouting_face {
-  background-image: url(src/assets/images/emoji/person_with_pouting_face.png)
+  background-image: url(src/assets/css/emoji/person_with_pouting_face.png)
 }
 
 .em-phone {
-  background-image: url(src/assets/images/emoji/phone.png)
+  background-image: url(src/assets/css/emoji/phone.png)
 }
 
 .em-pig {
-  background-image: url(src/assets/images/emoji/pig.png)
+  background-image: url(src/assets/css/emoji/pig.png)
 }
 
 .em-pig2 {
-  background-image: url(src/assets/images/emoji/pig2.png)
+  background-image: url(src/assets/css/emoji/pig2.png)
 }
 
 .em-pig_nose {
-  background-image: url(src/assets/images/emoji/pig_nose.png)
+  background-image: url(src/assets/css/emoji/pig_nose.png)
 }
 
 .em-pill {
-  background-image: url(src/assets/images/emoji/pill.png)
+  background-image: url(src/assets/css/emoji/pill.png)
 }
 
 .em-pineapple {
-  background-image: url(src/assets/images/emoji/pineapple.png)
+  background-image: url(src/assets/css/emoji/pineapple.png)
 }
 
 .em-pisces {
-  background-image: url(src/assets/images/emoji/pisces.png)
+  background-image: url(src/assets/css/emoji/pisces.png)
 }
 
 .em-pizza {
-  background-image: url(src/assets/images/emoji/pizza.png)
+  background-image: url(src/assets/css/emoji/pizza.png)
 }
 
 .em-plus1 {
-  background-image: url(src/assets/images/emoji/plus1.png)
+  background-image: url(src/assets/css/emoji/plus1.png)
 }
 
 .em-point_down {
-  background-image: url(src/assets/images/emoji/point_down.png)
+  background-image: url(src/assets/css/emoji/point_down.png)
 }
 
 .em-point_left {
-  background-image: url(src/assets/images/emoji/point_left.png)
+  background-image: url(src/assets/css/emoji/point_left.png)
 }
 
 .em-point_right {
-  background-image: url(src/assets/images/emoji/point_right.png)
+  background-image: url(src/assets/css/emoji/point_right.png)
 }
 
 .em-point_up {
-  background-image: url(src/assets/images/emoji/point_up.png)
+  background-image: url(src/assets/css/emoji/point_up.png)
 }
 
 .em-point_up_2 {
-  background-image: url(src/assets/images/emoji/point_up_2.png)
+  background-image: url(src/assets/css/emoji/point_up_2.png)
 }
 
 .em-police_car {
-  background-image: url(src/assets/images/emoji/police_car.png)
+  background-image: url(src/assets/css/emoji/police_car.png)
 }
 
 .em-poodle {
-  background-image: url(src/assets/images/emoji/poodle.png)
+  background-image: url(src/assets/css/emoji/poodle.png)
 }
 
 .em-poop {
-  background-image: url(src/assets/images/emoji/poop.png)
+  background-image: url(src/assets/css/emoji/poop.png)
 }
 
 .em-post_office {
-  background-image: url(src/assets/images/emoji/post_office.png)
+  background-image: url(src/assets/css/emoji/post_office.png)
 }
 
 .em-postal_horn {
-  background-image: url(src/assets/images/emoji/postal_horn.png)
+  background-image: url(src/assets/css/emoji/postal_horn.png)
 }
 
 .em-postbox {
-  background-image: url(src/assets/images/emoji/postbox.png)
+  background-image: url(src/assets/css/emoji/postbox.png)
 }
 
 .em-potable_water {
-  background-image: url(src/assets/images/emoji/potable_water.png)
+  background-image: url(src/assets/css/emoji/potable_water.png)
 }
 
 .em-pouch {
-  background-image: url(src/assets/images/emoji/pouch.png)
+  background-image: url(src/assets/css/emoji/pouch.png)
 }
 
 .em-poultry_leg {
-  background-image: url(src/assets/images/emoji/poultry_leg.png)
+  background-image: url(src/assets/css/emoji/poultry_leg.png)
 }
 
 .em-pound {
-  background-image: url(src/assets/images/emoji/pound.png)
+  background-image: url(src/assets/css/emoji/pound.png)
 }
 
 .em-pouting_cat {
-  background-image: url(src/assets/images/emoji/pouting_cat.png)
+  background-image: url(src/assets/css/emoji/pouting_cat.png)
 }
 
 .em-pray {
-  background-image: url(src/assets/images/emoji/pray.png)
+  background-image: url(src/assets/css/emoji/pray.png)
 }
 
 .em-princess {
-  background-image: url(src/assets/images/emoji/princess.png)
+  background-image: url(src/assets/css/emoji/princess.png)
 }
 
 .em-punch {
-  background-image: url(src/assets/images/emoji/punch.png)
+  background-image: url(src/assets/css/emoji/punch.png)
 }
 
 .em-purple_heart {
-  background-image: url(src/assets/images/emoji/purple_heart.png)
+  background-image: url(src/assets/css/emoji/purple_heart.png)
 }
 
 .em-purse {
-  background-image: url(src/assets/images/emoji/purse.png)
+  background-image: url(src/assets/css/emoji/purse.png)
 }
 
 .em-pushpin {
-  background-image: url(src/assets/images/emoji/pushpin.png)
+  background-image: url(src/assets/css/emoji/pushpin.png)
 }
 
 .em-put_litter_in_its_place {
-  background-image: url(src/assets/images/emoji/put_litter_in_its_place.png)
+  background-image: url(src/assets/css/emoji/put_litter_in_its_place.png)
 }
 
 .em-question {
-  background-image: url(src/assets/images/emoji/question.png)
+  background-image: url(src/assets/css/emoji/question.png)
 }
 
 .em-rabbit {
-  background-image: url(src/assets/images/emoji/rabbit.png)
+  background-image: url(src/assets/css/emoji/rabbit.png)
 }
 
 .em-rabbit2 {
-  background-image: url(src/assets/images/emoji/rabbit2.png)
+  background-image: url(src/assets/css/emoji/rabbit2.png)
 }
 
 .em-racehorse {
-  background-image: url(src/assets/images/emoji/racehorse.png)
+  background-image: url(src/assets/css/emoji/racehorse.png)
 }
 
 .em-radio {
-  background-image: url(src/assets/images/emoji/radio.png)
+  background-image: url(src/assets/css/emoji/radio.png)
 }
 
 .em-radio_button {
-  background-image: url(src/assets/images/emoji/radio_button.png)
+  background-image: url(src/assets/css/emoji/radio_button.png)
 }
 
 .em-rage {
-  background-image: url(src/assets/images/emoji/rage.png)
+  background-image: url(src/assets/css/emoji/rage.png)
 }
 
 .em-rage1 {
-  background-image: url(src/assets/images/emoji/rage1.png)
+  background-image: url(src/assets/css/emoji/rage1.png)
 }
 
 .em-rage2 {
-  background-image: url(src/assets/images/emoji/rage2.png)
+  background-image: url(src/assets/css/emoji/rage2.png)
 }
 
 .em-rage3 {
-  background-image: url(src/assets/images/emoji/rage3.png)
+  background-image: url(src/assets/css/emoji/rage3.png)
 }
 
 .em-rage4 {
-  background-image: url(src/assets/images/emoji/rage4.png)
+  background-image: url(src/assets/css/emoji/rage4.png)
 }
 
 .em-railway_car {
-  background-image: url(src/assets/images/emoji/railway_car.png)
+  background-image: url(src/assets/css/emoji/railway_car.png)
 }
 
 .em-rainbow {
-  background-image: url(src/assets/images/emoji/rainbow.png)
+  background-image: url(src/assets/css/emoji/rainbow.png)
 }
 
 .em-raised_hand {
-  background-image: url(src/assets/images/emoji/raised_hand.png)
+  background-image: url(src/assets/css/emoji/raised_hand.png)
 }
 
 .em-raised_hands {
-  background-image: url(src/assets/images/emoji/raised_hands.png)
+  background-image: url(src/assets/css/emoji/raised_hands.png)
 }
 
 .em-raising_hand {
-  background-image: url(src/assets/images/emoji/raising_hand.png)
+  background-image: url(src/assets/css/emoji/raising_hand.png)
 }
 
 .em-ram {
-  background-image: url(src/assets/images/emoji/ram.png)
+  background-image: url(src/assets/css/emoji/ram.png)
 }
 
 .em-ramen {
-  background-image: url(src/assets/images/emoji/ramen.png)
+  background-image: url(src/assets/css/emoji/ramen.png)
 }
 
 .em-rat {
-  background-image: url(src/assets/images/emoji/rat.png)
+  background-image: url(src/assets/css/emoji/rat.png)
 }
 
 .em-recycle {
-  background-image: url(src/assets/images/emoji/recycle.png)
+  background-image: url(src/assets/css/emoji/recycle.png)
 }
 
 .em-red_car {
-  background-image: url(src/assets/images/emoji/red_car.png)
+  background-image: url(src/assets/css/emoji/red_car.png)
 }
 
 .em-red_circle {
-  background-image: url(src/assets/images/emoji/red_circle.png)
+  background-image: url(src/assets/css/emoji/red_circle.png)
 }
 
 .em-registered {
-  background-image: url(src/assets/images/emoji/registered.png)
+  background-image: url(src/assets/css/emoji/registered.png)
 }
 
 .em-relaxed {
-  background-image: url(src/assets/images/emoji/relaxed.png)
+  background-image: url(src/assets/css/emoji/relaxed.png)
 }
 
 .em-relieved {
-  background-image: url(src/assets/images/emoji/relieved.png)
+  background-image: url(src/assets/css/emoji/relieved.png)
 }
 
 .em-repeat {
-  background-image: url(src/assets/images/emoji/repeat.png)
+  background-image: url(src/assets/css/emoji/repeat.png)
 }
 
 .em-repeat_one {
-  background-image: url(src/assets/images/emoji/repeat_one.png)
+  background-image: url(src/assets/css/emoji/repeat_one.png)
 }
 
 .em-restroom {
-  background-image: url(src/assets/images/emoji/restroom.png)
+  background-image: url(src/assets/css/emoji/restroom.png)
 }
 
 .em-revolving_hearts {
-  background-image: url(src/assets/images/emoji/revolving_hearts.png)
+  background-image: url(src/assets/css/emoji/revolving_hearts.png)
 }
 
 .em-rewind {
-  background-image: url(src/assets/images/emoji/rewind.png)
+  background-image: url(src/assets/css/emoji/rewind.png)
 }
 
 .em-ribbon {
-  background-image: url(src/assets/images/emoji/ribbon.png)
+  background-image: url(src/assets/css/emoji/ribbon.png)
 }
 
 .em-rice {
-  background-image: url(src/assets/images/emoji/rice.png)
+  background-image: url(src/assets/css/emoji/rice.png)
 }
 
 .em-rice_ball {
-  background-image: url(src/assets/images/emoji/rice_ball.png)
+  background-image: url(src/assets/css/emoji/rice_ball.png)
 }
 
 .em-rice_cracker {
-  background-image: url(src/assets/images/emoji/rice_cracker.png)
+  background-image: url(src/assets/css/emoji/rice_cracker.png)
 }
 
 .em-rice_scene {
-  background-image: url(src/assets/images/emoji/rice_scene.png)
+  background-image: url(src/assets/css/emoji/rice_scene.png)
 }
 
 .em-ring {
-  background-image: url(src/assets/images/emoji/ring.png)
+  background-image: url(src/assets/css/emoji/ring.png)
 }
 
 .em-rocket {
-  background-image: url(src/assets/images/emoji/rocket.png)
+  background-image: url(src/assets/css/emoji/rocket.png)
 }
 
 .em-roller_coaster {
-  background-image: url(src/assets/images/emoji/roller_coaster.png)
+  background-image: url(src/assets/css/emoji/roller_coaster.png)
 }
 
 .em-rooster {
-  background-image: url(src/assets/images/emoji/rooster.png)
+  background-image: url(src/assets/css/emoji/rooster.png)
 }
 
 .em-rose {
-  background-image: url(src/assets/images/emoji/rose.png)
+  background-image: url(src/assets/css/emoji/rose.png)
 }
 
 .em-rotating_light {
-  background-image: url(src/assets/images/emoji/rotating_light.png)
+  background-image: url(src/assets/css/emoji/rotating_light.png)
 }
 
 .em-round_pushpin {
-  background-image: url(src/assets/images/emoji/round_pushpin.png)
+  background-image: url(src/assets/css/emoji/round_pushpin.png)
 }
 
 .em-rowboat {
-  background-image: url(src/assets/images/emoji/rowboat.png)
+  background-image: url(src/assets/css/emoji/rowboat.png)
 }
 
 .em-ru {
-  background-image: url(src/assets/images/emoji/ru.png)
+  background-image: url(src/assets/css/emoji/ru.png)
 }
 
 .em-rugby_football {
-  background-image: url(src/assets/images/emoji/rugby_football.png)
+  background-image: url(src/assets/css/emoji/rugby_football.png)
 }
 
 .em-runner {
-  background-image: url(src/assets/images/emoji/runner.png)
+  background-image: url(src/assets/css/emoji/runner.png)
 }
 
 .em-running {
-  background-image: url(src/assets/images/emoji/running.png)
+  background-image: url(src/assets/css/emoji/running.png)
 }
 
 .em-running_shirt_with_sash {
-  background-image: url(src/assets/images/emoji/running_shirt_with_sash.png)
+  background-image: url(src/assets/css/emoji/running_shirt_with_sash.png)
 }
 
 .em-sa {
-  background-image: url(src/assets/images/emoji/sa.png)
+  background-image: url(src/assets/css/emoji/sa.png)
 }
 
 .em-sagittarius {
-  background-image: url(src/assets/images/emoji/sagittarius.png)
+  background-image: url(src/assets/css/emoji/sagittarius.png)
 }
 
 .em-sailboat {
-  background-image: url(src/assets/images/emoji/sailboat.png)
+  background-image: url(src/assets/css/emoji/sailboat.png)
 }
 
 .em-sake {
-  background-image: url(src/assets/images/emoji/sake.png)
+  background-image: url(src/assets/css/emoji/sake.png)
 }
 
 .em-sandal {
-  background-image: url(src/assets/images/emoji/sandal.png)
+  background-image: url(src/assets/css/emoji/sandal.png)
 }
 
 .em-santa {
-  background-image: url(src/assets/images/emoji/santa.png)
+  background-image: url(src/assets/css/emoji/santa.png)
 }
 
 .em-satellite {
-  background-image: url(src/assets/images/emoji/satellite.png)
+  background-image: url(src/assets/css/emoji/satellite.png)
 }
 
 .em-satisfied {
-  background-image: url(src/assets/images/emoji/satisfied.png)
+  background-image: url(src/assets/css/emoji/satisfied.png)
 }
 
 .em-saxophone {
-  background-image: url(src/assets/images/emoji/saxophone.png)
+  background-image: url(src/assets/css/emoji/saxophone.png)
 }
 
 .em-school {
-  background-image: url(src/assets/images/emoji/school.png)
+  background-image: url(src/assets/css/emoji/school.png)
 }
 
 .em-school_satchel {
-  background-image: url(src/assets/images/emoji/school_satchel.png)
+  background-image: url(src/assets/css/emoji/school_satchel.png)
 }
 
 .em-scissors {
-  background-image: url(src/assets/images/emoji/scissors.png)
+  background-image: url(src/assets/css/emoji/scissors.png)
 }
 
 .em-scorpius {
-  background-image: url(src/assets/images/emoji/scorpius.png)
+  background-image: url(src/assets/css/emoji/scorpius.png)
 }
 
 .em-scream {
-  background-image: url(src/assets/images/emoji/scream.png)
+  background-image: url(src/assets/css/emoji/scream.png)
 }
 
 .em-scream_cat {
-  background-image: url(src/assets/images/emoji/scream_cat.png)
+  background-image: url(src/assets/css/emoji/scream_cat.png)
 }
 
 .em-scroll {
-  background-image: url(src/assets/images/emoji/scroll.png)
+  background-image: url(src/assets/css/emoji/scroll.png)
 }
 
 .em-seat {
-  background-image: url(src/assets/images/emoji/seat.png)
+  background-image: url(src/assets/css/emoji/seat.png)
 }
 
 .em-secret {
-  background-image: url(src/assets/images/emoji/secret.png)
+  background-image: url(src/assets/css/emoji/secret.png)
 }
 
 .em-see_no_evil {
-  background-image: url(src/assets/images/emoji/see_no_evil.png)
+  background-image: url(src/assets/css/emoji/see_no_evil.png)
 }
 
 .em-seedling {
-  background-image: url(src/assets/images/emoji/seedling.png)
+  background-image: url(src/assets/css/emoji/seedling.png)
 }
 
 .em-seven {
-  background-image: url(src/assets/images/emoji/seven.png)
+  background-image: url(src/assets/css/emoji/seven.png)
 }
 
 .em-shaved_ice {
-  background-image: url(src/assets/images/emoji/shaved_ice.png)
+  background-image: url(src/assets/css/emoji/shaved_ice.png)
 }
 
 .em-sheep {
-  background-image: url(src/assets/images/emoji/sheep.png)
+  background-image: url(src/assets/css/emoji/sheep.png)
 }
 
 .em-shell {
-  background-image: url(src/assets/images/emoji/shell.png)
+  background-image: url(src/assets/css/emoji/shell.png)
 }
 
 .em-ship {
-  background-image: url(src/assets/images/emoji/ship.png)
+  background-image: url(src/assets/css/emoji/ship.png)
 }
 
 .em-shipit {
-  background-image: url(src/assets/images/emoji/shipit.png)
+  background-image: url(src/assets/css/emoji/shipit.png)
 }
 
 .em-shirt {
-  background-image: url(src/assets/images/emoji/shirt.png)
+  background-image: url(src/assets/css/emoji/shirt.png)
 }
 
 .em-shit {
-  background-image: url(src/assets/images/emoji/shit.png)
+  background-image: url(src/assets/css/emoji/shit.png)
 }
 
 .em-shoe {
-  background-image: url(src/assets/images/emoji/shoe.png)
+  background-image: url(src/assets/css/emoji/shoe.png)
 }
 
 .em-shower {
-  background-image: url(src/assets/images/emoji/shower.png)
+  background-image: url(src/assets/css/emoji/shower.png)
 }
 
 .em-signal_strength {
-  background-image: url(src/assets/images/emoji/signal_strength.png)
+  background-image: url(src/assets/css/emoji/signal_strength.png)
 }
 
 .em-six {
-  background-image: url(src/assets/images/emoji/six.png)
+  background-image: url(src/assets/css/emoji/six.png)
 }
 
 .em-six_pointed_star {
-  background-image: url(src/assets/images/emoji/six_pointed_star.png)
+  background-image: url(src/assets/css/emoji/six_pointed_star.png)
 }
 
 .em-ski {
-  background-image: url(src/assets/images/emoji/ski.png)
+  background-image: url(src/assets/css/emoji/ski.png)
 }
 
 .em-skull {
-  background-image: url(src/assets/images/emoji/skull.png)
+  background-image: url(src/assets/css/emoji/skull.png)
 }
 
 .em-sleeping {
-  background-image: url(src/assets/images/emoji/sleeping.png)
+  background-image: url(src/assets/css/emoji/sleeping.png)
 }
 
 .em-sleepy {
-  background-image: url(src/assets/images/emoji/sleepy.png)
+  background-image: url(src/assets/css/emoji/sleepy.png)
 }
 
 .em-slot_machine {
-  background-image: url(src/assets/images/emoji/slot_machine.png)
+  background-image: url(src/assets/css/emoji/slot_machine.png)
 }
 
 .em-small_blue_diamond {
-  background-image: url(src/assets/images/emoji/small_blue_diamond.png)
+  background-image: url(src/assets/css/emoji/small_blue_diamond.png)
 }
 
 .em-small_orange_diamond {
-  background-image: url(src/assets/images/emoji/small_orange_diamond.png)
+  background-image: url(src/assets/css/emoji/small_orange_diamond.png)
 }
 
 .em-small_red_triangle {
-  background-image: url(src/assets/images/emoji/small_red_triangle.png)
+  background-image: url(src/assets/css/emoji/small_red_triangle.png)
 }
 
 .em-small_red_triangle_down {
-  background-image: url(src/assets/images/emoji/small_red_triangle_down.png)
+  background-image: url(src/assets/css/emoji/small_red_triangle_down.png)
 }
 
 .em-smile {
-  background-image: url(src/assets/images/emoji/smile.png)
+  background-image: url(src/assets/css/emoji/smile.png)
 }
 
 .em-smile_cat {
-  background-image: url(src/assets/images/emoji/smile_cat.png)
+  background-image: url(src/assets/css/emoji/smile_cat.png)
 }
 
 .em-smiley {
-  background-image: url(src/assets/images/emoji/smiley.png)
+  background-image: url(src/assets/css/emoji/smiley.png)
 }
 
 .em-smiley_cat {
-  background-image: url(src/assets/images/emoji/smiley_cat.png)
+  background-image: url(src/assets/css/emoji/smiley_cat.png)
 }
 
 .em-smiling_imp {
-  background-image: url(src/assets/images/emoji/smiling_imp.png)
+  background-image: url(src/assets/css/emoji/smiling_imp.png)
 }
 
 .em-smirk {
-  background-image: url(src/assets/images/emoji/smirk.png)
+  background-image: url(src/assets/css/emoji/smirk.png)
 }
 
 .em-smirk_cat {
-  background-image: url(src/assets/images/emoji/smirk_cat.png)
+  background-image: url(src/assets/css/emoji/smirk_cat.png)
 }
 
 .em-smoking {
-  background-image: url(src/assets/images/emoji/smoking.png)
+  background-image: url(src/assets/css/emoji/smoking.png)
 }
 
 .em-snail {
-  background-image: url(src/assets/images/emoji/snail.png)
+  background-image: url(src/assets/css/emoji/snail.png)
 }
 
 .em-snake {
-  background-image: url(src/assets/images/emoji/snake.png)
+  background-image: url(src/assets/css/emoji/snake.png)
 }
 
 .em-snowboarder {
-  background-image: url(src/assets/images/emoji/snowboarder.png)
+  background-image: url(src/assets/css/emoji/snowboarder.png)
 }
 
 .em-snowflake {
-  background-image: url(src/assets/images/emoji/snowflake.png)
+  background-image: url(src/assets/css/emoji/snowflake.png)
 }
 
 .em-snowman {
-  background-image: url(src/assets/images/emoji/snowman.png)
+  background-image: url(src/assets/css/emoji/snowman.png)
 }
 
 .em-sob {
-  background-image: url(src/assets/images/emoji/sob.png)
+  background-image: url(src/assets/css/emoji/sob.png)
 }
 
 .em-soccer {
-  background-image: url(src/assets/images/emoji/soccer.png)
+  background-image: url(src/assets/css/emoji/soccer.png)
 }
 
 .em-soon {
-  background-image: url(src/assets/images/emoji/soon.png)
+  background-image: url(src/assets/css/emoji/soon.png)
 }
 
 .em-sos {
-  background-image: url(src/assets/images/emoji/sos.png)
+  background-image: url(src/assets/css/emoji/sos.png)
 }
 
 .em-sound {
-  background-image: url(src/assets/images/emoji/sound.png)
+  background-image: url(src/assets/css/emoji/sound.png)
 }
 
 .em-space_invader {
-  background-image: url(src/assets/images/emoji/space_invader.png)
+  background-image: url(src/assets/css/emoji/space_invader.png)
 }
 
 .em-spades {
-  background-image: url(src/assets/images/emoji/spades.png)
+  background-image: url(src/assets/css/emoji/spades.png)
 }
 
 .em-spaghetti {
-  background-image: url(src/assets/images/emoji/spaghetti.png)
+  background-image: url(src/assets/css/emoji/spaghetti.png)
 }
 
 .em-sparkle {
-  background-image: url(src/assets/images/emoji/sparkle.png)
+  background-image: url(src/assets/css/emoji/sparkle.png)
 }
 
 .em-sparkler {
-  background-image: url(src/assets/images/emoji/sparkler.png)
+  background-image: url(src/assets/css/emoji/sparkler.png)
 }
 
 .em-sparkles {
-  background-image: url(src/assets/images/emoji/sparkles.png)
+  background-image: url(src/assets/css/emoji/sparkles.png)
 }
 
 .em-sparkling_heart {
-  background-image: url(src/assets/images/emoji/sparkling_heart.png)
+  background-image: url(src/assets/css/emoji/sparkling_heart.png)
 }
 
 .em-speak_no_evil {
-  background-image: url(src/assets/images/emoji/speak_no_evil.png)
+  background-image: url(src/assets/css/emoji/speak_no_evil.png)
 }
 
 .em-speaker {
-  background-image: url(src/assets/images/emoji/speaker.png)
+  background-image: url(src/assets/css/emoji/speaker.png)
 }
 
 .em-speech_balloon {
-  background-image: url(src/assets/images/emoji/speech_balloon.png)
+  background-image: url(src/assets/css/emoji/speech_balloon.png)
 }
 
 .em-speedboat {
-  background-image: url(src/assets/images/emoji/speedboat.png)
+  background-image: url(src/assets/css/emoji/speedboat.png)
 }
 
 .em-squirrel {
-  background-image: url(src/assets/images/emoji/squirrel.png)
+  background-image: url(src/assets/css/emoji/squirrel.png)
 }
 
 .em-star {
-  background-image: url(src/assets/images/emoji/star.png)
+  background-image: url(src/assets/css/emoji/star.png)
 }
 
 .em-star2 {
-  background-image: url(src/assets/images/emoji/star2.png)
+  background-image: url(src/assets/css/emoji/star2.png)
 }
 
 .em-stars {
-  background-image: url(src/assets/images/emoji/stars.png)
+  background-image: url(src/assets/css/emoji/stars.png)
 }
 
 .em-station {
-  background-image: url(src/assets/images/emoji/station.png)
+  background-image: url(src/assets/css/emoji/station.png)
 }
 
 .em-statue_of_liberty {
-  background-image: url(src/assets/images/emoji/statue_of_liberty.png)
+  background-image: url(src/assets/css/emoji/statue_of_liberty.png)
 }
 
 .em-steam_locomotive {
-  background-image: url(src/assets/images/emoji/steam_locomotive.png)
+  background-image: url(src/assets/css/emoji/steam_locomotive.png)
 }
 
 .em-stew {
-  background-image: url(src/assets/images/emoji/stew.png)
+  background-image: url(src/assets/css/emoji/stew.png)
 }
 
 .em-straight_ruler {
-  background-image: url(src/assets/images/emoji/straight_ruler.png)
+  background-image: url(src/assets/css/emoji/straight_ruler.png)
 }
 
 .em-strawberry {
-  background-image: url(src/assets/images/emoji/strawberry.png)
+  background-image: url(src/assets/css/emoji/strawberry.png)
 }
 
 .em-stuck_out_tongue {
-  background-image: url(src/assets/images/emoji/stuck_out_tongue.png)
+  background-image: url(src/assets/css/emoji/stuck_out_tongue.png)
 }
 
 .em-stuck_out_tongue_closed_eyes {
-  background-image: url(src/assets/images/emoji/stuck_out_tongue_closed_eyes.png)
+  background-image: url(src/assets/css/emoji/stuck_out_tongue_closed_eyes.png)
 }
 
 .em-stuck_out_tongue_winking_eye {
-  background-image: url(src/assets/images/emoji/stuck_out_tongue_winking_eye.png)
+  background-image: url(src/assets/css/emoji/stuck_out_tongue_winking_eye.png)
 }
 
 .em-sun_with_face {
-  background-image: url(src/assets/images/emoji/sun_with_face.png)
+  background-image: url(src/assets/css/emoji/sun_with_face.png)
 }
 
 .em-sunflower {
-  background-image: url(src/assets/images/emoji/sunflower.png)
+  background-image: url(src/assets/css/emoji/sunflower.png)
 }
 
 .em-sunglasses {
-  background-image: url(src/assets/images/emoji/sunglasses.png)
+  background-image: url(src/assets/css/emoji/sunglasses.png)
 }
 
 .em-sunny {
-  background-image: url(src/assets/images/emoji/sunny.png)
+  background-image: url(src/assets/css/emoji/sunny.png)
 }
 
 .em-sunrise {
-  background-image: url(src/assets/images/emoji/sunrise.png)
+  background-image: url(src/assets/css/emoji/sunrise.png)
 }
 
 .em-sunrise_over_mountains {
-  background-image: url(src/assets/images/emoji/sunrise_over_mountains.png)
+  background-image: url(src/assets/css/emoji/sunrise_over_mountains.png)
 }
 
 .em-surfer {
-  background-image: url(src/assets/images/emoji/surfer.png)
+  background-image: url(src/assets/css/emoji/surfer.png)
 }
 
 .em-sushi {
-  background-image: url(src/assets/images/emoji/sushi.png)
+  background-image: url(src/assets/css/emoji/sushi.png)
 }
 
 .em-suspect {
-  background-image: url(src/assets/images/emoji/suspect.png)
+  background-image: url(src/assets/css/emoji/suspect.png)
 }
 
 .em-suspension_railway {
-  background-image: url(src/assets/images/emoji/suspension_railway.png)
+  background-image: url(src/assets/css/emoji/suspension_railway.png)
 }
 
 .em-sweat {
-  background-image: url(src/assets/images/emoji/sweat.png)
+  background-image: url(src/assets/css/emoji/sweat.png)
 }
 
 .em-sweat_drops {
-  background-image: url(src/assets/images/emoji/sweat_drops.png)
+  background-image: url(src/assets/css/emoji/sweat_drops.png)
 }
 
 .em-sweat_smile {
-  background-image: url(src/assets/images/emoji/sweat_smile.png)
+  background-image: url(src/assets/css/emoji/sweat_smile.png)
 }
 
 .em-sweet_potato {
-  background-image: url(src/assets/images/emoji/sweet_potato.png)
+  background-image: url(src/assets/css/emoji/sweet_potato.png)
 }
 
 .em-swimmer {
-  background-image: url(src/assets/images/emoji/swimmer.png)
+  background-image: url(src/assets/css/emoji/swimmer.png)
 }
 
 .em-symbols {
-  background-image: url(src/assets/images/emoji/symbols.png)
+  background-image: url(src/assets/css/emoji/symbols.png)
 }
 
 .em-syringe {
-  background-image: url(src/assets/images/emoji/syringe.png)
+  background-image: url(src/assets/css/emoji/syringe.png)
 }
 
 .em-tada {
-  background-image: url(src/assets/images/emoji/tada.png)
+  background-image: url(src/assets/css/emoji/tada.png)
 }
 
 .em-tanabata_tree {
-  background-image: url(src/assets/images/emoji/tanabata_tree.png)
+  background-image: url(src/assets/css/emoji/tanabata_tree.png)
 }
 
 .em-tangerine {
-  background-image: url(src/assets/images/emoji/tangerine.png)
+  background-image: url(src/assets/css/emoji/tangerine.png)
 }
 
 .em-taurus {
-  background-image: url(src/assets/images/emoji/taurus.png)
+  background-image: url(src/assets/css/emoji/taurus.png)
 }
 
 .em-taxi {
-  background-image: url(src/assets/images/emoji/taxi.png)
+  background-image: url(src/assets/css/emoji/taxi.png)
 }
 
 .em-tea {
-  background-image: url(src/assets/images/emoji/tea.png)
+  background-image: url(src/assets/css/emoji/tea.png)
 }
 
 .em-telephone {
-  background-image: url(src/assets/images/emoji/telephone.png)
+  background-image: url(src/assets/css/emoji/telephone.png)
 }
 
 .em-telephone_receiver {
-  background-image: url(src/assets/images/emoji/telephone_receiver.png)
+  background-image: url(src/assets/css/emoji/telephone_receiver.png)
 }
 
 .em-telescope {
-  background-image: url(src/assets/images/emoji/telescope.png)
+  background-image: url(src/assets/css/emoji/telescope.png)
 }
 
 .em-tennis {
-  background-image: url(src/assets/images/emoji/tennis.png)
+  background-image: url(src/assets/css/emoji/tennis.png)
 }
 
 .em-tent {
-  background-image: url(src/assets/images/emoji/tent.png)
+  background-image: url(src/assets/css/emoji/tent.png)
 }
 
 .em-thought_balloon {
-  background-image: url(src/assets/images/emoji/thought_balloon.png)
+  background-image: url(src/assets/css/emoji/thought_balloon.png)
 }
 
 .em-three {
-  background-image: url(src/assets/images/emoji/three.png)
+  background-image: url(src/assets/css/emoji/three.png)
 }
 
 .em-thumbsdown {
-  background-image: url(src/assets/images/emoji/thumbsdown.png)
+  background-image: url(src/assets/css/emoji/thumbsdown.png)
 }
 
 .em-thumbsup {
-  background-image: url(src/assets/images/emoji/thumbsup.png)
+  background-image: url(src/assets/css/emoji/thumbsup.png)
 }
 
 .em-ticket {
-  background-image: url(src/assets/images/emoji/ticket.png)
+  background-image: url(src/assets/css/emoji/ticket.png)
 }
 
 .em-tiger {
-  background-image: url(src/assets/images/emoji/tiger.png)
+  background-image: url(src/assets/css/emoji/tiger.png)
 }
 
 .em-tiger2 {
-  background-image: url(src/assets/images/emoji/tiger2.png)
+  background-image: url(src/assets/css/emoji/tiger2.png)
 }
 
 .em-tired_face {
-  background-image: url(src/assets/images/emoji/tired_face.png)
+  background-image: url(src/assets/css/emoji/tired_face.png)
 }
 
 .em-tm {
-  background-image: url(src/assets/images/emoji/tm.png)
+  background-image: url(src/assets/css/emoji/tm.png)
 }
 
 .em-toilet {
-  background-image: url(src/assets/images/emoji/toilet.png)
+  background-image: url(src/assets/css/emoji/toilet.png)
 }
 
 .em-tokyo_tower {
-  background-image: url(src/assets/images/emoji/tokyo_tower.png)
+  background-image: url(src/assets/css/emoji/tokyo_tower.png)
 }
 
 .em-tomato {
-  background-image: url(src/assets/images/emoji/tomato.png)
+  background-image: url(src/assets/css/emoji/tomato.png)
 }
 
 .em-tongue {
-  background-image: url(src/assets/images/emoji/tongue.png)
+  background-image: url(src/assets/css/emoji/tongue.png)
 }
 
 .em-top {
-  background-image: url(src/assets/images/emoji/top.png)
+  background-image: url(src/assets/css/emoji/top.png)
 }
 
 .em-tophat {
-  background-image: url(src/assets/images/emoji/tophat.png)
+  background-image: url(src/assets/css/emoji/tophat.png)
 }
 
 .em-tractor {
-  background-image: url(src/assets/images/emoji/tractor.png)
+  background-image: url(src/assets/css/emoji/tractor.png)
 }
 
 .em-traffic_light {
-  background-image: url(src/assets/images/emoji/traffic_light.png)
+  background-image: url(src/assets/css/emoji/traffic_light.png)
 }
 
 .em-train {
-  background-image: url(src/assets/images/emoji/train.png)
+  background-image: url(src/assets/css/emoji/train.png)
 }
 
 .em-train2 {
-  background-image: url(src/assets/images/emoji/train2.png)
+  background-image: url(src/assets/css/emoji/train2.png)
 }
 
 .em-tram {
-  background-image: url(src/assets/images/emoji/tram.png)
+  background-image: url(src/assets/css/emoji/tram.png)
 }
 
 .em-triangular_flag_on_post {
-  background-image: url(src/assets/images/emoji/triangular_flag_on_post.png)
+  background-image: url(src/assets/css/emoji/triangular_flag_on_post.png)
 }
 
 .em-triangular_ruler {
-  background-image: url(src/assets/images/emoji/triangular_ruler.png)
+  background-image: url(src/assets/css/emoji/triangular_ruler.png)
 }
 
 .em-trident {
-  background-image: url(src/assets/images/emoji/trident.png)
+  background-image: url(src/assets/css/emoji/trident.png)
 }
 
 .em-triumph {
-  background-image: url(src/assets/images/emoji/triumph.png)
+  background-image: url(src/assets/css/emoji/triumph.png)
 }
 
 .em-trolleybus {
-  background-image: url(src/assets/images/emoji/trolleybus.png)
+  background-image: url(src/assets/css/emoji/trolleybus.png)
 }
 
 .em-trollface {
-  background-image: url(src/assets/images/emoji/trollface.png)
+  background-image: url(src/assets/css/emoji/trollface.png)
 }
 
 .em-trophy {
-  background-image: url(src/assets/images/emoji/trophy.png)
+  background-image: url(src/assets/css/emoji/trophy.png)
 }
 
 .em-tropical_drink {
-  background-image: url(src/assets/images/emoji/tropical_drink.png)
+  background-image: url(src/assets/css/emoji/tropical_drink.png)
 }
 
 .em-tropical_fish {
-  background-image: url(src/assets/images/emoji/tropical_fish.png)
+  background-image: url(src/assets/css/emoji/tropical_fish.png)
 }
 
 .em-truck {
-  background-image: url(src/assets/images/emoji/truck.png)
+  background-image: url(src/assets/css/emoji/truck.png)
 }
 
 .em-trumpet {
-  background-image: url(src/assets/images/emoji/trumpet.png)
+  background-image: url(src/assets/css/emoji/trumpet.png)
 }
 
 .em-tshirt {
-  background-image: url(src/assets/images/emoji/tshirt.png)
+  background-image: url(src/assets/css/emoji/tshirt.png)
 }
 
 .em-tulip {
-  background-image: url(src/assets/images/emoji/tulip.png)
+  background-image: url(src/assets/css/emoji/tulip.png)
 }
 
 .em-turtle {
-  background-image: url(src/assets/images/emoji/turtle.png)
+  background-image: url(src/assets/css/emoji/turtle.png)
 }
 
 .em-tv {
-  background-image: url(src/assets/images/emoji/tv.png)
+  background-image: url(src/assets/css/emoji/tv.png)
 }
 
 .em-twisted_rightwards_arrows {
-  background-image: url(src/assets/images/emoji/twisted_rightwards_arrows.png)
+  background-image: url(src/assets/css/emoji/twisted_rightwards_arrows.png)
 }
 
 .em-two {
-  background-image: url(src/assets/images/emoji/two.png)
+  background-image: url(src/assets/css/emoji/two.png)
 }
 
 .em-two_hearts {
-  background-image: url(src/assets/images/emoji/two_hearts.png)
+  background-image: url(src/assets/css/emoji/two_hearts.png)
 }
 
 .em-two_men_holding_hands {
-  background-image: url(src/assets/images/emoji/two_men_holding_hands.png)
+  background-image: url(src/assets/css/emoji/two_men_holding_hands.png)
 }
 
 .em-two_women_holding_hands {
-  background-image: url(src/assets/images/emoji/two_women_holding_hands.png)
+  background-image: url(src/assets/css/emoji/two_women_holding_hands.png)
 }
 
 .em-u5272 {
-  background-image: url(src/assets/images/emoji/u5272.png)
+  background-image: url(src/assets/css/emoji/u5272.png)
 }
 
 .em-u5408 {
-  background-image: url(src/assets/images/emoji/u5408.png)
+  background-image: url(src/assets/css/emoji/u5408.png)
 }
 
 .em-u55b6 {
-  background-image: url(src/assets/images/emoji/u55b6.png)
+  background-image: url(src/assets/css/emoji/u55b6.png)
 }
 
 .em-u6307 {
-  background-image: url(src/assets/images/emoji/u6307.png)
+  background-image: url(src/assets/css/emoji/u6307.png)
 }
 
 .em-u6708 {
-  background-image: url(src/assets/images/emoji/u6708.png)
+  background-image: url(src/assets/css/emoji/u6708.png)
 }
 
 .em-u6709 {
-  background-image: url(src/assets/images/emoji/u6709.png)
+  background-image: url(src/assets/css/emoji/u6709.png)
 }
 
 .em-u6e80 {
-  background-image: url(src/assets/images/emoji/u6e80.png)
+  background-image: url(src/assets/css/emoji/u6e80.png)
 }
 
 .em-u7121 {
-  background-image: url(src/assets/images/emoji/u7121.png)
+  background-image: url(src/assets/css/emoji/u7121.png)
 }
 
 .em-u7533 {
-  background-image: url(src/assets/images/emoji/u7533.png)
+  background-image: url(src/assets/css/emoji/u7533.png)
 }
 
 .em-u7981 {
-  background-image: url(src/assets/images/emoji/u7981.png)
+  background-image: url(src/assets/css/emoji/u7981.png)
 }
 
 .em-u7a7a {
-  background-image: url(src/assets/images/emoji/u7a7a.png)
+  background-image: url(src/assets/css/emoji/u7a7a.png)
 }
 
 .em-uk {
-  background-image: url(src/assets/images/emoji/uk.png)
+  background-image: url(src/assets/css/emoji/uk.png)
 }
 
 .em-umbrella {
-  background-image: url(src/assets/images/emoji/umbrella.png)
+  background-image: url(src/assets/css/emoji/umbrella.png)
 }
 
 .em-unamused {
-  background-image: url(src/assets/images/emoji/unamused.png)
+  background-image: url(src/assets/css/emoji/unamused.png)
 }
 
 .em-underage {
-  background-image: url(src/assets/images/emoji/underage.png)
+  background-image: url(src/assets/css/emoji/underage.png)
 }
 
 .em-unlock {
-  background-image: url(src/assets/images/emoji/unlock.png)
+  background-image: url(src/assets/css/emoji/unlock.png)
 }
 
 .em-up {
-  background-image: url(src/assets/images/emoji/up.png)
+  background-image: url(src/assets/css/emoji/up.png)
 }
 
 .em-us {
-  background-image: url(src/assets/images/emoji/us.png)
+  background-image: url(src/assets/css/emoji/us.png)
 }
 
 .em-v {
-  background-image: url(src/assets/images/emoji/v.png)
+  background-image: url(src/assets/css/emoji/v.png)
 }
 
 .em-vertical_traffic_light {
-  background-image: url(src/assets/images/emoji/vertical_traffic_light.png)
+  background-image: url(src/assets/css/emoji/vertical_traffic_light.png)
 }
 
 .em-vhs {
-  background-image: url(src/assets/images/emoji/vhs.png)
+  background-image: url(src/assets/css/emoji/vhs.png)
 }
 
 .em-vibration_mode {
-  background-image: url(src/assets/images/emoji/vibration_mode.png)
+  background-image: url(src/assets/css/emoji/vibration_mode.png)
 }
 
 .em-video_camera {
-  background-image: url(src/assets/images/emoji/video_camera.png)
+  background-image: url(src/assets/css/emoji/video_camera.png)
 }
 
 .em-video_game {
-  background-image: url(src/assets/images/emoji/video_game.png)
+  background-image: url(src/assets/css/emoji/video_game.png)
 }
 
 .em-violin {
-  background-image: url(src/assets/images/emoji/violin.png)
+  background-image: url(src/assets/css/emoji/violin.png)
 }
 
 .em-virgo {
-  background-image: url(src/assets/images/emoji/virgo.png)
+  background-image: url(src/assets/css/emoji/virgo.png)
 }
 
 .em-volcano {
-  background-image: url(src/assets/images/emoji/volcano.png)
+  background-image: url(src/assets/css/emoji/volcano.png)
 }
 
 .em-vs {
-  background-image: url(src/assets/images/emoji/vs.png)
+  background-image: url(src/assets/css/emoji/vs.png)
 }
 
 .em-walking {
-  background-image: url(src/assets/images/emoji/walking.png)
+  background-image: url(src/assets/css/emoji/walking.png)
 }
 
 .em-waning_crescent_moon {
-  background-image: url(src/assets/images/emoji/waning_crescent_moon.png)
+  background-image: url(src/assets/css/emoji/waning_crescent_moon.png)
 }
 
 .em-waning_gibbous_moon {
-  background-image: url(src/assets/images/emoji/waning_gibbous_moon.png)
+  background-image: url(src/assets/css/emoji/waning_gibbous_moon.png)
 }
 
 .em-warning {
-  background-image: url(src/assets/images/emoji/warning.png)
+  background-image: url(src/assets/css/emoji/warning.png)
 }
 
 .em-watch {
-  background-image: url(src/assets/images/emoji/watch.png)
+  background-image: url(src/assets/css/emoji/watch.png)
 }
 
 .em-water_buffalo {
-  background-image: url(src/assets/images/emoji/water_buffalo.png)
+  background-image: url(src/assets/css/emoji/water_buffalo.png)
 }
 
 .em-watermelon {
-  background-image: url(src/assets/images/emoji/watermelon.png)
+  background-image: url(src/assets/css/emoji/watermelon.png)
 }
 
 .em-wave {
-  background-image: url(src/assets/images/emoji/wave.png)
+  background-image: url(src/assets/css/emoji/wave.png)
 }
 
 .em-wavy_dash {
-  background-image: url(src/assets/images/emoji/wavy_dash.png)
+  background-image: url(src/assets/css/emoji/wavy_dash.png)
 }
 
 .em-waxing_crescent_moon {
-  background-image: url(src/assets/images/emoji/waxing_crescent_moon.png)
+  background-image: url(src/assets/css/emoji/waxing_crescent_moon.png)
 }
 
 .em-waxing_gibbous_moon {
-  background-image: url(src/assets/images/emoji/waxing_gibbous_moon.png)
+  background-image: url(src/assets/css/emoji/waxing_gibbous_moon.png)
 }
 
 .em-wc {
-  background-image: url(src/assets/images/emoji/wc.png)
+  background-image: url(src/assets/css/emoji/wc.png)
 }
 
 .em-weary {
-  background-image: url(src/assets/images/emoji/weary.png)
+  background-image: url(src/assets/css/emoji/weary.png)
 }
 
 .em-wedding {
-  background-image: url(src/assets/images/emoji/wedding.png)
+  background-image: url(src/assets/css/emoji/wedding.png)
 }
 
 .em-whale {
-  background-image: url(src/assets/images/emoji/whale.png)
+  background-image: url(src/assets/css/emoji/whale.png)
 }
 
 .em-whale2 {
-  background-image: url(src/assets/images/emoji/whale2.png)
+  background-image: url(src/assets/css/emoji/whale2.png)
 }
 
 .em-wheelchair {
-  background-image: url(src/assets/images/emoji/wheelchair.png)
+  background-image: url(src/assets/css/emoji/wheelchair.png)
 }
 
 .em-white_check_mark {
-  background-image: url(src/assets/images/emoji/white_check_mark.png)
+  background-image: url(src/assets/css/emoji/white_check_mark.png)
 }
 
 .em-white_circle {
-  background-image: url(src/assets/images/emoji/white_circle.png)
+  background-image: url(src/assets/css/emoji/white_circle.png)
 }
 
 .em-white_flower {
-  background-image: url(src/assets/images/emoji/white_flower.png)
+  background-image: url(src/assets/css/emoji/white_flower.png)
 }
 
 .em-white_large_square {
-  background-image: url(src/assets/images/emoji/white_large_square.png)
+  background-image: url(src/assets/css/emoji/white_large_square.png)
 }
 
 .em-white_medium_small_square {
-  background-image: url(src/assets/images/emoji/white_medium_small_square.png)
+  background-image: url(src/assets/css/emoji/white_medium_small_square.png)
 }
 
 .em-white_medium_square {
-  background-image: url(src/assets/images/emoji/white_medium_square.png)
+  background-image: url(src/assets/css/emoji/white_medium_square.png)
 }
 
 .em-white_small_square {
-  background-image: url(src/assets/images/emoji/white_small_square.png)
+  background-image: url(src/assets/css/emoji/white_small_square.png)
 }
 
 .em-white_square_button {
-  background-image: url(src/assets/images/emoji/white_square_button.png)
+  background-image: url(src/assets/css/emoji/white_square_button.png)
 }
 
 .em-wind_chime {
-  background-image: url(src/assets/images/emoji/wind_chime.png)
+  background-image: url(src/assets/css/emoji/wind_chime.png)
 }
 
 .em-wine_glass {
-  background-image: url(src/assets/images/emoji/wine_glass.png)
+  background-image: url(src/assets/css/emoji/wine_glass.png)
 }
 
 .em-wink {
-  background-image: url(src/assets/images/emoji/wink.png)
+  background-image: url(src/assets/css/emoji/wink.png)
 }
 
 .em-wolf {
-  background-image: url(src/assets/images/emoji/wolf.png)
+  background-image: url(src/assets/css/emoji/wolf.png)
 }
 
 .em-woman {
-  background-image: url(src/assets/images/emoji/woman.png)
+  background-image: url(src/assets/css/emoji/woman.png)
 }
 
 .em-womans_clothes {
-  background-image: url(src/assets/images/emoji/womans_clothes.png)
+  background-image: url(src/assets/css/emoji/womans_clothes.png)
 }
 
 .em-womans_hat {
-  background-image: url(src/assets/images/emoji/womans_hat.png)
+  background-image: url(src/assets/css/emoji/womans_hat.png)
 }
 
 .em-womens {
-  background-image: url(src/assets/images/emoji/womens.png)
+  background-image: url(src/assets/css/emoji/womens.png)
 }
 
 .em-worried {
-  background-image: url(src/assets/images/emoji/worried.png)
+  background-image: url(src/assets/css/emoji/worried.png)
 }
 
 .em-wrench {
-  background-image: url(src/assets/images/emoji/wrench.png)
+  background-image: url(src/assets/css/emoji/wrench.png)
 }
 
 .em-x {
-  background-image: url(src/assets/images/emoji/x.png)
+  background-image: url(src/assets/css/emoji/x.png)
 }
 
 .em-yellow_heart {
-  background-image: url(src/assets/images/emoji/yellow_heart.png)
+  background-image: url(src/assets/css/emoji/yellow_heart.png)
 }
 
 .em-yen {
-  background-image: url(src/assets/images/emoji/yen.png)
+  background-image: url(src/assets/css/emoji/yen.png)
 }
 
 .em-yum {
-  background-image: url(src/assets/images/emoji/yum.png)
+  background-image: url(src/assets/css/emoji/yum.png)
 }
 
 .em-zap {
-  background-image: url(src/assets/images/emoji/zap.png)
+  background-image: url(src/assets/css/emoji/zap.png)
 }
 
 .em-zero {
-  background-image: url(src/assets/images/emoji/zero.png)
+  background-image: url(src/assets/css/emoji/zero.png)
 }
 
 .em-zzz {
-  background-image: url(src/assets/images/emoji/zzz.png)
+  background-image: url(src/assets/css/emoji/zzz.png)
 }
 
 .icon {
