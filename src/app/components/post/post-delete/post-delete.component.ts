@@ -12,8 +12,7 @@ export class PostDeleteComponent implements OnInit {
   post:any;
   constructor(private postService: PostService,
               private router: Router,
-              private act:ActivatedRoute,
-              private toastr:ToastrService) { }
+              private act:ActivatedRoute) { }
 
   // @ts-ignore
   id = +this.act.snapshot.paramMap.get('id');
@@ -22,18 +21,13 @@ export class PostDeleteComponent implements OnInit {
   }
 
   getPost(){
+    console.log(this.id)
     this.postService.getPostById(this.id).subscribe(res => {
       this.post = res;
+      console.log(res);
     })
   }
 
-  deletePost(){
-    if (confirm('Are you sure?')){
-      this.postService.delete(this.id).subscribe(res => {
-        this.toastr.success('Delete Post successfully','Delete Post');
-        this.router.navigate(['admin/home/posts']);
-      })
-    }
-  }
+
 
 }

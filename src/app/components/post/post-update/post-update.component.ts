@@ -37,14 +37,18 @@ export class PostUpdateComponent implements OnInit {
 
   submit() {
     let data = this.formUpdate?.value;
-    this.toastr.success('Update Post successfully','Update Post');
     return this.postService.update(data,this.id).subscribe(res => {
+      this.toastr.success('Update Post successfully','Update Post');
       this.router.navigate(['admin/home/posts']);
     })
   }
 
   get content() {
     return this.formUpdate?.get('content');
+  }
+
+  get isPublic(){
+    return this.formUpdate?.get('is_public');
   }
 
 }
