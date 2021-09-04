@@ -1,5 +1,6 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-post-list',
@@ -8,12 +9,13 @@ import {PostService} from "../../../services/post.service";
 })
 export class PostListComponent implements OnInit {
   posts: any = [];
-
-  constructor(private postService: PostService) {
-  }
+  user: any
+  constructor(private postService: PostService,
+              private authService: AuthService) {}
 
   ngOnInit(): void {
     this.getAll();
+    this.user = JSON.parse(<string>this.authService.getUser())
   }
 
   getAll() {
