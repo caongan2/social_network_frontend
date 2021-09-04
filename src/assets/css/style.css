@@ -297,7 +297,7 @@ section {
 	background: #ff7c7c;
 }
 .pattern:before {
-    background: #23d2e2 url("src/assets/images/dot-pattern.html") repeat scroll 0 0;
+    background: #23d2e2 url("../images/dot-pattern.html") repeat scroll 0 0;
     opacity: 0.45;
 }
 .mate-black:before{
@@ -6545,7 +6545,7 @@ a.addnewforum {
 }
 /* Weather Widget */
 .weather-widget {
-    background-image: url("src/assets/images/weather.jpg");
+    background-image: url("../images/resources/weather.jpg");
     float: left;
     min-height: 300px;
     text-align: center;
@@ -7661,7 +7661,7 @@ input[type="checkbox"]:checked + label{color: #000;}
 	background-position: -16px 10px;
 }
 .chosen-container-single .chosen-single div b{
-	background: rgba(0, 0, 0, 0) url("src/assets/images/chosen-sprite.png") no-repeat scroll 0 10px;
+	background: rgba(0, 0, 0, 0) url("chosen-sprite.png") no-repeat scroll 0 10px;
 }
 
 .select-options .chosen-single > span {
@@ -11713,7 +11713,7 @@ aside .widget.pitnik-links > ul > li > a {
     width: 100%;
 }
 
-/*--- user feature info box ---*/
+/*--- users feature info box ---*/
 .user-feature-info {
     background: #fff none repeat scroll 0 0;
     border-radius: 5px;
@@ -15941,7 +15941,7 @@ a.shopping-cart > i {
 .coming-meta > h1 {
     font-weight: 500;
     font-size: 80px;
-    background-image: url(src/assets/images/text-bg.jpg);
+    background-image: url(src/assets/images/resources/text-bg.jpg);
 	text-transform: capitalize;
     padding-right: 30px;
 
@@ -16386,10 +16386,14 @@ a.shopping-cart > i {
 
 .is-valid {
   border-color: #AAD661 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .not-valid {
   border-color: #D7595F;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .not-valid + .message {
   display: block !important;
@@ -17864,7 +17868,7 @@ nav .main-btn{margin-left: 20px;}
   font-size: 2em;
   text-transform: uppercase;
   animation: animate 1.5s ease-in-out infinite;
-  animation-delay: calc(.1s * var(--i))
+  animation-delay:1s
 }
 @keyframes animate {
   0%, 100% {

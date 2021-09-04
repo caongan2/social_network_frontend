@@ -4,8 +4,6 @@ import {LoginComponent} from "./components/login/login.component";
 import {MasterComponent} from "./components/layout/master/master.component";
 import {AuthGuard} from "./auth.guard";
 import {RegisterComponent} from "./components/register/register.component";
-import {PostListComponent} from "./components/post/post-list/post-list.component";
-
 const routes: Routes = [
   {
     path: '',
@@ -25,11 +23,11 @@ const routes: Routes = [
         component: MasterComponent,
         children:[
           {
-            path:'',
-            component:PostListComponent
+            path: 'posts',
+            loadChildren: () => import('./components/post/post.module').then(m => m.PostModule),
           }
         ]
-      }
+      },
     ],
     canActivate: [AuthGuard]
 
