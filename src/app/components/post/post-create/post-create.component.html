@@ -3,7 +3,7 @@
   <span class="create-post">My post</span>
   <div class="new-postbox">
     <figure>
-      <img src="images/resources/admin.jpg" alt="">
+      <img src="src/assets/images/resources/admin.jpg" alt="">
     </figure>
     <div class="newpst-input">
       <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
@@ -56,8 +56,7 @@
               <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
             </li>
           </ul>
-          <button #element class="post-btn" type="submit" data-ripple="" (click)="getStatus(element.value)">Post
-          </button>
+          <button #element class="post-btn" type="submit" data-ripple="" (click)="getStatus(element.value)">Post</button>
         </div>
 
       </form>
