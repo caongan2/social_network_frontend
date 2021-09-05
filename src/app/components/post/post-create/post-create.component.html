@@ -1,20 +1,20 @@
-
 <div class="central-meta postbox">
-  <span class="create-post">My post</span>
+  <span class="create-post">Create post</span>
   <div class="new-postbox">
     <figure>
-      <img src="src/assets/images/resources/admin.jpg" alt="">
+      <img src="assets/images/resources/admin.jpg" alt="">
     </figure>
     <div class="newpst-input">
-      <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+    <div class="attachments">
+      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
           <span><i class="fa fa-globe"> </i></span>
-            <select formControlName="is_public" [value]="is_public" [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
+            <select formControlName="is_public" class="form-check-label" [value]="is_public" [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
               <option [ngValue]="is_public">Public</option>
               <option [ngValue]="!is_public">Private</option>
           </select>
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
-            Không được để trống
+            Can not be blank
           </p>
         </div>
 
@@ -22,7 +22,7 @@
                   [ngClass]="(content?.invalid && content?.dirty) ? 'is-invalid' : ''"></textarea>
         <div *ngIf="content?.invalid && (content?.dirty || content?.touched) ">
           <p *ngIf="content?.errors?.required" class="text-danger">
-            Không được để trống
+            Can not be blank
           </p>
         </div>
         <div class="attachments">
@@ -66,7 +66,6 @@
 
       </form>
     </div>
-
     <div class="add-location-post">
       <span>Drag map point to selected area</span>
       <div class="row">
@@ -84,4 +83,5 @@
       <div id="us3"></div>
     </div>
   </div>
+</div>
 </div>

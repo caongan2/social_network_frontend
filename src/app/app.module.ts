@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {ToastrModule} from 'ngx-toastr';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MasterComponent } from './components/layout/master/master.component';
@@ -21,25 +20,25 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
+import {UserModule} from "./components/user/user.module";
 
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        MasterComponent,
-        NarbarComponent,
-        FooterComponent,
-        SidebarLeftComponent,
-        SidebarRightComponent,
-        HeaderComponent,
-        LeftMenuComponent,
-        SectionLeftComponent,
-        SectionRightComponent,
-        StoryComponent,
-        LoginComponent,
-        RegisterComponent,
-
-    ],
+  declarations: [
+    AppComponent,
+    MasterComponent,
+    NarbarComponent,
+    FooterComponent,
+    SidebarLeftComponent,
+    SidebarRightComponent,
+    HeaderComponent,
+    LeftMenuComponent,
+    SectionLeftComponent,
+    SectionRightComponent,
+    StoryComponent,
+    LoginComponent,
+    RegisterComponent,
+  ],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -49,14 +48,15 @@ import {UsersModule} from "./components/users/users.module";
         BrowserAnimationsModule,
         UsersModule,
         ToastrModule.forRoot()
-
     ],
-    providers: [],
+    providers: [
+    ],
   exports: [
     StoryComponent,
     SidebarLeftComponent,
     SidebarRightComponent,
   ],
-    bootstrap: [AppComponent]
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

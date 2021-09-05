@@ -15,11 +15,9 @@ export class PostListComponent implements OnInit {
   constructor(private postService: PostService,
               private authService: AuthService,
               private router:Router,
-              private toastr: ToastrService) {
-  }
+              private toastr: ToastrService)  {}
 
   ngOnInit(): void {
-
     this.user = JSON.parse(<string>this.authService.getUser());
     this.getAll();
   }
@@ -31,11 +29,12 @@ export class PostListComponent implements OnInit {
   }
 
   deletePost(id:number){
+    if(confirm("Are you sure about that ?")){
       this.postService.delete(id).subscribe(res => {
         this.toastr.success('Delete Post successfully','Delete Post');
         this.getAll();
         this.router.navigate(['admin/home/posts']);
       })
-
+    }
   }
 }

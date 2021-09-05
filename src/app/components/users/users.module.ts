@@ -11,6 +11,8 @@ import {UserProfileComponent} from "./user-profile/user-profile.component";
 import {RouterModule, Routes} from "@angular/router";
 import { UserSidebarLeftComponent } from './user-sidebar-left/user-sidebar-left.component';
 import { UserSidebarRightComponent } from './user-sidebar-right/user-sidebar-right.component';
+import { UserUpdateProfileComponent } from './user-update-profile/user-update-profile.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 const routes: Routes = [
@@ -44,11 +46,16 @@ const routes: Routes = [
     UserProfileBannerComponent,
     UserProfileComponent,
     UserSidebarLeftComponent,
-    UserSidebarRightComponent
+    UserSidebarRightComponent,
+    UserUpdateProfileComponent
+  ],
+  exports: [
+    UserProfileComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
+    ReactiveFormsModule,
 
   ]
 })
