@@ -70,23 +70,14 @@
             </div>
           </div>
         </div>
-        <ul class="like-dislike">
-          <li><a class="bg-purple" href="#" title="Save to Pin Post"><i
-            class="fa fa-thumb-tack"></i></a></li>
-          <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-          <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-        </ul>
       </figure>
       <div class="we-video-info">
         <ul>
           <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-          </li>
-          <li>
-            <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
+            <div class="fas fa-thumbs-up" title="Like/Dislike" [hidden]="isLike" (click)="like(post.id)"
+                 ><span>{{post.like.length}}</span></div>
+            <div class="fas fa-thumbs-down" title="Like/Dislike" [hidden]="!isLike"  (click)="dislike(post.id)"
+               ><span>{{post.like.length}}</span></div>
           </li>
           <li>
 																<span class="comment" title="Comments">
@@ -95,14 +86,6 @@
 																</span>
           </li>
 
-          <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-          </li>
         </ul>
         <div class="users-thumb-list">
           <a data-toggle="tooltip" title="Anderw" href="#">
