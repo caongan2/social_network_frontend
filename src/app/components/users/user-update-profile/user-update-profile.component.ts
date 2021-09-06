@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
@@ -25,7 +24,7 @@ export class UserUpdateProfileComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getById().subscribe(res => {
       this.formEditProfile = this.fb.group({
-        name: [res.name,[Validators.minLength(2),Validators.maxLength(50),Validators.pattern(/^[A-Z a-z]+$/)]],
+        name: [res.name,[Validators.minLength(2),Validators.maxLength(50)]],
         phone: [res.phone,[Validators.pattern(/^0[1-9][0-9]{8}$/)]],
         address: [res.address,[Validators.minLength(2),Validators.maxLength(50)]],
         interest: [res.interest,[Validators.minLength(2),Validators.maxLength(50)]],
