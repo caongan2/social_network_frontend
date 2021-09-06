@@ -1,9 +1,8 @@
-
 <div class="central-meta postbox">
-  <span class="create-post">My post</span>
+  <span class="create-post">Create post</span>
   <div class="new-postbox">
     <figure>
-      <img src="src/assets/images/resources/admin.jpg" alt="">
+      <img src="assets/images/resources/admin.jpg" alt="">
     </figure>
     <div class="newpst-input">
       <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
@@ -16,13 +15,14 @@
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
             Không được để trống
           </p>
+
         </div>
 
         <textarea rows="2" placeholder="Share some what you are thinking?" formControlName="content"
                   [ngClass]="(content?.invalid && content?.dirty) ? 'is-invalid' : ''"></textarea>
         <div *ngIf="content?.invalid && (content?.dirty || content?.touched) ">
           <p *ngIf="content?.errors?.required" class="text-danger">
-            Không được để trống
+            Can not be blank
           </p>
         </div>
         <div class="attachments">
@@ -60,17 +60,13 @@
               <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
             </li>
           </ul>
-          <button  class="post-btn" type="submit" data-ripple="" >Post
-          </button>
+          <button  class="post-btn" type="submit" data-ripple="" >Post</button>
         </div>
-
       </form>
     </div>
-
     <div class="add-location-post">
       <span>Drag map point to selected area</span>
       <div class="row">
-
         <div class="col-lg-6">
           <label class="control-label">Lat :</label>
           <input type="text" class="" id="us3-lat"/>
@@ -80,7 +76,6 @@
           <input type="text" class="" id="us3-lon"/>
         </div>
       </div>
-      <!-- map -->
       <div id="us3"></div>
     </div>
   </div>

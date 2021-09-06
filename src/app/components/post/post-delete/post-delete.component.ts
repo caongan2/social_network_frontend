@@ -27,5 +27,4 @@ export class PostDeleteComponent implements OnInit {
       console.log(res);
     })
   }
-
 }

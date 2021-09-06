@@ -4,6 +4,8 @@ import {LoginComponent} from "./components/login/login.component";
 import {MasterComponent} from "./components/layout/master/master.component";
 import {AuthGuard} from "./auth.guard";
 import {RegisterComponent} from "./components/register/register.component";
+import {UserUpdateProfileComponent} from "./components/users/user-update-profile/user-update-profile.component";
+import {ChangePasswordComponent} from "./components/users/change-password/change-password.component";
 const routes: Routes = [
   {
     path: '',
@@ -25,12 +27,20 @@ const routes: Routes = [
           {
             path: 'posts',
             loadChildren: () => import('./components/post/post.module').then(m => m.PostModule),
+            // component: PostListComponent,
           },
+          {
+            path: ':id/update',
+            component: UserUpdateProfileComponent,
+          },
+          {
+            path: 'change-password',
+            component: ChangePasswordComponent,
+          }
         ]
       },
     ],
     canActivate: [AuthGuard]
-
   }
 ];
 

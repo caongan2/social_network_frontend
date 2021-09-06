@@ -1,6 +1,8 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
+import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {count} from "rxjs/operators";
