@@ -58,7 +58,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
-
   ]
 })
 export class UsersModule { }

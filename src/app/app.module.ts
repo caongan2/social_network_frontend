@@ -53,6 +53,7 @@ import {UsersModule} from "./components/users/users.module";
     StoryComponent,
     SidebarLeftComponent,
     SidebarRightComponent,
+    NarbarComponent,
   ],
   bootstrap: [AppComponent]
 })

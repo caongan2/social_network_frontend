@@ -77,5 +77,4 @@ export class UserUpdateProfileComponent implements OnInit {
   back() {
     this.location.back();
   }
-
 }

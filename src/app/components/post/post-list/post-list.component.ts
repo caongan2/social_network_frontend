@@ -1,6 +1,7 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
+
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {CommentService} from "../../../services/comment.service";
@@ -43,6 +44,7 @@ export class PostListComponent implements OnInit {
     return this.postService.getAll().subscribe(posts => {
       for (const post of posts) {
         this.postService.getCountLikeByPost(post.id).subscribe(likes => {
+        post.propertyLike = false;
           post['like'] = likes;
           this.commentService.getCommentByPost(post.id).subscribe(comments => {
             post['comment'] = comments
@@ -75,12 +77,11 @@ export class PostListComponent implements OnInit {
   like(id: any) {
     this.postService.like(id).subscribe(res => {
       for (const post of this.posts) {
-        if (post.id === id) {
+        if(post.id === id) {
+          post.propertyLike = !post.propertyLike
           post['like'].length += 1;
         }
       }
-
-      this.isLike = !this.isLike;
       this.router.navigate(['admin/home/posts']);
     })
   }
@@ -88,14 +89,13 @@ export class PostListComponent implements OnInit {
   dislike(id: any) {
     this.postService.disLike(id).subscribe(res => {
       for (const post of this.posts) {
-        if (post.id === id) {
+        if(post.id === id) {
+          post.propertyLike = !post.propertyLike
           post['like'].length -= 1;
         }
       }
-
-      this.isLike = !this.isLike;
       this.router.navigate(['admin/home/posts']);
-    })
+    });
   }
 
   submitComment(id: number) {
@@ -104,7 +104,7 @@ export class PostListComponent implements OnInit {
     this.commentService.comment({...data, post_id:id}).subscribe(res => {
       console.log(res)
       this.getAll()
-      // this.refresh()
+      this.refresh()
     })
   }
 
