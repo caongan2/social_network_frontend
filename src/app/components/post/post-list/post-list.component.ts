@@ -103,7 +103,7 @@ export class PostListComponent implements OnInit {
     this.commentService.comment({...data, post_id:id}).subscribe(res => {
       console.log(res)
       this.getAll()
-      // this.refresh()
+      this.refresh()
     })
   }
 
