@@ -11,7 +11,6 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./user-update-profile.component.css']
 })
 export class UserUpdateProfileComponent implements OnInit {
-
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   formEditProfile  ?: FormGroup;
@@ -78,5 +77,4 @@ export class UserUpdateProfileComponent implements OnInit {
   back() {
     this.location.back();
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
@@ -27,7 +27,4 @@ export class PostDeleteComponent implements OnInit {
       console.log(res);
     })
   }
-
-
-
 }

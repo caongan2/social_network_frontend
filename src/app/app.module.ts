@@ -21,6 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,7 @@ import {UsersModule} from "./components/users/users.module";
     StoryComponent,
     SidebarLeftComponent,
     SidebarRightComponent,
+    NarbarComponent,
   ],
   bootstrap: [AppComponent]
 })
