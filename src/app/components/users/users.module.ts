@@ -54,6 +54,7 @@ const routes: Routes = [
     UserSidebarRightComponent,
     UserUpdateProfileComponent,
     ChangePasswordComponent 
+
   ],
   exports: [
     UserProfileComponent
@@ -62,6 +63,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule,
     ReactiveFormsModule
+
   ]
 })
 export class UsersModule { }

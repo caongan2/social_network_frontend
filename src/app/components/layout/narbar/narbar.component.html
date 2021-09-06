@@ -3,9 +3,9 @@
 </div>
 <div class="top-area">
   <div class="main-menu">
-				<span>
+				<a [routerLink]="[user.id,'update']">
 			    	<i>{{user.name}}</i>
-			    </span>
+			    </a>
   </div>
   <div class="top-search">
     <form method="post" class="">
@@ -527,7 +527,7 @@
       </ul>
       <span class="seting-title">User setting <a href="#" title="">see all</a></span>
       <ul class="log-out">
-        <li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
+        <li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li> 
         <li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
         <li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
         <li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>

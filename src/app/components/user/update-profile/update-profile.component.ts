@@ -1,27 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-
-import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
-import {Location} from "@angular/common";
+import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-user-update-profile',
-  templateUrl: './user-update-profile.component.html',
-  styleUrls: ['./user-update-profile.component.css']
+  selector: 'app-update-profile',
+  templateUrl: './update-profile.component.html',
+  styleUrls: ['./update-profile.component.css']
 })
-export class UserUpdateProfileComponent implements OnInit {
-
-
-
+export class UpdateProfileComponent implements OnInit {
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   formEditProfile  ?: FormGroup;
   constructor(private router: Router,
               private userService: UserService,
               private fb: FormBuilder,
-              private activatedRoute: ActivatedRoute,
-              private location: Location) { }
+              private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.userService.getById().subscribe(res => {
@@ -38,7 +32,6 @@ export class UserUpdateProfileComponent implements OnInit {
   submit() {
     let data = this.formEditProfile?.value;
     this.userService.update(data,this.id).subscribe(res => {
-      this.userService.changeUserLogin({...data, id: this.id});
       this.router.navigate(['admin/home/posts']);
       console.log(res);
     })
@@ -72,9 +65,5 @@ export class UserUpdateProfileComponent implements OnInit {
       }
       return control.value.getTime() > today ? {invalidDate: 'You can not choose the day in future'} : null;
     }
-  }
-
-  back() {
-    this.location.back();
   }
 }
