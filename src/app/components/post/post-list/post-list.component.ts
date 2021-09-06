@@ -1,7 +1,6 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
-
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {CommentService} from "../../../services/comment.service";
@@ -43,8 +42,8 @@ export class PostListComponent implements OnInit {
   getAll() {
     return this.postService.getAll().subscribe(posts => {
       for (const post of posts) {
-        this.postService.getCountLikeByPost(post.id).subscribe(likes => {
         post.propertyLike = false;
+        this.postService.getCountLikeByPost(post.id).subscribe(likes=>{
           post['like'] = likes;
           this.commentService.getCommentByPost(post.id).subscribe(comments => {
             post['comment'] = comments
