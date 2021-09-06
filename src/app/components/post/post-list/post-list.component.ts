@@ -11,11 +11,13 @@ import {ToastrService} from "ngx-toastr";
 })
 export class PostListComponent implements OnInit {
   posts: any = [];
-  user:any;
+  user: any;
+
   constructor(private postService: PostService,
               private authService: AuthService,
-              private router:Router,
-              private toastr: ToastrService)  {}
+              private router: Router,
+              private toastr: ToastrService) {
+  }
 
   ngOnInit(): void {
     this.user = JSON.parse(<string>this.authService.getUser());
@@ -28,13 +30,13 @@ export class PostListComponent implements OnInit {
     });
   }
 
-  deletePost(id:number){
-    if(confirm("Are you sure about that ?")){
+  deletePost(id: number) {
+    if (confirm("Are you sure about that ?")) {
       this.postService.delete(id).subscribe(res => {
-        this.toastr.success('Delete Post successfully','Delete Post');
+        this.toastr.success('Delete Post successfully', 'Delete Post');
         this.getAll();
         this.router.navigate(['admin/home/posts']);
-      })
+      });
     }
   }
 }

@@ -28,7 +28,7 @@ export class PostCreateComponent implements OnInit {
     this.formCreatePost = this.fb.group({
       userId: [this.user.id],
       content: ['', [Validators.required]],
-      is_public: ['',[Validators.required]],
+      is_public: [this.is_public,[Validators.required]],
     });
     this.getAll();
   }
@@ -60,5 +60,5 @@ export class PostCreateComponent implements OnInit {
   refresh(): void {
     window.location.reload();
   }
-  
+
 }

@@ -21,7 +21,6 @@ import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +35,7 @@ import {UsersModule} from "./components/users/users.module";
     SectionRightComponent,
     StoryComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
     imports: [
         BrowserModule,
@@ -48,8 +47,7 @@ import {UsersModule} from "./components/users/users.module";
         UsersModule,
         ToastrModule.forRoot()
     ],
-    providers: [
-    ],
+    providers: [],
   exports: [
     StoryComponent,
     SidebarLeftComponent,

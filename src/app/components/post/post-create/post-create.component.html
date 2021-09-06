@@ -4,8 +4,8 @@
     <figure>
       <img src="assets/images/resources/admin.jpg" alt="">
     </figure>
-    <div class="attachments">
-      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+    <div class="newpst-input">
+      <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
           <span><i class="fa fa-globe"> </i></span>
             <select formControlName="is_public" [value]="is_public" [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
               <option [ngValue]="is_public">Public</option>
@@ -14,7 +14,6 @@
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
             Can not be blank
-          </p>
         </div>
 
         <textarea rows="2" placeholder="Share some what you are thinking?" formControlName="content"
@@ -61,13 +60,11 @@
           </ul>
           <button  class="post-btn" type="submit" data-ripple="" >Post</button>
         </div>
-
       </form>
     </div>
     <div class="add-location-post">
       <span>Drag map point to selected area</span>
       <div class="row">
-
         <div class="col-lg-6">
           <label class="control-label">Lat :</label>
           <input type="text" class="" id="us3-lat"/>
@@ -77,7 +74,6 @@
           <input type="text" class="" id="us3-lon"/>
         </div>
       </div>
-      <!-- map -->
       <div id="us3"></div>
     </div>
   </div>
