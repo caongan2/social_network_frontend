@@ -1,30 +1,34 @@
-
 <div>
-  <app-post-create ></app-post-create>
+  <app-post-create></app-post-create>
 </div>
 <!-- add post new box -->
 <div class="central-meta">
   <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
 </div><!-- top stories -->
+
 <div class="central-meta item">
-<div class="user-post" *ngFor="let post of posts" >
-  <div class="friend-info">
-    <figure>
-      <img src="src/assets/images/resources/nearly1.jpg" alt="">
-    </figure>
-    <div class="friend-name">
-      <div class="more">
-        <div class="more-post-optns"><i class="ti-more-alt"></i>
-          <ul>
-            <li><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit Post</a></li>
-            <li><i class="fa fa-trash-o"></i><a  (click)="deletePost(post.id)">Delete Post</a></li>
-            <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-            <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-            <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-            <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-            <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-          </ul>
+  <div class="user-post" *ngFor="let post of posts">
+    <div class="friend-info">
+      <figure>
+        <img src="src/assets/images/resources/nearly1.jpg" alt="">
+      </figure>
+      <div class="friend-name">
+        <div class="more">
+          <div class="more-post-optns"><i class="ti-more-alt"></i>
+            <ul>
+              <li><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit
+                Post</a></li>
+              <li><i class="fa fa-trash-o"></i><a (click)="deletePost(post.id)">Delete Post</a></li>
+              <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+              <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
+              <li><i class="fa fa-clock-o"></i>Schedule Post</li>
+              <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
+              <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
+            </ul>
+          </div>
         </div>
+        <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
+        <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
       </div>
       <ins><a href="time-line.html" style="height: 50px" title="">{{post.name}}</a> Post Album</ins>
       <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
@@ -69,23 +73,21 @@
               </figure>
             </div>
           </div>
-        </div>
-      </figure>
-      <div class="we-video-info">
-        <ul>
-          <li>
-            <div class="fas fa-thumbs-up" title="Like/Dislike" [hidden]="isLike" (click)="like(post.id)"
-                 ><span>{{post.like.length}}</span></div>
-            <div class="fas fa-thumbs-down" title="Like/Dislike" [hidden]="!isLike"  (click)="dislike(post.id)"
-               ><span>{{post.like.length}}</span></div>
-          </li>
-          <li>
+        </figure>
+        <div class="we-video-info">
+          <ul>
+            <li>
+              <div class="fas fa-thumbs-up" title="Like/Dislike" [hidden]="post.propertyLike" (click)="like(post.id)"
+              ><span>{{post.like.length}}</span></div>
+              <div class="fas fa-thumbs-down" title="Like/Dislike" [hidden]="!post.propertyLike" (click)="dislike(post.id)"
+              ><span>{{post.like.length}}</span></div>
+            </li>
+            <li>
 																<span class="comment" title="Comments">
 																	<i class="fa fa-commenting"></i>
 																	<ins>52</ins>
 																</span>
-          </li>
-
+            </li>
         </ul>
         <div class="users-thumb-list">
           <a data-toggle="tooltip" title="Anderw" href="#">
@@ -134,7 +136,6 @@
               <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
             </div>
           </div>
-
         </li>
         <li>
           <a title="" class="showmore underline">more comments+</a>
@@ -177,6 +178,5 @@
       </ul>
     </div>
   </div>
-</div>
 </div>
 
