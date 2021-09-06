@@ -60,6 +60,4 @@ export class PostCreateComponent implements OnInit {
   refresh(): void {
     window.location.reload();
   }
-
-
 }

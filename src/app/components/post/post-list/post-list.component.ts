@@ -1,7 +1,7 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
@@ -20,8 +20,7 @@ export class PostListComponent implements OnInit {
               private authService: AuthService,
               private router:Router,
               private toastr: ToastrService,
-              private activatedRoute: ActivatedRoute) {
-  }
+              private activatedRoute: ActivatedRoute) {}
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   ngOnInit(): void {
@@ -32,11 +31,13 @@ export class PostListComponent implements OnInit {
   getAll() {
     return this.postService.getAll().subscribe(posts => {
       for (const post of posts) {
+        post.propertyLike = false;
         this.postService.getCountLikeByPost(post.id).subscribe(likes=>{
           post['like'] = likes;
           this.posts.push(post);
         })
       }
+      console.log(posts);
     });
   }
 
@@ -54,11 +55,10 @@ export class PostListComponent implements OnInit {
     this.postService.like(id).subscribe(res=>{
       for (const post of this.posts) {
         if(post.id === id) {
+          post.propertyLike = !post.propertyLike
           post['like'].length += 1;
         }
       }
-
-      this.isLike =! this.isLike;
       this.router.navigate(['admin/home/posts']);
     })
   }
@@ -67,13 +67,12 @@ export class PostListComponent implements OnInit {
     this.postService.disLike(id).subscribe(res=>{
       for (const post of this.posts) {
         if(post.id === id) {
+          post.propertyLike = !post.propertyLike
           post['like'].length -= 1;
         }
       }
-
-      this.isLike =! this.isLike;
       this.router.navigate(['admin/home/posts']);
-    })
+    });
   }
 
 }
