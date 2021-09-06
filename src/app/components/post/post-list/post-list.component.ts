@@ -3,6 +3,9 @@ import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
+import {ActivatedRoute, Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
+import {count} from "rxjs/operators";
 
 @Component({
   selector: 'app-post-list',
@@ -11,8 +14,8 @@ import {ToastrService} from "ngx-toastr";
 })
 export class PostListComponent implements OnInit {
   posts: any = [];
-  user: any;
-
+  user:any;
+  isLike:boolean = false;
   constructor(private postService: PostService,
               private authService: AuthService,
               private router:Router,
@@ -38,13 +41,13 @@ export class PostListComponent implements OnInit {
     });
   }
 
-  deletePost(id: number) {
-    if (confirm("Are you sure about that ?")) {
+  deletePost(id:number){
+    if(confirm('Are you sure?')){
       this.postService.delete(id).subscribe(res => {
-        this.toastr.success('Delete Post successfully', 'Delete Post');
+        this.toastr.success('Delete Post successfully','Delete Post');
         this.getAll();
         this.router.navigate(['admin/home/posts']);
-      });
+      })
     }
   }
 

@@ -12,6 +12,7 @@
           <option [ngValue]="true">Public</option>
           <option [ngValue]="false">Private</option>
         </select>
+
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
             Không được để trống
