@@ -126,6 +126,7 @@
                 </div>
               </div>
             </div>
+            <br>
             <p>{{comment.content}}</p>
             <div class="inline-itms">
               <span>1 year ago</span>
@@ -136,15 +137,16 @@
 
         </li>
         <li>
-          <a href="#" title="" class="showmore underline">more comments+</a>
+          <a title="" class="showmore underline">more comments+</a>
         </li>
         <li class="post-comment">
           <div class="comet-avatar">
             <img src="src/assets/images/resources/nearly1.jpg" alt="">
           </div>
           <div class="post-comt-box">
-            <form method="post">
-              <textarea placeholder="Post your comment"></textarea>
+            <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">
+              <input type="number" hidden formControlName="user_id">
+              <textarea placeholder="Post your comment" formControlName="content"></textarea>
               <div class="add-smiles">
                 <div class="uploadimage">
                   <i class="fa fa-image"></i>
@@ -168,8 +170,7 @@
                   <i class="em em-stuck_out_tongue"></i>
                 </div>
               </div>
-
-              <button type="submit"></button>
+              <button type="submit">Comment</button>
             </form>
           </div>
         </li>

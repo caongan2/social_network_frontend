@@ -3,6 +3,7 @@ import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from "
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
 import {Location} from "@angular/common";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-user-update-profile',
@@ -17,7 +18,8 @@ export class UserUpdateProfileComponent implements OnInit {
               private userService: UserService,
               private fb: FormBuilder,
               private activatedRoute: ActivatedRoute,
-              private location: Location) { }
+              private location: Location,
+              private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.userService.getById().subscribe(res => {
@@ -33,10 +35,12 @@ export class UserUpdateProfileComponent implements OnInit {
 
   submit() {
     let data = this.formEditProfile?.value;
+    console.log(data)
     this.userService.update(data,this.id).subscribe(res => {
-      this.userService.changeUserLogin({...data, id: this.id});
-      this.router.navigate(['admin/home/posts']);
-      console.log(res);
+        this.toastr.success('Change profile success');
+        this.userService.changeUserLogin({...data, id: this.id});
+        this.router.navigate(['admin/home/posts']);
+        console.log(res);
     })
   }
 

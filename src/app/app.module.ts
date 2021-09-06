@@ -20,7 +20,6 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
-import {UserModule} from "./components/user/user.module";
 
 
 @NgModule({
@@ -37,7 +36,7 @@ import {UserModule} from "./components/user/user.module";
     SectionRightComponent,
     StoryComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
     imports: [
         BrowserModule,
@@ -49,8 +48,7 @@ import {UserModule} from "./components/user/user.module";
         UsersModule,
         ToastrModule.forRoot()
     ],
-    providers: [
-    ],
+    providers: [],
   exports: [
     StoryComponent,
     SidebarLeftComponent,

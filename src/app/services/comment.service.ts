@@ -20,6 +20,10 @@ export class CommentService {
     return this.http.delete(environment.url_api + 'comment/delete/' + id, {headers: this.authService.setHeader()})
   }
 
+  comment(data: any): Observable<any> {
+    return this.http.post(environment.url_api + 'comment/create', data, {headers: this.authService.setHeader()})
+  }
+
 
 
 }
