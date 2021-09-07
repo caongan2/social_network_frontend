@@ -20,11 +20,14 @@
               <div class="col-lg-3 col-md-3">
                 <aside class="sidebar">
                   <div class="central-meta stick-widget">
-                    <span class="create-post">Personal Info</span>
+                    <div>
+                      <span class="create-post">Personal Info</span>
+                      <span style="margin-left: 800px" class="btn btn-primary"><a [routerLink]="['../home/'+ user.id + '/update']" >Edit profile</a></span>
+                    </div>
                     <div class="personal-head">
                       <span class="f-title"><i class="fa fa-user"></i> About Me:</span>
                       <p>
-                        Hi, I’m John Carter, I’m 36 and I work as a Digital Designer for the “dewwater” Agency in Ontario, Canada
+                        Hi, I’m {{user.name}}
                       </p>
                       <span class="f-title"><i class="fa fa-birthday-cake"></i> Birthday:</span>
                       <p>
@@ -32,19 +35,12 @@
                       </p>
                       <span class="f-title"><i class="fa fa-phone"></i> Phone Number:</span>
                       <p>
-                        +1-989-232435234
+                        {{user.phone}}
                       </p>
-                      <span class="f-title"><i class="fa fa-medkit"></i> Blood group:</span>
+
+                      <span class="f-title"><i class="fa fa-globe"></i> Address:</span>
                       <p>
-                        B+
-                      </p>
-                      <span class="f-title"><i class="fa fa-male"></i> Gender:</span>
-                      <p>
-                        Male
-                      </p>
-                      <span class="f-title"><i class="fa fa-globe"></i> Country:</span>
-                      <p>
-                        San Francisco, California, USA
+                          {{user.address}}
                       </p>
                       <span class="f-title"><i class="fa fa-briefcase"></i> Occupation:</span>
                       <p>
@@ -52,12 +48,11 @@
                       </p>
                       <span class="f-title"><i class="fa fa-handshake-o"></i> Joined:</span>
                       <p>
-                        December 20, 2001
+                        {{user.created_at}}
                       </p>
-
                       <span class="f-title"><i class="fa fa-envelope"></i> Email & Website:</span>
                       <p>
-                        <a href="wpkixx.html" title="">www.wpkixx.com</a> <a href="http://wpkixx.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ebbb829f858280ab92849e99868a8287c5888486">[email&#160;protected]</a>
+                        {{user.email}}
                       </p>
 
                     </div>
@@ -227,7 +222,4 @@
     </div>
   </div>
 </div><!-- report popup -->
-
-
-
 </body>
