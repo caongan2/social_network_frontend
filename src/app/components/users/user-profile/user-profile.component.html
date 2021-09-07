@@ -17,18 +17,24 @@
           <div class="col-lg-12">
             <div class="row merged20" id="page-contents">
              <app-user-profile-banner></app-user-profile-banner>
-              <div class="col-lg-3 col-md-3">
+              <div class="col-lg-12 col-md-12" >
                 <aside class="sidebar">
                   <div class="central-meta stick-widget">
-                    <span class="create-post">Personal Info</span>
+                    <div>
+                      <span class="create-post">Personal Info</span>
+                      <span style="margin-left: 800px" class="btn btn-primary"><a [routerLink]="['../home/'+ user.id +'/update']" >Edit profile</a></span>
+                    </div>
                     <div class="personal-head">
                       <span class="f-title"><i class="fa fa-user"></i> About Me:</span>
                       <p>
-                        Hi, I’m John Carter, I’m 36 and I work as a Digital Designer for the “dewwater” Agency in Ontario, Canada
+                        Hi, I’m {{user.name}}, I’m 36 and I work as a Digital Designer for the “dewwater” Agency in Ontario, Canada
                       </p>
                       <span class="f-title"><i class="fa fa-birthday-cake"></i> Birthday:</span>
-                      <p>
-                        December 17, 1985
+                      <p *ngIf="user.birth_date">
+                          {{user.birth_date}}
+                      </p>
+                      <p *ngIf="!user.birth_date">
+                        Can't see it
                       </p>
                       <span class="f-title"><i class="fa fa-phone"></i> Phone Number:</span>
                       <p>

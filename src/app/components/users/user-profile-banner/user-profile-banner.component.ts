@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from "../../../services/user.service";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-user-profile-banner',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileBannerComponent implements OnInit {
 
-  constructor() { }
+  user: any;
+  constructor(private userService: UserService,
+              private authService: AuthService) { }
 
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser())
   }
-
 }
