@@ -1,4 +1,4 @@
-<div class="tab-pane " id="edit-profile" >
+<div class="tab-pane " id="edit-profile">
   <div class="set-title">
     <h5>Edit Profile</h5>
     <span>People on Pitnik will get to know you with the info below</span>
@@ -11,7 +11,9 @@
 
           <label class="fileContainer">
             <i class="fa fa-camera-retro"></i>
+
             Chage DP
+
             <input type="file">
           </label>
         </form>
@@ -22,7 +24,7 @@
     <form *ngIf="formEditProfile" [formGroup]="formEditProfile" (ngSubmit)="submit()" class="c-form">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control " formControlName="name" id="name" >
+        <input type="text" class="form-control " formControlName="name" id="name">
         <div *ngIf="name?.invalid && (name?.dirty || name?.touched) ">
           <p *ngIf="name?.errors?.minlength" class="text-danger">
             Field name must be between 2 to 50 charaters
@@ -46,7 +48,7 @@
       </div>
       <div class="form-group">
         <label for="address">Address</label>
-        <textarea formControlName="address"  class="form-control" id="address" cols="30" rows="3"></textarea>
+        <textarea formControlName="address" class="form-control" id="address" cols="30" rows="3"></textarea>
         <div *ngIf="address?.invalid && address?.dirty ">
           <p *ngIf="address?.errors?.minlength" class="text-danger">
             Field address can not less than 2 characters

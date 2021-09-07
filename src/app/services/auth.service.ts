@@ -23,15 +23,18 @@ export class AuthService {
   }
 
   register(data: any): Observable<any> {
-    return this.http.post(environment.url_api + "auth/register", data, {headers: this.setHeader()} )
+    return this.http.post(environment.url_api + "auth/register", data, {headers: this.setHeader()});
   }
 
   getUser() {
-    return localStorage.getItem('userLogin')
+    return localStorage.getItem('userLogin');
   }
 
   logout() {
-    return this.http.post(environment.url_api + "auth/logout", null, {headers: this.setHeader()})
+    return this.http.post(environment.url_api + "auth/logout", null, {headers: this.setHeader()});
   }
 
+  changePassword(data: any) {
+    return this.http.post(environment.url_api + "auth/change-password", data, {headers: this.setHeader()});
+  }
 }
