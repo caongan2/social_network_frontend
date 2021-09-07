@@ -17,6 +17,7 @@ export class PostListComponent implements OnInit {
   isLike: boolean = false;
   formComment: FormGroup | undefined
   post: any
+  showComment: boolean = false
   constructor(private postService: PostService,
               private authService: AuthService,
               private router: Router,
@@ -42,6 +43,7 @@ export class PostListComponent implements OnInit {
     return this.postService.getAll().subscribe(posts => {
       for (const post of posts) {
         post.propertyLike = false;
+        post.showComment = true
         this.postService.getCountLikeByPost(post.id).subscribe(likes=>{
           post['like'] = likes;
           this.commentService.getCommentByPost(post.id).subscribe(comments => {
@@ -50,8 +52,6 @@ export class PostListComponent implements OnInit {
           })
         });
       }
-      // this.posts = res;
-
     })
   }
 
@@ -59,8 +59,6 @@ export class PostListComponent implements OnInit {
     if (confirm('Are you sure?')) {
       this.postService.delete(id).subscribe(res => {
         this.toastr.success('Delete Post successfully','Delete Post');
-        // this.getAll();
-        // this.router.navigate(['admin/home/posts']);
         this.refresh();
       })
     }
@@ -70,6 +68,7 @@ export class PostListComponent implements OnInit {
     if (confirm('Are you sure?')) {
       this.commentService.delete(id).subscribe(res => {
         console.log(res)
+        this.refresh()
         this.router.navigate(['admin/home/posts']);
       })
     }
@@ -96,4 +95,13 @@ export class PostListComponent implements OnInit {
     window.location.reload();
   }
 
+  showMoreComment(id: number) {
+    this.commentService.getCommentByPost(id).subscribe(res => {
+      for (const post of this.posts) {
+        if (post.id == id) {
+          post.showComment = !post.showComment
+        }
+      }
+    })
+  }
 }

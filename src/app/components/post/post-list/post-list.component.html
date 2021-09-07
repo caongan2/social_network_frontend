@@ -81,8 +81,8 @@
             </li>
             <li>
 																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
+																	<i [hidden]="!post.showComment" (click)="showMoreComment(post.id)"  class="fa fa-commenting"></i>
+																	<ins>{{post.comment.length}}</ins>
 																</span>
             </li>
           </ul>
@@ -113,9 +113,9 @@
             <div class="comet-avatar">
               <img src="src/assets/images/resources/nearly3.jpg" alt="">
             </div>
-            <div *ngFor="let comment of post.comment" class="we-comment">
-              <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>
+            <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
               <div class="friend-name">
+                <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>
                 <div class="more">
                   <div class="more-post-optns"><i class="ti-more-alt"></i>
                     <ul>
@@ -136,7 +136,8 @@
 
           </li>
           <li>
-            <a title="" class="showmore underline">more comments+</a>
+<!--            <atitle="" class="showmore underline">more comments+</a>-->
+            <a [hidden]="post.showComment" (click)="showMoreComment(post.id)" title="" class="showmore underline">hide comments-</a>
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
