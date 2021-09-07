@@ -22,4 +22,5 @@ export class UserProfileComponent implements OnInit {
       this.user = res;
     })
   }
+
 }
