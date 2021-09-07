@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from "../../../services/user.service";
-import {ActivatedRoute} from "@angular/router";
-
 
 @Component({
   selector: 'app-user-profile',
@@ -18,9 +15,6 @@ export class UserProfileComponent implements OnInit {
               private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.userService.getById().subscribe(res => {
-      this.user = res;
-    })
   }
 
 }
