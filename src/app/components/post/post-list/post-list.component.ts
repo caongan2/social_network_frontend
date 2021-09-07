@@ -13,7 +13,6 @@ import {count} from "rxjs/operators";
 export class PostListComponent implements OnInit {
   posts: any = [];
   user:any;
-  isLike:boolean = false;
   constructor(private postService: PostService,
               private authService: AuthService,
               private router:Router,
@@ -42,8 +41,9 @@ export class PostListComponent implements OnInit {
     if(confirm('Are you sure?')){
       this.postService.delete(id).subscribe(res => {
         this.toastr.success('Delete Post successfully','Delete Post');
-        this.getAll();
-        this.router.navigate(['admin/home/posts']);
+        // this.getAll();
+        // this.router.navigate(['admin/home/posts']);
+        this.refresh();
       })
     }
   }
@@ -51,12 +51,14 @@ export class PostListComponent implements OnInit {
   like(id:any){
     this.postService.like(id).subscribe(res=>{
       for (const post of this.posts) {
-        if(post.id === id) {
-          post['like'].length += 1;
+        post.propertyLike = false;
+        if(post.id === id ) {
+            post['like'].length += 1;
+            post.propertyLike = !post.propertyLike;
         }
+
       }
 
-      this.isLike =! this.isLike;
       this.router.navigate(['admin/home/posts']);
     })
   }
@@ -64,14 +66,19 @@ export class PostListComponent implements OnInit {
   dislike(id:any){
     this.postService.disLike(id).subscribe(res=>{
       for (const post of this.posts) {
+        post.propertyLike = true;
         if(post.id === id) {
           post['like'].length -= 1;
+          post.propertyLike = !post.propertyLike;
         }
-      }
 
-      this.isLike =! this.isLike;
+      }
       this.router.navigate(['admin/home/posts']);
     })
+  }
+
+  refresh(): void {
+    window.location.reload();
   }
 
 }
