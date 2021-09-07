@@ -10,7 +10,8 @@ import {ActivatedRoute} from "@angular/router";
 export class UserNavbarComponent implements OnInit {
 
   user:any;
-
+  // @ts-ignore
+  id = +this.activatedRoute.snapshot.paramMap.get('id')
   constructor(private userService: UserService,
               private activatedRoute: ActivatedRoute) { }
 
