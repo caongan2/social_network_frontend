@@ -18,6 +18,7 @@ export class PostListComponent implements OnInit {
   formComment: FormGroup | undefined
   post: any
   showComment: boolean = false
+
   constructor(private postService: PostService,
               private authService: AuthService,
               private router: Router,
