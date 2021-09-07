@@ -6,7 +6,6 @@ import {RouterModule, Routes} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
 import { PostUpdateComponent } from './post-update/post-update.component';
 import { PostDeleteComponent } from './post-delete/post-delete.component';
-import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
   {
@@ -35,8 +34,7 @@ const routes: Routes = [
     PostCreateComponent,
     PostListComponent,
     PostUpdateComponent,
-    PostDeleteComponent,
-    CommentComponent,
+    PostDeleteComponent
   ],
   exports: [
     PostCreateComponent,

@@ -35,17 +35,5 @@ export class PostService {
   delete(id:number):Observable<any>{
     return this.httpClient.delete(environment.url_api + 'posts/' + id + '/delete',{headers: this.authService.setHeader()});
   }
-
-  like(id:any):Observable<any>{
-    return this.httpClient.get(environment.url_api + 'posts/' + id + '/likePost',{headers: this.authService.setHeader()});
-  }
-
-  disLike(id:any):Observable<any>{
-    return this.httpClient.delete(environment.url_api + 'posts/' + id + '/disLike',{headers: this.authService.setHeader()});
-  }
-
-  getCountLikeByPost(id:any):Observable<any>{
-    return this.httpClient.get(environment.url_api + 'posts/' +id +'/countLike',{headers:this.authService.setHeader()});
-  }
 }
 
