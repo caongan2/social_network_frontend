@@ -16,7 +16,7 @@ export class PostListComponent implements OnInit {
   user: any;
   isLike: boolean = false;
   formComment: FormGroup | undefined
-  post: any
+  post: any;
   showComment: boolean = false
 
   constructor(private postService: PostService,
