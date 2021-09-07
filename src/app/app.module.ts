@@ -20,6 +20,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {UsersModule} from "./components/users/users.module";
     SectionRightComponent,
     StoryComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    TestComponent
   ],
     imports: [
         BrowserModule,

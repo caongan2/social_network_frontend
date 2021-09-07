@@ -11,7 +11,8 @@ import {ActivatedRoute} from "@angular/router";
 export class UserProfileComponent implements OnInit {
 
   user: any;
-  id = this.activatedRoute.snapshot.paramMap.get('id');
+  // @ts-ignore
+  id = +this.activatedRoute.snapshot.paramMap.get('id');
 
   constructor(private userService: UserService,
               private activatedRoute: ActivatedRoute) { }
@@ -21,5 +22,4 @@ export class UserProfileComponent implements OnInit {
       this.user = res;
     })
   }
-
 }
