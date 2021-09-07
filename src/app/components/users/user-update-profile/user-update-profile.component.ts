@@ -22,7 +22,7 @@ export class UserUpdateProfileComponent implements OnInit {
               private toastr: ToastrService) { }
 
   ngOnInit(): void {
-    this.userService.getById().subscribe(res => {
+    this.userService.getById(this.id).subscribe(res => {
       this.formEditProfile = this.fb.group({
         name: [res.name,[Validators.minLength(2),Validators.maxLength(50)]],
         phone: [res.phone,[Validators.pattern(/^0[1-9][0-9]{8}$/)]],
