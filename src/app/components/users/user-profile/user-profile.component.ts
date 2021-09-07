@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  user: any;
-  // @ts-ignore
-  id = +this.activatedRoute.snapshot.paramMap.get('id');
-
-  constructor(private userService: UserService,
-              private activatedRoute: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
