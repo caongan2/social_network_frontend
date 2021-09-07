@@ -24,10 +24,13 @@
             <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
             <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
           </ul>
+        <div>
+          <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
+          <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
         </div>
-        <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
-        <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
+
       </div>
+    </div>
       <div class="post-meta">
         <p>
           {{post.content}}
@@ -72,12 +75,9 @@
         </figure>
         <div class="we-video-info">
           <ul>
-            <li>
-              <div class="fas fa-thumbs-up" title="Like/Dislike" [hidden]="post.propertyLike" (click)="like(post.id)"
-              ><span>{{post.like.length}}</span></div>
-              <div class="fas fa-thumbs-down" title="Like/Dislike" [hidden]="!post.propertyLike"
-                   (click)="dislike(post.id)"
-              ><span>{{post.like.length}}</span></div>
+            <li >
+              <div (click)="like(post.id)" class="fas fa-thumbs-up" title="Like/Dislike"
+              ><span id="countLike-{{post.id}}">{{post.like.length}}</span></div>
             </li>
             <li>
 																<span class="comment" title="Comments">

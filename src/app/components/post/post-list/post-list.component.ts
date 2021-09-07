@@ -48,8 +48,10 @@ export class PostListComponent implements OnInit {
             post['comment'] = comments
             this.posts.push(post)
           })
-        })
+        });
       }
+      // this.posts = res;
+
     })
   }
 
@@ -75,27 +77,9 @@ export class PostListComponent implements OnInit {
 
   like(id: any) {
     this.postService.like(id).subscribe(res => {
-      for (const post of this.posts) {
-        if(post.id === id) {
-          post.propertyLike = !post.propertyLike
-          post['like'].length += 1;
-        }
-
-      }
-      this.router.navigate(['admin/home/posts']);
+      // @ts-ignore
+      document.getElementById('countLike-' + id ).innerHTML = res;
     })
-  }
-
-  dislike(id: any) {
-    this.postService.disLike(id).subscribe(res => {
-      for (const post of this.posts) {
-        if(post.id === id) {
-          post.propertyLike = !post.propertyLike
-          post['like'].length -= 1;
-        }
-      }
-      this.router.navigate(['admin/home/posts']);
-    });
   }
 
   submitComment(id: number) {
