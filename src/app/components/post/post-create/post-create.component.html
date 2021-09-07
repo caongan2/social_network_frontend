@@ -5,13 +5,13 @@
       <img src="assets/images/resources/admin.jpg" alt="">
     </figure>
     <div class="newpst-input">
-      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
-        <span><i class="fa fa-globe"> </i></span>
-        <select formControlName="is_public" [(ngModel)]="is_public"
-                [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
-          <option [ngValue]="true">Public</option>
-          <option [ngValue]="false">Private</option>
-        </select>
+    <div class="attachments">
+      <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+          <span><i class="fa fa-globe"> </i></span>
+            <select formControlName="is_public" [(ngModel)]="is_public"  [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
+              <option [ngValue]="true">Public</option>
+              <option [ngValue]="false">Private</option>
+          </select>
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
             Không được để trống
@@ -79,4 +79,5 @@
       <div id="us3"></div>
     </div>
   </div>
+</div>
 </div>
