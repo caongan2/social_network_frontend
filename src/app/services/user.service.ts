@@ -24,8 +24,8 @@ export class UserService {
     return this.http.put(environment.url_api + "auth/users/" + id + "/update-profile", data, {headers: this.authService.setHeader()});
   }
 
-  getById(): Observable<any> {
-    return this.http.get(environment.url_api + "auth/users/user-profile", {headers: this.authService.setHeader()})
+  getById(id: number): Observable<any> {
+    return this.http.get(environment.url_api + 'auth/users/'+ id +'/user-profile', {headers: this.authService.setHeader()})
   }
 
   // set item(value: any){

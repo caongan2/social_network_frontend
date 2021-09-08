@@ -14,6 +14,7 @@ import { UserSidebarRightComponent } from './user-sidebar-right/user-sidebar-rig
 import { UserUpdateProfileComponent } from './user-update-profile/user-update-profile.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { UserPostComponent } from './user-post/user-post.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,8 @@ const routes: Routes = [
     UserSidebarLeftComponent,
     UserSidebarRightComponent,
     UserUpdateProfileComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    UserPostComponent
   ],
   exports: [
     UserProfileComponent
