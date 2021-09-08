@@ -36,7 +36,7 @@ import {UsersModule} from "./components/users/users.module";
     SectionRightComponent,
     StoryComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
     imports: [
         BrowserModule,

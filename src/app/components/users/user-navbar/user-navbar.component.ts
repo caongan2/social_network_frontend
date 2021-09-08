@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {UserService} from "../../../services/user.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-user-navbar',
@@ -9,14 +10,27 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class UserNavbarComponent implements OnInit {
 
-  user:any;
+  user: any
 
-  constructor(private userService: UserService,
-              private activatedRoute: ActivatedRoute) { }
+  constructor(private authService: AuthService,
+              private router: Router,
+              private userService: UserService) { }
 
   ngOnInit(): void {
-    this.userService.getById().subscribe(res => {
-      this.user = res;
+    this.user = JSON.parse(<string>this.authService.getUser());
+    // this.userService.userCast.subscribe(user => this.user = user);
+  }
+
+
+  logout() {
+    this.authService.logout().subscribe(res => {
+      localStorage.clear()
+      this.router.navigate(['']).then(r => {
+        console.log(res)
+        // console.log('Success')
+      }).catch(error => {
+        console.log("Logout error")
+      })
     })
   }
 
