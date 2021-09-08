@@ -1,26 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from "../../../services/user.service";
-import {ActivatedRoute} from "@angular/router";
 import {PostService} from "../../../services/post.service";
 import {AuthService} from "../../../services/auth.service";
-
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
-  selector: 'app-user-profile',
-  templateUrl: './user-profile.component.html',
-  styleUrls: ['./user-profile.component.css']
+  selector: 'app-user-post',
+  templateUrl: './user-post.component.html',
+  styleUrls: ['./user-post.component.css']
 })
-export class UserProfileComponent implements OnInit {
+export class UserPostComponent implements OnInit {
 
-  user: any;
-  posts: any = [];
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
-
-  constructor(private userService: UserService,
-              private activatedRoute: ActivatedRoute,
-              private postService: PostService,
-              private authService: AuthService) { }
+  user:any;
+  posts: any = [];
+  constructor(private postService:PostService,
+              private authService: AuthService,
+              private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.user = JSON.parse(<string>this.authService.getUser());

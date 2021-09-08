@@ -1,6 +1,4 @@
-<div>
-  <app-post-create></app-post-create>
-</div>
+
 <!-- add post new box -->
 <div class="central-meta">
   <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
@@ -16,9 +14,9 @@
         <div class="more">
           <div class="more-post-optns"><i class="ti-more-alt"></i>
             <ul>
-              <li [hidden]="post.name != user.name"><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit
-                Post</a></li>
-              <li [hidden]="post.name != user.name"><i class="fa fa-trash-o"></i><a (click)="deletePost(post.id)">Delete Post</a></li>
+<!--              <li><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit-->
+<!--                Post</a></li>-->
+<!--              <li [hidden]="post.name != user.name"><i class="fa fa-trash-o"></i><a (click)="deletePost(post.id)">Delete Post</a></li>-->
               <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
               <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
               <li><i class="fa fa-clock-o"></i>Schedule Post</li>
@@ -28,7 +26,7 @@
           </div>
         </div>
         <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
-        <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
+        <span><i class="fa fa-globe"></i> published: </span>
       </div>
       <div class="post-meta">
         <p>
@@ -75,13 +73,13 @@
         <div class="we-video-info">
           <ul>
             <li>
-              <div class="fa fa-heart" title="Like/Dislike"  (click)="like(post.id)"
-              ><span id="countLike-{{post.id}}">{{post.like.length}}</span></div>
+              <div class="fas fa-thumbs-up" title="Like/Dislike"
+              ></div>
             </li>
             <li>
 																<span class="comment" title="Comments">
-																	<i [hidden]="!post.showComment" (click)="showMoreComment(post.id)"  class="fa fa-commenting"></i>
-																	<ins>{{post.comment.length}}</ins>
+																	<i class="fa fa-commenting"></i>
+<!--																	<ins>{{post.comment.length}}</ins>-->
 																</span>
             </li>
           </ul>
@@ -112,20 +110,20 @@
             <div class="comet-avatar">
               <img src="src/assets/images/resources/nearly3.jpg" alt="">
             </div>
-            <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
+            <div>
               <div class="friend-name">
-                <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>
+<!--                <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>-->
                 <div class="more">
                   <div class="more-post-optns"><i class="ti-more-alt"></i>
                     <ul>
                       <!--                    <li><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit Post</a></li>-->
-                      <li><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>
+<!--                      <li><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>-->
                     </ul>
                   </div>
                 </div>
               </div>
               <br>
-              <p>{{comment.content}}</p>
+<!--              <p>{{comment.content}}</p>-->
               <div class="inline-itms">
                 <span>1 year ago</span>
                 <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
@@ -136,14 +134,14 @@
           </li>
           <li>
             <!--            <atitle="" class="showmore underline">more comments+</a>-->
-            <a [hidden]="post.showComment" (click)="showMoreComment(post.id)" title="" class="showmore underline">hide comments-</a>
+<!--            <a [hidden]="post.showComment" (click)="showMoreComment(post.id)" title="" class="showmore underline">hide comments-</a>-->
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
               <img src="src/assets/images/resources/nearly1.jpg" alt="">
             </div>
             <div class="post-comt-box">
-              <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">
+              <form>
                 <input type="number" hidden formControlName="user_id">
                 <textarea placeholder="Post your comment" formControlName="content"></textarea>
                 <div class="add-smiles">
