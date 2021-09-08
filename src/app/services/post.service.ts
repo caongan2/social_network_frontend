@@ -20,8 +20,8 @@ export class PostService {
     return this.httpClient.get(environment.url_api + 'posts/' + id + '/showPost',{headers:this.authService.setHeader()});
   }
 
-  getPostByUser(id:number): Observable<any>{
-    return this.httpClient.get(environment.url_api + 'posts/' + id + '/getPostByUser',{headers: this.authService.setHeader()});
+  getPostByUser(name:any): Observable<any>{
+    return this.httpClient.get(environment.url_api + 'posts/getPostByUser' + name ,{headers: this.authService.setHeader()});
   }
 
   create(data:any):Observable<any>{
