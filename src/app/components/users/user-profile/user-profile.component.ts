@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from "../../../services/user.service";
 import {ActivatedRoute} from "@angular/router";
+import {AuthService} from "../../../services/auth.service";
 
 
 @Component({
@@ -15,11 +16,11 @@ export class UserProfileComponent implements OnInit {
   id = +this.activatedRoute.snapshot.paramMap.get('id');
 
   constructor(private userService: UserService,
+              private authService: AuthService,
               private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.userService.getById().subscribe(res => {
-      this.user = res;
-    })
+    this.user = JSON.parse(<string>this.authService.getUser())
   }
+
 }

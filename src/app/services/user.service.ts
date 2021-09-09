@@ -28,14 +28,6 @@ export class UserService {
     return this.http.get(environment.url_api + "auth/users/user-profile", {headers: this.authService.setHeader()})
   }
 
-  // set item(value: any){
-  //   this.userLogin.next(value);
-  //   localStorage.setItem('userLogin',JSON.stringify(value));
-  // }
-  //
-  // get item(){
-  //   return localStorage.getItem('userLogin');
-  // }
 
   changeUserLogin(user: any) {
     this.userLogin.next(user);
