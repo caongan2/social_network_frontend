@@ -21,7 +21,7 @@ export class PostService {
   }
 
   getPostByUser(id:any): Observable<any>{
-    return this.httpClient.get(environment.url_api + 'posts/getPostByUser' + id ,{headers: this.authService.setHeader()});
+    return this.httpClient.get(environment.url_api + 'posts/getPostByUser/' + id ,{headers: this.authService.setHeader()});
   }
 
   searchPostByUser(name:any):Observable<any>{

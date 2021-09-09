@@ -29,7 +29,7 @@ export class UserService {
   }
 
   getById(id: number): Observable<any> {
-    return this.http.get(environment.url_api + 'auth/users/'+ id +'/user-profile', {headers: this.authService.setHeader()})
+    return this.http.get(environment.url_api + id +'/user-profile', {headers: this.authService.setHeader()})
   }
 
   // set item(value: any){

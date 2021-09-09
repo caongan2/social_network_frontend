@@ -27,9 +27,7 @@ export class MasterComponent implements OnInit {
 
   searchUser(event:any){
    let name = event;
-    // console.log(name)
     this.userFilter = this.findUser(name);
-    console.log(this.userFilter);
   }
 
   findUser(keyword:any){
