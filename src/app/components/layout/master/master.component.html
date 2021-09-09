@@ -6,8 +6,16 @@
   </div><!-- responsive header -->
 
   <div class="topbar stick">
-    <app-narbar></app-narbar>
+    <app-narbar (name)="searchUser($event)"></app-narbar>
   </div><!-- narbar -->
+  <div class="container">
+    <table class="table" >
+      <tr  *ngFor="let user of userFilter">
+        <td><a [routerLink]="['../',user.id,'profile']">{{user.name}}</a></td>
+      </tr>
+    </table>
+
+  </div>
 
   <div class="fixed-sidebar right">
     <app-sidebar-right></app-sidebar-right>

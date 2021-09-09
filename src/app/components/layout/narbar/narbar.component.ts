@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Output,EventEmitter} from '@angular/core';
 import {AuthService} from "../../../services/auth.service";
 import {Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
@@ -10,6 +10,7 @@ import {PostService} from "../../../services/post.service";
   styleUrls: ['./narbar.component.css']
 })
 export class NarbarComponent implements OnInit {
+  @Output() name = new EventEmitter<string>()
   user: any;
   postsFilter:any = [];
 
@@ -35,5 +36,22 @@ export class NarbarComponent implements OnInit {
       })
     })
   }
+
+  // getName(event:any){
+  //   let value = event.target.value;
+  //   console.log(value)
+  //   return value;
+  // }
+
+  seachUser(event:any){
+    let value = event.target.value;
+    this.name.emit(value);
+    this.postService.searchPostByUser(value).subscribe(res=>{
+      console.log(res);
+    })
+
+  }
+
+
 
 }
