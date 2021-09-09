@@ -4,13 +4,14 @@
     <figure>
       <img src="assets/images/resources/admin.jpg" alt="">
     </figure>
-    <div class="attachments">
-      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+
+    <div class="newpst-input">
+      <form *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()" enctype="multipart/form-data">
         <span><i class="fa fa-globe"> </i></span>
-        <select formControlName="is_public" [value]="is_public"
+        <select formControlName="is_public" [(ngModel)]="is_public"
           [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
-          <option [ngValue]="is_public">Public</option>
-          <option [ngValue]="!is_public">Private</option>
+          <option [ngValue]="true">Public</option>
+          <option [ngValue]="false">Private</option>
         </select>
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
@@ -41,7 +42,7 @@
             <li>
               <i class="fa fa-image"></i>
               <label class="fileContainer">
-                <input type="file">
+                <input type="file" formControlName="images">
               </label>
             </li>
             <li>

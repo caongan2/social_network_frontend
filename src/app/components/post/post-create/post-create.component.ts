@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {PostService} from "../../../services/post.service";
-import {Router} from "@angular/router";
-import {AuthService} from "../../../services/auth.service";
-import {ToastrService} from "ngx-toastr";
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { PostService } from "../../../services/post.service";
+import { Router } from "@angular/router";
+import { AuthService } from "../../../services/auth.service";
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: 'app-post-create',
@@ -17,10 +17,10 @@ export class PostCreateComponent implements OnInit {
   posts: any = [];
 
   constructor(private postService: PostService,
-              private fb: FormBuilder,
-              private router: Router,
-              private authService: AuthService,
-              private toastr: ToastrService) {
+    private fb: FormBuilder,
+    private router: Router,
+    private authService: AuthService,
+    private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -28,12 +28,13 @@ export class PostCreateComponent implements OnInit {
     this.formCreatePost = this.fb.group({
       userId: [this.user.id],
       content: ['', [Validators.required]],
-      is_public: ['',[Validators.required]],
+      images: [''],
+      is_public: ['', [Validators.required]],
     });
     this.getAll();
   }
 
-  getAll() {
+  getAll() {  
     return this.postService.getAll().subscribe(res => {
       this.posts = res;
     });
@@ -42,18 +43,22 @@ export class PostCreateComponent implements OnInit {
   submit() {
     let data = this.formCreatePost?.value;
     return this.postService.create(data).subscribe(res => {
-       this.toastr.success('Create Post successfully','Create Post');
-       this.getAll();
-       this.refresh();
+      this.toastr.success('Create Post successfully', 'Create Post');
+      this.getAll();
+      this.refresh();
     })
 
+  }
+
+  get images() {
+    return this.formCreatePost?.get('images');
   }
 
   get content() {
     return this.formCreatePost?.get('content');
   }
 
-  get isPublic(){
+  get isPublic() {
     return this.formCreatePost?.get('is_public');
   }
 
@@ -62,6 +67,6 @@ export class PostCreateComponent implements OnInit {
   }
 
 
-  }
+}
 
- 
+
