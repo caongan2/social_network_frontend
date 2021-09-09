@@ -16,7 +16,7 @@ import { StoryComponent } from './components/layout/story/story.component';
 import { LoginComponent } from './components/login/login.component';
 import {PostModule} from "./components/post/post.module";
 import {HttpClientModule} from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
@@ -46,7 +46,8 @@ import {UsersModule} from "./components/users/users.module";
         ReactiveFormsModule,
         BrowserAnimationsModule,
         UsersModule,
-        ToastrModule.forRoot()
+        ToastrModule.forRoot(),
+        FormsModule
     ],
     providers: [],
   exports: [
