@@ -6,6 +6,7 @@
 
 <div class="central-meta item">
   <div class="user-post" *ngFor="let post of posts">
+<!--    <span>{{post.content}}</span>-->
     <div class="friend-info">
       <figure>
         <img src="src/assets/images/resources/nearly1.jpg" alt="">
@@ -25,12 +26,12 @@
             </ul>
           </div>
         </div>
-        <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
+        <ins><a href="time-line.html" title="">{{post?.name}}</a> Post Album</ins>
         <span><i class="fa fa-globe"></i> published: </span>
       </div>
       <div class="post-meta">
         <p>
-          {{post.content}}
+          {{post?.content}}
         </p>
         <figure>
           <div class="img-bunch">
@@ -132,18 +133,18 @@
             </div>
 
           </li>
-          <li>
+<!--          <li>-->
             <!--            <atitle="" class="showmore underline">more comments+</a>-->
 <!--            <a [hidden]="post.showComment" (click)="showMoreComment(post.id)" title="" class="showmore underline">hide comments-</a>-->
-          </li>
+<!--          </li>-->
           <li class="post-comment">
             <div class="comet-avatar">
               <img src="src/assets/images/resources/nearly1.jpg" alt="">
             </div>
             <div class="post-comt-box">
               <form>
-                <input type="number" hidden formControlName="user_id">
-                <textarea placeholder="Post your comment" formControlName="content"></textarea>
+                <input type="number" hidden >
+                <textarea placeholder="Post your comment"></textarea>
                 <div class="add-smiles">
                   <div class="uploadimage">
                     <i class="fa fa-image"></i>
