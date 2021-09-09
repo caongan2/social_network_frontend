@@ -20,12 +20,16 @@ export class UserService {
     }
   }
 
+  getAll():Observable<any>{
+    return this.http.get(environment.url_api + 'user-list/',{headers:this.authService.setHeader()});
+  }
+
   update(data: any, id: number): Observable<any> {
     return this.http.put(environment.url_api + "auth/users/" + id + "/update-profile", data, {headers: this.authService.setHeader()});
   }
 
   getById(id: number): Observable<any> {
-    return this.http.get(environment.url_api + 'auth/users/'+ id +'/user-profile', {headers: this.authService.setHeader()})
+    return this.http.get(environment.url_api + id +'/user-profile', {headers: this.authService.setHeader()})
   }
 
   // set item(value: any){
@@ -40,5 +44,9 @@ export class UserService {
   changeUserLogin(user: any) {
     this.userLogin.next(user);
     localStorage.setItem('userLogin', JSON.stringify(user));
+  }
+
+  findUser():Observable<any>{
+    return this.http.get(environment.url_api + 'findUser',{headers:this.authService.setHeader()});
   }
 }

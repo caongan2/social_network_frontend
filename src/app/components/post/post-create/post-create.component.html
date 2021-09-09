@@ -1,5 +1,4 @@
 <div class="central-meta postbox">
-  <span class="create-post">Create post</span>
   <div class="new-postbox">
     <figure>
       <img src="assets/images/resources/admin.jpg" alt="">
@@ -7,14 +6,18 @@
     <div class="newpst-input">
     <div class="attachments">
       <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
-          <span><i class="fa fa-globe"> </i></span>
-            <select formControlName="is_public" [(ngModel)]="is_public"  [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
-              <option [ngValue]="true">Public</option>
-              <option [ngValue]="false">Private</option>
+        <div>
+          <p style="color: #0e0e0e"><strong>{{user.name}}</strong></p>
+          <span ><i class="fa fa-globe"> </i></span>
+          <select  formControlName="is_public" [(ngModel)]="is_public"  [ngClass]="(isPublic?.invalid && isPublic?.dirty) ? 'is-invalid' : ''">
+            <option [ngValue]="true">Public</option>
+            <option [ngValue]="false">Private</option>
           </select>
+        </div>
+
         <div *ngIf="isPublic?.invalid && (isPublic?.dirty || isPublic?.touched) ">
           <p *ngIf="isPublic?.errors?.required" class="text-danger">
-            Không được để trống
+            Can not be blank
           </p>
         </div>
         <textarea rows="2" placeholder="Share some what you are thinking?" formControlName="content"
@@ -55,9 +58,9 @@
                 <input type="file">
               </label>
             </li>
-            <li class="preview-btn">
-              <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
-            </li>
+<!--            <li class="preview-btn">-->
+<!--              <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>-->
+<!--            </li>-->
           </ul>
           <button class="post-btn" type="submit" data-ripple="">Post
           </button>
