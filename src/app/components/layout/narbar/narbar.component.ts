@@ -37,12 +37,6 @@ export class NarbarComponent implements OnInit {
     })
   }
 
-  // getName(event:any){
-  //   let value = event.target.value;
-  //   console.log(value)
-  //   return value;
-  // }
-
   seachUser(event:any){
     let value = event.target.value;
     this.name.emit(value);
