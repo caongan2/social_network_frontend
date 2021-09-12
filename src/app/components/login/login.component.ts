@@ -35,8 +35,4 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  loginByGoogle() {
-    return this.authService.loginByGoogle().subscribe()
-  }
-
 }

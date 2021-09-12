@@ -80,7 +80,7 @@
       </div>
       <div class="form-group">
         <label for="image">Birthdate</label>
-        <input type="file" formControlName="image" class="form-control" (change)="onFileSelected($event)" id="image">
+        <input type="file" [src]="image" class="form-control" (change)="onFileSelected($event)" id="image">
       </div>
       <div>
         <button type="submit" (click)="back()" data-ripple="">Back</button>
