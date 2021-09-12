@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: ':id/delete',
     component: PostDeleteComponent,
+  },
+  {
+    path: 'update-comment/:id',
+    component: CommentComponent
   }
 ]
 

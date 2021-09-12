@@ -18,7 +18,6 @@ export class UserNavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = JSON.parse(<string>this.authService.getUser());
-    // this.userService.userCast.subscribe(user => this.user = user);
   }
 
 
@@ -27,7 +26,6 @@ export class UserNavbarComponent implements OnInit {
       localStorage.clear()
       this.router.navigate(['']).then(r => {
         console.log(res)
-        // console.log('Success')
       }).catch(error => {
         console.log("Logout error")
       })

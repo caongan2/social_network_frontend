@@ -4,6 +4,7 @@ import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthService} from "../../../services/auth.service";
 import {ToastrService} from "ngx-toastr";
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'app-post-update',
@@ -20,7 +21,8 @@ export class PostUpdateComponent implements OnInit {
               private router: Router,
               private authService: AuthService,
               private activatedRoute: ActivatedRoute,
-              private toastr: ToastrService) { }
+              private toastr: ToastrService,
+              private location: Location) { }
 
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
@@ -49,6 +51,10 @@ export class PostUpdateComponent implements OnInit {
 
   get isPublic(){
     return this.formUpdate?.get('is_public');
+  }
+
+  back() {
+    this.router.navigate(['admin/home/posts'])
   }
 
 }
