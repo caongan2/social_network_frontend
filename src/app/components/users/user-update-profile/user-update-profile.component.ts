@@ -4,6 +4,9 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
 import {Location} from "@angular/common";
 import {ToastrService} from "ngx-toastr";
+import {Observable} from "rxjs";
+import {finalize} from "rxjs/operators";
+import {AngularFireStorage} from "@angular/fire/compat/storage";
 
 @Component({
   selector: 'app-user-update-profile',
@@ -11,27 +14,62 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./user-update-profile.component.css']
 })
 export class UserUpdateProfileComponent implements OnInit {
+
+  title = "cloudsSorage";
+  selectedFile: null = null;
+  fb: any;
+  downloadURL: Observable<string> | undefined;
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   formEditProfile  ?: FormGroup;
   constructor(private router: Router,
               private userService: UserService,
-              private fb: FormBuilder,
+              private formBuilder: FormBuilder,
               private activatedRoute: ActivatedRoute,
               private location: Location,
-              private toastr: ToastrService) { }
+              private toastr: ToastrService,
+              private storage: AngularFireStorage) { }
 
   ngOnInit(): void {
     this.userService.getById(this.id).subscribe(res => {
-      this.formEditProfile = this.fb.group({
+      this.formEditProfile = this.formBuilder.group({
         name: [res.name,[Validators.minLength(2),Validators.maxLength(50)]],
         phone: [res.phone,[Validators.pattern(/^0[1-9][0-9]{8}$/)]],
         address: [res.address,[Validators.minLength(2),Validators.maxLength(50)]],
         interest: [res.interest,[Validators.minLength(2),Validators.maxLength(50)]],
-        birth_date: [res.birth_date]
+        birth_date: [res.birth_date],
+        image: ['']
       });
     });
   }
+
+  onFileSelected(event: any) {
+    var n = Date.now();
+    const file = event.target.files[0];
+    const filePath = `RoomsImages/${n}`;
+    const fileRef = this.storage.ref(filePath);
+    const task = this.storage.upload(`RoomsImages/${n}`, file);
+    task
+      .snapshotChanges()
+      .pipe(
+        finalize(() => {
+          this.downloadURL = fileRef.getDownloadURL();
+          // @ts-ignore
+          this.downloadURL.subscribe(url => {
+            if (url) {
+              this.fb = url;
+            }
+            console.log(this.fb);
+          });
+        })
+      )
+      .subscribe((url: any) => {
+        if (url) {
+          console.log(url);
+        }
+      });
+  }
+
 
   submit() {
     let data = this.formEditProfile?.value;

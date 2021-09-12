@@ -7,6 +7,9 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { PostUpdateComponent } from './post-update/post-update.component';
 import { PostDeleteComponent } from './post-delete/post-delete.component';
 import { CommentComponent } from './comment/comment.component';
+import {AngularFireStorageModule} from "@angular/fire/compat/storage";
+import {AngularFireModule} from "@angular/fire/compat";
+import {environment} from "../../../environments/environment";
 
 const routes: Routes = [
   {
@@ -44,12 +47,14 @@ const routes: Routes = [
   ],
   exports: [
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
   ],
   imports: [
     [RouterModule.forChild(routes)],
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, "cloud")
   ]
 })
 export class PostModule { }
