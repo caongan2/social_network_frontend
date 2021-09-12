@@ -36,12 +36,12 @@ export class NarbarComponent implements OnInit {
       localStorage.clear()
       this.router.navigate(['']).then(r => {
         console.log(res)
-        // console.log('Success')
       }).catch(error => {
         console.log("Logout error")
       })
     })
   }
+
 
   seachUser(event:any){
     let value = event.target.value;

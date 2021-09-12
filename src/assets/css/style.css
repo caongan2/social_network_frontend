@@ -1643,6 +1643,18 @@ form button {
     transition: all 0.2s linear 0s;
 }
 
+.new-postbox .cancel-btn {
+  background: #686868 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 11px;
+  padding: 5px;
+  width: 100%;
+  transition: all 0.2s linear 0s;
+}
+
 .attachments .fileContainer [type="file"] {
     right: 2px;
     top: -10px;
