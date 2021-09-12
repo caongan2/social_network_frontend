@@ -24,6 +24,14 @@ export class CommentService {
     return this.http.post(environment.url_api + 'comment/create', data, {headers: this.authService.setHeader()})
   }
 
+  updateComment(data: any, id: any): Observable<any> {
+    return this.http.post(environment.url_api + 'comment/update/' + id, data, {headers: this.authService.setHeader()})
+  }
+
+  getCommentById(id: any): Observable<any> {
+    return this.http.get(environment.url_api + 'comment/show-comment/' + id, {headers: this.authService.setHeader()})
+  }
+
 
 
 }
