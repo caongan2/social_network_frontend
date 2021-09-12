@@ -3,6 +3,7 @@ import {PostService} from "../../../services/post.service";
 import {UserService} from "../../../services/user.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthService} from "../../../services/auth.service";
+import {ToastrService} from "ngx-toastr";
 
 
 @Component({
@@ -20,7 +21,8 @@ export class MasterComponent implements OnInit {
               private authService: AuthService,
               private userService: UserService,
               private activatedRoute: ActivatedRoute,
-              private router: Router) { }
+              private router: Router,
+              private toastr: ToastrService) { }
   // @ts-ignore
   id =+ this.activatedRoute.snapshot.paramMap.get('id');
   ngOnInit(): void {
@@ -58,12 +60,14 @@ export class MasterComponent implements OnInit {
   acceptRequest(id:number){
     return this.userService.acceptFriend(id).subscribe(res=>{
       this.requestFriends.splice(res);
+      this.toastr.success('You have accepted the friend request');
     })
   }
 
   deleteRequest(id:number){
     return this.userService.deleteRequest(id).subscribe(res=>{
       this.requestFriends.splice(res);
+      this.toastr.info('You declined the friend request');
     })
   }
 
