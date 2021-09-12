@@ -6,9 +6,14 @@
   </div><!-- responsive header -->
 
   <div class="topbar stick">
-    <app-narbar (name)="searchUser($event)"></app-narbar>
+    <app-narbar (name)="searchUser($event)" (friend)="requestFriend($event)"></app-narbar>
   </div><!-- narbar -->
   <div class="fixed-sidebar right">
+<!--    <table class="table" style="width: 200px">-->
+<!--      <tr  *ngFor="let requestFriend of requestFriends">-->
+<!--        <td><a>{{requestFriend.name}}</a></td>-->
+<!--      </tr>-->
+<!--    </table>-->
     <app-sidebar-right></app-sidebar-right>
   </div><!-- right sidebar users chat -->
   <div class="fixed-sidebar left">
@@ -42,6 +47,17 @@
                 </div>
               </div><!-- centerl meta -->
               <div class="col-lg-3">
+                <div class="rec-events bg-blue">
+                  <table class="table" style="width: 200px">
+                    <tr>
+                      <th style="color: red">Friend request</th>
+                    </tr>
+                    <tr  *ngFor="let requestFriend of requestFriends">
+                      <td><a>{{requestFriend.name}}</a></td>
+                      <td><a class="active btn btn-primary " data-toggle="tab" data-ripple="">Accept</a> </td>
+                    </tr>
+                  </table>
+                </div>
                 <app-section-right></app-section-right>
               </div><!-- sidebar -->
             </div>

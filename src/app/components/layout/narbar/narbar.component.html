@@ -5,7 +5,7 @@
   <div class="main-menu">
 				<a [routerLink]="['../',user.id,'profile']">
 			    	<i>{{user.name}}</i>
-			    </a>
+        </a>
   </div>
   <div class="top-search">
     <form method="post" class="">
@@ -19,8 +19,8 @@
   <ul class="setting-area">
     <li><a href="newsfeed.html" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
     <li>
-      <a href="#" title="Friend Requests" data-ripple="">
-        <i class="fa fa-user"></i><em class="bg-red">5</em>
+      <a (click)="requestFriend($event)"  title="Friend Requests" data-ripple="" >
+        <i class="fa fa-user"></i><em class="bg-red">{{request.length}}</em>
       </a>
       <div class="dropdowns">
         <span>5 New Requests <a href="#" title="">View all Requests</a></span>
@@ -662,3 +662,4 @@
   </ul>
 
 </nav><!-- nav menu -->
+

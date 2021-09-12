@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {UserService} from "../../../services/user.service";
+import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../../../services/auth.service";
 
 
 @Component({
@@ -9,14 +11,23 @@ import {UserService} from "../../../services/user.service";
   styleUrls: ['./master.component.css']
 })
 export class MasterComponent implements OnInit {
+  user:any;
   users:any = [];
   userFilter:any = [];
-  constructor(private postService: PostService,
-              private userService: UserService) { }
+  requestFriends:any = [];
 
+  constructor(private postService: PostService,
+              private authService: AuthService,
+              private userService: UserService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) { }
+  // @ts-ignore
+  id =+ this.activatedRoute.snapshot.paramMap.get('id');
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser());
     this.getAll();
     this.userFilter = this.users;
+    this.requestFriends = this.users;
   }
 
   getAll(){
@@ -35,6 +46,13 @@ export class MasterComponent implements OnInit {
       return user.name.toLowerCase().indexOf(keyword) !=-1;
     });
 
+  }
+
+  requestFriend(event:any){
+    let friend = event;
+    return  this.userService.requestFriend(friend).subscribe(res=>{
+      this.requestFriends = res;
+    })
   }
 
 }
