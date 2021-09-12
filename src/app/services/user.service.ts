@@ -45,8 +45,12 @@ export class UserService {
     return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriend',{headers:this.authService.setHeader()});
   }
 
-  updateFriend(id:number):Observable<any>{
+  addFriend(id:number):Observable<any>{
     return this.http.get(environment.url_api +'auth/users/'+ id +'/updateFriend',{headers:this.authService.setHeader()});
+  }
+
+  deleteRequest(id:number):Observable<any>{
+    return this.http.delete(environment.url_api + 'auth/users/' + id + '/deleteRequest',{headers:this.authService.setHeader()});
   }
 
   acceptFriend(id:number):Observable<any>{

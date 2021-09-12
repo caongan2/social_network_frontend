@@ -55,4 +55,20 @@ export class MasterComponent implements OnInit {
     })
   }
 
+  acceptRequest(id:number){
+    return this.userService.acceptFriend(id).subscribe(res=>{
+      this.requestFriends.splice(res);
+    })
+  }
+
+  deleteRequest(id:number){
+    return this.userService.deleteRequest(id).subscribe(res=>{
+      this.requestFriends.splice(res);
+    })
+  }
+
+  refresh(): void {
+    window.location.reload();
+  }
+
 }

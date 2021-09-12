@@ -27,6 +27,7 @@ export class NarbarComponent implements OnInit {
     // console.log(this.id)
     this.user = JSON.parse(<string>this.authService.getUser());
     this.userService.userCast.subscribe(user => this.user = user);
+    this.getRequest();
   }
 
 
@@ -56,7 +57,13 @@ export class NarbarComponent implements OnInit {
     console.log(event.value)
     this.friend.emit(event.value)
     return this.userService.requestFriend(event.value).subscribe(res=>{
-      console.log(res);
+      this.request.length = res.length;
+    })
+  }
+
+  getRequest(){
+    return this.userService.requestFriend(this.user.id).subscribe(res=>{
+      this.request = res;
     })
   }
 
