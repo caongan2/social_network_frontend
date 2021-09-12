@@ -17,7 +17,7 @@ export class UserUpdateProfileComponent implements OnInit {
 
   title = "cloudsSorage";
   selectedFile: null = null;
-  fb: any;
+  image: any
   downloadURL: Observable<string> | undefined;
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
@@ -38,9 +38,9 @@ export class UserUpdateProfileComponent implements OnInit {
         address: [res.address,[Validators.minLength(2),Validators.maxLength(50)]],
         interest: [res.interest,[Validators.minLength(2),Validators.maxLength(50)]],
         birth_date: [res.birth_date],
-        image: ['']
       });
     });
+    this.image = this.formEditProfile?.value.image
   }
 
   onFileSelected(event: any) {
@@ -57,14 +57,15 @@ export class UserUpdateProfileComponent implements OnInit {
           // @ts-ignore
           this.downloadURL.subscribe(url => {
             if (url) {
-              this.fb = url;
+              this.image = url;
             }
-            console.log(this.fb);
+            console.log(this.image);
           });
         })
       )
       .subscribe((url: any) => {
         if (url) {
+          // this.image = url
           console.log(url);
         }
       });
@@ -74,6 +75,8 @@ export class UserUpdateProfileComponent implements OnInit {
   submit() {
     let data = this.formEditProfile?.value;
     console.log(data)
+    // @ts-ignore
+    this.formEditProfile?.value.image = this.image
     this.userService.update(data,this.id).subscribe(res => {
         this.toastr.success('Change profile success');
         this.userService.changeUserLogin({...data, id: this.id});
