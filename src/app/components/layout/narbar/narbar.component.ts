@@ -43,15 +43,12 @@ export class NarbarComponent implements OnInit {
   //   return value;
   // }
 
-  seachUser(event:any){
+  searchUser(event:any){
     let value = event.target.value;
     this.name.emit(value);
     this.postService.searchPostByUser(value).subscribe(res=>{
       console.log(res);
-    })
-
+    });
   }
-
-
 
 }
