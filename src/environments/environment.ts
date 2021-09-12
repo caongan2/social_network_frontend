@@ -4,7 +4,18 @@
 
 export const environment = {
   production: false,
-  url_api: "http://localhost:8000/api/"
+  url_api: "http://localhost:8000/api/",
+  firebaseConfig : {
+    apiKey: "AIzaSyD_N0pwDl6XUwEnyIMoB3HYFfIjiJiaS9o",
+    databaseURL :'https://axial-serenity-322216-default-rtdb.firebaseio.com/',
+    authDomain: "axial-serenity-322216.firebaseapp.com",
+    projectId: "axial-serenity-322216",
+    storageBucket: "axial-serenity-322216.appspot.com",
+    messagingSenderId: "993407506844",
+    appId: "1:993407506844:web:134e10fbd090da6e595059",
+    measurementId: "G-5914DHHX30"
+  }
+
 };
 
 /*
