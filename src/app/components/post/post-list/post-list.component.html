@@ -6,11 +6,11 @@
   <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
 </div><!-- top stories -->
 
-<div class="central-meta item">
-  <div class="user-post" *ngFor="let post of posts">
+<div class="central-meta">
+  <div class="create-post" *ngFor="let post of posts">
     <div class="friend-info">
       <figure>
-        <img src="src/assets/images/resources/nearly1.jpg" alt="">
+        <img src="assets/images/resources/nearly1.jpg" alt="">
       </figure>
       <div class="friend-name">
         <div class="more">
@@ -31,44 +31,39 @@
         <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
       </div>
       <div class="post-meta">
-        <p>
-          {{post.content}}
-        </p>
+        <p>{{post.content}}</p>
         <figure>
           <div class="img-bunch">
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="col-lg-12 col-md-12 col-sm-12">
                 <figure>
                   <a href="#" title="" data-toggle="modal" data-target="#img-comt">
-                    <img src="src/assets/images/resources/album1.jpg" alt="">
-                  </a>
-                </figure>
-                <figure>
-                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">
-                    <img src="src/assets/images/resources/album2.jpg" alt="">
+                    <img src="{{post.image}}" alt="">
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <figure>
-                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">
-                    <img src="src/assets/images/resources/album6.jpg" alt="">
-                  </a>
-                </figure>
-                <figure>
-                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">
-                    <img src="src/assets/images/resources/album5.jpg" alt="">
-                  </a>
-                </figure>
-                <figure>
-                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">
-                    <img src="src/assets/images/resources/album4.jpg" alt="">
-                  </a>
-                  <div class="more-photos">
-                    <span>+15</span>
-                  </div>
-                </figure>
-              </div>
+<!--              <div class="col-lg-6 col-md-6 col-sm-6">-->
+<!--                <figure>-->
+<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
+<!--                    <img src="assets/images/resources/album6.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
+<!--                    <img src="assets/images/resources/album6.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
+<!--                    <img src="assets/images/resources/album5.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </figure>-->
+<!--                <figure>-->
+<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
+<!--                    <img src="assets/images/resources/album4.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </figure>-->
+<!--              </div>-->
             </div>
           </div>
         </figure>
@@ -87,19 +82,19 @@
           </ul>
           <div class="users-thumb-list">
             <a data-toggle="tooltip" title="Anderw" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-1.jpg">
+              <img alt="" src="assets/images/resources/userlist-1.jpg">
             </a>
             <a data-toggle="tooltip" title="frank" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-2.jpg">
+              <img alt="" src="assets/images/resources/userlist-2.jpg">
             </a>
             <a data-toggle="tooltip" title="Sara" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-3.jpg">
+              <img alt="" src="assets/images/resources/userlist-3.jpg">
             </a>
             <a data-toggle="tooltip" title="Amy" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-4.jpg">
+              <img alt="" src="assets/images/resources/userlist-4.jpg">
             </a>
             <a data-toggle="tooltip" title="Ema" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-5.jpg">
+              <img alt="" src="assets/images/resources/userlist-5.jpg">
             </a>
             <span><strong>You</strong>, <b>Sarah</b> and <a href="#"
                                                             title="">24+ more</a> liked</span>
@@ -110,7 +105,7 @@
         <ul class="we-comet">
           <li>
             <div class="comet-avatar">
-              <img src="src/assets/images/resources/nearly3.jpg" alt="">
+              <img src="assets/images/resources/nearly3.jpg" alt="">
             </div>
             <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
               <div class="friend-name">
@@ -118,7 +113,7 @@
                 <div class="more">
                   <div class="more-post-optns"><i class="ti-more-alt"></i>
                     <ul>
-                      <!--                    <li><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit Post</a></li>-->
+                      <li><i class="fa fa-pencil-square-o"></i><a [routerLink]="['/admin/home/posts/update-comment', comment.id]">Edit Comment</a></li>
                       <li><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>
                     </ul>
                   </div>
@@ -127,7 +122,7 @@
               <br>
               <p>{{comment.content}}</p>
               <div class="inline-itms">
-                <span>1 year ago</span>
+                <span>{{comment.created_at}}</span>
                 <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
                 <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
               </div>
@@ -140,36 +135,13 @@
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
-              <img src="src/assets/images/resources/nearly1.jpg" alt="">
+              <img src="assets/images/resources/nearly1.jpg" alt="">
             </div>
             <div class="post-comt-box">
               <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">
                 <input type="number" hidden formControlName="user_id">
                 <textarea placeholder="Post your comment" formControlName="content"></textarea>
-                <div class="add-smiles">
-                  <div class="uploadimage">
-                    <i class="fa fa-image"></i>
-                    <label class="fileContainer">
-                      <input type="file">
-                    </label>
-                  </div>
-                  <span class="em em-expressionless" title="add icon"></span>
-                  <div class="smiles-bunch">
-                    <i class="em em---1"></i>
-                    <i class="em em-smiley"></i>
-                    <i class="em em-anguished"></i>
-                    <i class="em em-laughing"></i>
-                    <i class="em em-angry"></i>
-                    <i class="em em-astonished"></i>
-                    <i class="em em-blush"></i>
-                    <i class="em em-disappointed"></i>
-                    <i class="em em-worried"></i>
-                    <i class="em em-kissing_heart"></i>
-                    <i class="em em-rage"></i>
-                    <i class="em em-stuck_out_tongue"></i>
-                  </div>
-                </div>
-                <button type="submit">Comment</button>
+                <button style="color: #0e0e0e" type="submit">Comment</button>
               </form>
             </div>
           </li>

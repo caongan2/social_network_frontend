@@ -1,7 +1,7 @@
 <div class="central-meta postbox">
   <div class="new-postbox">
     <figure>
-      <img src="assets/images/resources/admin.jpg" alt="">
+      <img src="{{user.image}}" style="width: 35px" alt="">
     </figure>
 
     <div class="newpst-input">
@@ -44,7 +44,8 @@
             <li>
               <i class="fa fa-image"></i>
               <label class="fileContainer">
-                <input type="file" formControlName="images">
+
+                <input type="file" [src]="image" (change)="onFileSelected($event)">
               </label>
             </li>
             <li>
@@ -59,9 +60,7 @@
                 <input type="file">
               </label>
             </li>
-<!--            <li class="preview-btn">-->
-<!--              <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>-->
-<!--            </li>-->
+
           </ul>
 
           <button class="post-btn" type="submit" data-ripple="">Post

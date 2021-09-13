@@ -11,11 +11,14 @@ import {UserProfileComponent} from "./user-profile/user-profile.component";
 import {RouterModule, Routes} from "@angular/router";
 import { UserSidebarLeftComponent } from './user-sidebar-left/user-sidebar-left.component';
 import { UserSidebarRightComponent } from './user-sidebar-right/user-sidebar-right.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { UserUpdateProfileComponent } from './user-update-profile/user-update-profile.component';
- import { UserPostComponent } from './user-post/user-post.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { UserPostComponent } from './user-post/user-post.component';
 import { PersonalPageComponent } from './personal-page/personal-page.component';
+import {AngularFireStorageModule} from "@.../storage";
+import { AngularFireModule } from "@angular/fire/compat";
+import {environment} from "../../../environments/environment";
 
 
 const routes: Routes = [
@@ -65,8 +68,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule,
-
     ReactiveFormsModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, "cloud")
   ]
 })
 export class UsersModule { }

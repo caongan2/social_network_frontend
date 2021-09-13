@@ -3,9 +3,9 @@
 </div>
 <div class="top-area">
   <div class="main-menu">
-				<a [routerLink]="['../',user.id,'profile']">
+    <a [routerLink]="['../',user.id,'profile']">
 			    	<i>{{user.name}}</i>
-			    </a>
+    </a>
   </div>
   <div class="top-search">
     <form method="post" class="">
@@ -19,8 +19,8 @@
   <ul class="setting-area">
     <li><a href="newsfeed.html" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
     <li>
-      <a href="#" title="Friend Requests" data-ripple="">
-        <i class="fa fa-user"></i><em class="bg-red">5</em>
+      <a (click)="requestFriend($event)"  title="Friend Requests" data-ripple="" >
+        <i class="fa fa-user"></i><em class="bg-red">{{request.length}}</em>
       </a>
       <div class="dropdowns">
         <span>5 New Requests <a href="#" title="">View all Requests</a></span>
@@ -423,12 +423,14 @@
               </li>
               <li>
                 <a href="#">
-                  <img title="Image Title" alt="Image Alternative text" src="assets/images/flags/IND.png">Bahasa Indonesia
+                  <img title="Image Title" alt="Image Alternative text" src="assets/images/flags/IND.png">Bahasa
+                  Indonesia
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img title="Image Title" alt="Image Alternative text" src="assets/images/flags/MAL.png">Bahasa Malaysia
+                  <img title="Image Title" alt="Image Alternative text" src="assets/images/flags/MAL.png">Bahasa
+                  Malaysia
                 </a>
               </li>
               <li>
@@ -516,7 +518,7 @@
   </ul>
   <div class="user-img">
     <i class="fas fa-power-off" (click)="logout()"></i>
-    <img src="assets/images/resources/admin.jpg" alt="">
+    <img src="{{user.image}}" style="width: 60px; height: 60px"  alt="">
     <span class="status f-online"></span>
     <div class="user-setting">
       <span class="seting-title">Chat setting <a href="#" title="">see all</a></span>
@@ -662,3 +664,4 @@
   </ul>
 
 </nav><!-- nav menu -->
+

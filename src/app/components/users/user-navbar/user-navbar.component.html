@@ -18,7 +18,7 @@
     <span>Newsfeed</span>
   </div>
   <ul class="setting-area">
-    <li><a [routerLink]="['../home/posts']" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
+    <li><a [routerLink]="['../../home/posts']" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
     <li>
       <a href="#" title="Friend Requests" data-ripple="">
         <i class="fa fa-user"></i><em class="bg-red">5</em>
@@ -517,7 +517,7 @@
   </ul>
   <div class="user-img">
     <i class="fas fa-power-off" (click)="logout()"></i>
-    <img src="assets/images/resources/admin.jpg" alt="">
+    <img src="{{user.image}}"style="width: 40px; height: 40px" alt="">
     <span class="status f-online"></span>
     <div class="user-setting">
       <span class="seting-title">Chat setting <a href="#" title="">see all</a></span>

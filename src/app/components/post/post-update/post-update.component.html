@@ -41,7 +41,7 @@
             <li>
               <i class="fa fa-image"></i>
               <label class="fileContainer">
-                <input type="file">
+                <input type="file" (change)="onFileSelected($event)">
               </label>
             </li>
             <li>
@@ -60,8 +60,8 @@
               <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
             </li>
           </ul>
-          <button  class="post-btn" type="submit" data-ripple="">Post
-          </button>
+          <button  class="post-btn" type="submit" data-ripple="">Accept</button>
+          <button  class="cancel-btn" (click)="back()" data-ripple="">Cancel</button>
         </div>
 
       </form>

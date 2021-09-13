@@ -31,7 +31,10 @@ export class UserService {
     return this.http.get(environment.url_api + id +'/user-profile', {headers: this.authService.setHeader()})
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 009c28aba49af3cc62e613955f608a66d9780356
   changeUserLogin(user: any) {
     this.userLogin.next(user);
     localStorage.setItem('userLogin', JSON.stringify(user));
@@ -39,5 +42,21 @@ export class UserService {
 
   findUser():Observable<any>{
     return this.http.get(environment.url_api + 'findUser',{headers:this.authService.setHeader()});
+  }
+
+  listFriend(id:number):Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriend',{headers:this.authService.setHeader()});
+  }
+
+  updateFriend(id:number):Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/'+ id +'/updateFriend',{headers:this.authService.setHeader()});
+  }
+
+  acceptFriend(id:number):Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/'+id +'/acceptFriend',{headers:this.authService.setHeader()});
+  }
+
+  requestFriend(id:number):Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/'+id + '/requestFriend',{headers:this.authService.setHeader()});
   }
 }
