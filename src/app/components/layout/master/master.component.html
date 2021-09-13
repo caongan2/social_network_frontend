@@ -53,9 +53,9 @@
                       <th style="color: black">Friend request</th>
                     </tr>
                     <tr  *ngFor="let requestFriend of requestFriends">
-                      <td><a>{{requestFriend.name}}</a></td>
-                      <td><a id="requestFriend-{{requestFriend.friend_id}}" (click)="acceptRequest(requestFriend.friend_id)" class="active btn btn-secondary" style="background-color: #2a62bc" data-toggle="tab" data-ripple="">Accept</a> </td>
-                      <td><a id="deleteRequest-{{requestFriend.friend_id}}" (click)="deleteRequest(requestFriend.friend_id)" class="active btn btn-secondary " style="background-color: red" data-toggle="tab" data-ripple="">Cancel</a> </td>
+                      <td><a>{{requestFriend.friend_name}}</a></td>
+                      <td><a id="requestFriend-{{requestFriend.user_id}}" (click)="acceptRequest(requestFriend.user_id)" class="active btn btn-secondary" style="background-color: #2a62bc" data-toggle="tab" data-ripple="">Accept</a> </td>
+                      <td><a id="deleteRequest-{{requestFriend.user_id}}" (click)="deleteRequest(requestFriend.user_id)" class="active btn btn-secondary " style="background-color: red" data-toggle="tab" data-ripple="">Cancel</a> </td>
                     </tr>
                   </table>
                 </div>

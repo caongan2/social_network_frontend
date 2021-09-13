@@ -42,7 +42,7 @@ export class UserService {
   }
 
   listFriend(id:number):Observable<any>{
-    return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriend',{headers:this.authService.setHeader()});
+    return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriendByUser',{headers:this.authService.setHeader()});
   }
 
   listUsers():Observable<any>{
@@ -63,5 +63,9 @@ export class UserService {
 
   requestFriend(id:number):Observable<any>{
     return this.http.get(environment.url_api +'auth/users/'+id + '/requestFriend',{headers:this.authService.setHeader()});
+  }
+
+  getRelationShip(id:number):Observable<any>{
+    return this.http.get(environment.url_api + 'posts/' + id + '/getRelationShip',{headers:this.authService.setHeader()});
   }
 }

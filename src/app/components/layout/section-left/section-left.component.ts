@@ -32,6 +32,7 @@ export class SectionLeftComponent implements OnInit {
 
   addFriend(id:number){
     return this.userService.addFriend(id).subscribe(res=>{
+      console.log(res)
       this.refresh();
       this.toastr.success('Send a friend request successfully')
     })

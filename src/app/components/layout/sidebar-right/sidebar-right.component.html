@@ -1,10 +1,10 @@
 <div class="chat-friendz">
-  <ul class="chat-users" *ngFor="let user of users">
+  <ul class="chat-users" *ngFor="let friend of users">
     <li >
       <div class="author-thmb">
-        <img src="{{user.image}}" alt="">
+        <img src="{{friend.image}}" alt="">
         <span class="status f-online"></span>
-        <p><a [routerLink]="['../',user.friend_id,'personal-profile']">{{user.name}}</a></p>
+        <p><a [routerLink]="['../',friend.user_id,'personal-profile']">{{friend.friend_name}}</a></p>
       </div>
     </li>
   </ul>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from "../../../services/user.service";
 import {PostService} from "../../../services/post.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../../../services/auth.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-personal-page',
@@ -15,7 +17,10 @@ export class PersonalPageComponent implements OnInit {
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   constructor(private userService: UserService,
               private postService:PostService,
-              private activatedRoute: ActivatedRoute) { }
+              private activatedRoute: ActivatedRoute,
+              private authService: AuthService,
+              private router: Router,
+              private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.getUser(this.id);
@@ -24,8 +29,16 @@ export class PersonalPageComponent implements OnInit {
 
   getPostByUser(){
     return this.postService.getPostByUser(this.id).subscribe(res => {
+      console.log(res)
       this.posts = res;
-      console.log(res);
+    })
+  }
+
+
+  like(id: any) {
+    this.postService.like(id).subscribe(res => {
+      // @ts-ignore
+      document.getElementById('countLike-' + id ).innerHTML = res;
     })
   }
 
