@@ -10,7 +10,7 @@
   <div class="create-post" *ngFor="let post of posts">
     <div class="friend-info">
       <figure>
-        <img src="src/assets/images/resources/nearly1.jpg" alt="">
+        <img src="" alt="">
       </figure>
       <div class="friend-name">
         <div class="more">
@@ -27,7 +27,7 @@
             </ul>
           </div>
         </div>
-        <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
+        <ins><a [routerLink]="['../../',post.userId,'personal-profile']" title="">{{post.name}}</a> Post Album</ins>
         <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
       </div>
       <div class="post-meta">
@@ -82,19 +82,19 @@
           </ul>
           <div class="users-thumb-list">
             <a data-toggle="tooltip" title="Anderw" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-1.jpg">
+              <img alt="" src="assets/images/resources/userlist-1.jpg">
             </a>
             <a data-toggle="tooltip" title="frank" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-2.jpg">
+              <img alt="" src="assets/images/resources/userlist-2.jpg">
             </a>
             <a data-toggle="tooltip" title="Sara" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-3.jpg">
+              <img alt="" src="assets/images/resources/userlist-3.jpg">
             </a>
             <a data-toggle="tooltip" title="Amy" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-4.jpg">
+              <img alt="" src="assets/images/resources/userlist-4.jpg">
             </a>
             <a data-toggle="tooltip" title="Ema" href="#">
-              <img alt="" src="src/assets/images/resources/userlist-5.jpg">
+              <img alt="" src="assets/images/resources/userlist-5.jpg">
             </a>
             <span><strong>You</strong>, <b>Sarah</b> and <a href="#"
                                                             title="">24+ more</a> liked</span>
@@ -105,7 +105,7 @@
         <ul class="we-comet">
           <li>
             <div class="comet-avatar">
-              <img src="src/assets/images/resources/nearly3.jpg" alt="">
+              <img src="assets/images/resources/nearly3.jpg" alt="">
             </div>
             <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
               <div class="friend-name">
@@ -135,7 +135,7 @@
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
-              <img src="src/assets/images/resources/nearly1.jpg" alt="">
+              <img src="assets/images/resources/nearly1.jpg" alt="">
             </div>
             <div class="post-comt-box">
               <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">

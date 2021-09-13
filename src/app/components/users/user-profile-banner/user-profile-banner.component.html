@@ -8,7 +8,7 @@
     </div>
     <img src="assets/images/resources/profile-image.jpg" alt="">
     <ul class="profile-controls">
-      <li><a href="#" title="Add friend" data-toggle="tooltip"><i class="fa fa-user-plus"></i></a></li>
+      <li><a *ngIf="is_accept == false" (click)="addFriend(user.id)" title="Add friend" data-toggle="tooltip"><i class="fa fa-user-plus"></i></a></li>
       <li><a href="#" title="Follow" data-toggle="tooltip"><i class="fa fa-star"></i></a></li>
       <li><a class="send-mesg" href="#" title="Send Message" data-toggle="tooltip"><i class="fa fa-comment"></i></a></li>
       <li>
@@ -39,7 +39,7 @@
       <div class="col-lg-2 col-md-3">
         <div class="profile-author">
           <div class="profile-author-thumb">
-            <img alt="author" src="assets/images/resources/author.jpg">
+            <img alt="author" src="{{user.image}}" style="width: 50px; height: 150px">
             <div class="edit-dp">
               <label class="fileContainer">
                 <i class="fa fa-camera"></i>

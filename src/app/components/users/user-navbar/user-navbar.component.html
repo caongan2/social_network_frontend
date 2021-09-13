@@ -10,7 +10,7 @@
   </div>
   <div class="top-search">
     <form method="post" class="">
-      <input type="text" placeholder="Search People, Pages, Groups etc">
+      <input type="text" placeholder="Search People, Pages, Groups etc" (keyup)="seachUser($event)">
       <button data-ripple><i class="ti-search"></i></button>
     </form>
   </div>
@@ -20,9 +20,7 @@
   <ul class="setting-area">
     <li><a [routerLink]="['../../home/posts']" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
     <li>
-      <a href="#" title="Friend Requests" data-ripple="">
-        <i class="fa fa-user"></i><em class="bg-red">5</em>
-      </a>
+
       <div class="dropdowns">
         <span>5 New Requests <a href="#" title="">View all Requests</a></span>
         <ul class="drops-menu">
@@ -514,10 +512,15 @@
         </ul>
       </div>
     </li>
+    <li>
+      <a (click)="requestFriend($event)"  title="Friend Requests" data-ripple="" >
+        <i class="fa fa-user"></i><em class="bg-red">{{request.length}}</em>
+      </a>
+    </li>
   </ul>
   <div class="user-img">
     <i class="fas fa-power-off" (click)="logout()"></i>
-    <img src="assets/images/resources/admin.jpg" alt="">
+    <img src="{{user.image}}"style="width: 40px; height: 40px" alt="">
     <span class="status f-online"></span>
     <div class="user-setting">
       <span class="seting-title">Chat setting <a href="#" title="">see all</a></span>
