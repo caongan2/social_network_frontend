@@ -42,11 +42,19 @@ export class UserService {
   }
 
   listFriend(id:number):Observable<any>{
-    return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriend',{headers:this.authService.setHeader()});
+    return this.http.get(environment.url_api +'auth/users/' + id+ '/listFriendByUser',{headers:this.authService.setHeader()});
   }
 
-  updateFriend(id:number):Observable<any>{
-    return this.http.get(environment.url_api +'auth/users/'+ id +'/updateFriend',{headers:this.authService.setHeader()});
+  listUsers():Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/listUsers',{headers:this.authService.setHeader()} );
+  }
+
+  addFriend(id:number):Observable<any>{
+    return this.http.get(environment.url_api +'auth/users/'+ id +'/addFriend',{headers:this.authService.setHeader()});
+  }
+
+  deleteRequest(id:number):Observable<any>{
+    return this.http.delete(environment.url_api + 'auth/users/' + id + '/deleteRequest',{headers:this.authService.setHeader()});
   }
 
   acceptFriend(id:number):Observable<any>{
@@ -55,5 +63,9 @@ export class UserService {
 
   requestFriend(id:number):Observable<any>{
     return this.http.get(environment.url_api +'auth/users/'+id + '/requestFriend',{headers:this.authService.setHeader()});
+  }
+
+  getRelationShip(id:number):Observable<any>{
+    return this.http.get(environment.url_api + 'posts/' + id + '/getRelationShip',{headers:this.authService.setHeader()});
   }
 }

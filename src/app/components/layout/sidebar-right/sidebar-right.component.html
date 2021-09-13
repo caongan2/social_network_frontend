@@ -1,69 +1,10 @@
 <div class="chat-friendz">
-  <ul class="chat-users">
-    <li>
+  <ul class="chat-users" *ngFor="let friend of users">
+    <li >
       <div class="author-thmb">
-        <img src="assets/images/resources/side-friend1.jpg" alt="">
+        <img src="{{friend.image}}" alt="">
         <span class="status f-online"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend2.jpg" alt="">
-        <span class="status f-away"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend3.jpg" alt="">
-        <span class="status f-online"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend4.jpg" alt="">
-        <span class="status f-offline"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend5.jpg" alt="">
-        <span class="status f-online"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend6.jpg" alt="">
-        <span class="status f-online"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend7.jpg" alt="">
-        <span class="status f-offline"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend8.jpg" alt="">
-        <span class="status f-online"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend9.jpg" alt="">
-        <span class="status f-away"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend10.jpg" alt="">
-        <span class="status f-away"></span>
-      </div>
-    </li>
-    <li>
-      <div class="author-thmb">
-        <img src="assets/images/resources/side-friend8.jpg" alt="">
-        <span class="status f-online"></span>
+        <p><a [routerLink]="['../',friend.user_id,'personal-profile']">{{friend.friend_name}}</a></p>
       </div>
     </li>
   </ul>

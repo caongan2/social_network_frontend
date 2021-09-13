@@ -10,7 +10,7 @@
   <div class="create-post" *ngFor="let post of posts">
     <div class="friend-info">
       <figure>
-        <img src="assets/images/resources/nearly1.jpg" alt="">
+        <img src="" alt="">
       </figure>
       <div class="friend-name">
         <div class="more">
@@ -27,7 +27,7 @@
             </ul>
           </div>
         </div>
-        <ins><a href="time-line.html" title="">{{post.name}}</a> Post Album</ins>
+        <ins><a [routerLink]="['../../',post.userId,'personal-profile']" title="">{{post.name}}</a> Post Album</ins>
         <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
       </div>
       <div class="post-meta">
