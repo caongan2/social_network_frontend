@@ -91,8 +91,8 @@
                 <div class="more">
                   <div class="more-post-optns"><i class="ti-more-alt"></i>
                     <ul>
-                      <li><i class="fa fa-pencil-square-o"></i><a [routerLink]="['/admin/home/posts/update-comment', comment.id]">Edit Comment</a></li>
-                      <li><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>
+                      <li [hidden]="comment.name != user.name"><i class="fa fa-pencil-square-o"></i><a [routerLink]="['/admin/home/posts/update-comment', comment.id]">Edit Comment</a></li>
+                      <li [hidden]="comment.name != user.name"><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>
                     </ul>
                   </div>
                 </div>
