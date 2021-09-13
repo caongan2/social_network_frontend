@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {UserService} from "../../../services/user.service";
 import {AuthService} from "../../../services/auth.service";
 import {ActivatedRoute} from "@angular/router";
+=======
+>>>>>>> 9093ba2217a723abd4de619ba7690c79cda2ea7a
 
 @Component({
   selector: 'app-user-profile-banner',
@@ -10,6 +13,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class UserProfileBannerComponent implements OnInit {
 
+<<<<<<< HEAD
   user: any;
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
@@ -26,5 +30,11 @@ export class UserProfileBannerComponent implements OnInit {
     return this.userService.getById(id).subscribe(res=>{
       this.user = res;
     })
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+>>>>>>> 9093ba2217a723abd4de619ba7690c79cda2ea7a
   }
+
 }

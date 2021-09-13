@@ -7,7 +7,8 @@ import {AuthService} from "../../../services/auth.service";
 import {ToastrService} from "ngx-toastr";
 import {Observable} from "rxjs";
 import {finalize} from "rxjs/operators";
-import {AngularFireStorage} from "@angular/fire/compat/storage";
+import { AngularFireStorage } from "@angular/fire/compat/storage";
+
 
 @Component({
   selector: 'app-post-create',
@@ -41,7 +42,7 @@ export class PostCreateComponent implements OnInit {
       userId: [this.user.id],
       content: ['', [Validators.required]],
 
-      is_public: [this.is_public,[Validators.required]],
+      is_public: ['',[Validators.required]],
     });
     this.getAll();
     this.image = this.formCreatePost.value.image

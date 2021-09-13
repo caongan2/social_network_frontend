@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {AuthService} from "./auth.service";
@@ -10,34 +10,28 @@ import {BehaviorSubject, Observable} from "rxjs";
 export class UserService {
   userLogin = new BehaviorSubject(null);
   userCast = this.userLogin.asObservable();
-
   constructor(private http: HttpClient,
-              private authService: AuthService) {
+              private authService: AuthService)
+  {
     let data = localStorage.getItem('userLogin');
-    if (data) {
+    if (data){
       this.changeUserLogin(JSON.parse(data));
     }
   }
 
-  getAll():Observable<any>{
-    return this.http.get(environment.url_api + 'user-list/',{headers:this.authService.setHeader()});
-  }
 
-  update(data: any, id: number): Observable<any> {
+  update(data:any, id: number):Observable<any> {
     return this.http.put(environment.url_api + "auth/users/" + id + "/update-profile", data, {headers: this.authService.setHeader()});
   }
 
-  getById(id: number): Observable<any> {
-    return this.http.get(environment.url_api + id +'/user-profile', {headers: this.authService.setHeader()})
+  getById():Observable<any> {
+    return this.http.get(environment.url_api + "auth/user-profile", {headers: this.authService.setHeader()})
   }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 009c28aba49af3cc62e613955f608a66d9780356
-  changeUserLogin(user: any) {
+  changeUserLogin(user: any){
     this.userLogin.next(user);
-    localStorage.setItem('userLogin', JSON.stringify(user));
+    localStorage.setItem('userLogin',JSON.stringify(user));
   }
 
   findUser():Observable<any>{

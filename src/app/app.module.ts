@@ -20,6 +20,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegisterComponent} from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
+import {UserModule} from "./components/user/user.module";
 
 
 
@@ -38,24 +39,25 @@ import {UsersModule} from "./components/users/users.module";
     StoryComponent,
     LoginComponent,
     RegisterComponent,
+
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PostModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    UsersModule,
-    ToastrModule.forRoot(),
-    FormsModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        PostModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        UserModule,
+        UsersModule,
+        ToastrModule.forRoot()
+    ],
+    providers: [
+    ],
   exports: [
     StoryComponent,
     SidebarLeftComponent,
     SidebarRightComponent,
-    NarbarComponent,
   ],
   bootstrap: [AppComponent]
 })

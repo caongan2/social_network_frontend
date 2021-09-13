@@ -3,10 +3,13 @@ import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from "
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
 import {Location} from "@angular/common";
+<<<<<<< HEAD
 import {ToastrService} from "ngx-toastr";
 import {Observable} from "rxjs";
 import {finalize} from "rxjs/operators";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
+=======
+>>>>>>> 9093ba2217a723abd4de619ba7690c79cda2ea7a
 
 @Component({
   selector: 'app-user-update-profile',
@@ -27,6 +30,7 @@ export class UserUpdateProfileComponent implements OnInit {
               private userService: UserService,
               private formBuilder: FormBuilder,
               private activatedRoute: ActivatedRoute,
+<<<<<<< HEAD
               private location: Location,
               private toastr: ToastrService,
               private storage: AngularFireStorage) { }
@@ -35,6 +39,14 @@ export class UserUpdateProfileComponent implements OnInit {
     this.userService.getById(this.id).subscribe(res => {
       this.formEditProfile = this.formBuilder.group({
         name: [res.name,[Validators.minLength(2),Validators.maxLength(50)]],
+=======
+              private location: Location) { }
+
+  ngOnInit(): void {
+    this.userService.getById().subscribe(res => {
+      this.formEditProfile = this.fb.group({
+        name: [res.name,[Validators.minLength(2),Validators.maxLength(50),Validators.pattern(/^[A-Z a-z]+$/)]],
+>>>>>>> 9093ba2217a723abd4de619ba7690c79cda2ea7a
         phone: [res.phone,[Validators.pattern(/^0[1-9][0-9]{8}$/)]],
         address: [res.address,[Validators.minLength(2),Validators.maxLength(50)]],
         interest: [res.interest,[Validators.minLength(2),Validators.maxLength(50)]],
@@ -75,14 +87,16 @@ export class UserUpdateProfileComponent implements OnInit {
 
   submit() {
     let data = this.formEditProfile?.value;
+<<<<<<< HEAD
     console.log(data)
     // @ts-ignore
     this.formEditProfile?.value.image = this.image
+=======
+>>>>>>> 9093ba2217a723abd4de619ba7690c79cda2ea7a
     this.userService.update(data,this.id).subscribe(res => {
-        this.toastr.success('Change profile success');
-        this.userService.changeUserLogin({...data, id: this.id});
-        this.router.navigate(['admin/home/posts']);
-        console.log(res);
+      this.userService.changeUserLogin({...data, id: this.id});
+      this.router.navigate(['admin/home/posts']);
+      console.log(res);
     })
   }
 

@@ -27,9 +27,7 @@ export class ChangePasswordComponent implements OnInit {
         new_password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(20)]],
         new_password_confirmation: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(20)]]
       }
-      // {
-      //   validator: ChangePasswordComponent.MatchPassword
-      // }
+    
     );
   }
 

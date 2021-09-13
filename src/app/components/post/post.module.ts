@@ -42,8 +42,7 @@ const routes: Routes = [
     PostCreateComponent,
     PostListComponent,
     PostUpdateComponent,
-    PostDeleteComponent,
-    CommentComponent,
+    PostDeleteComponent
   ],
   exports: [
     PostCreateComponent,
