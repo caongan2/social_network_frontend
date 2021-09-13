@@ -15,7 +15,7 @@ export class PostListComponent implements OnInit {
   posts: any = [];
   user: any;
   isLike: boolean = false;
-  formComment: FormGroup | undefined
+  formComment: FormGroup | undefined;
   post: any;
   showComment: boolean = false
 

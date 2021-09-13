@@ -38,4 +38,8 @@ export class AuthService {
     return this.http.post(environment.url_api + "auth/change-password", data, {headers: this.setHeader()});
   }
 
+  loginByGoogle(data: any) {
+    return this.http.post(environment.url_api + "auth/loginGoogle",data);
+  }
+
 }
