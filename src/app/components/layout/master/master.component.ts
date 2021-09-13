@@ -60,6 +60,7 @@ export class MasterComponent implements OnInit {
   acceptRequest(id:number){
     return this.userService.acceptFriend(id).subscribe(res=>{
       this.requestFriends.splice(res);
+      this.refresh();
       this.toastr.success('You have accepted the friend request');
     })
   }

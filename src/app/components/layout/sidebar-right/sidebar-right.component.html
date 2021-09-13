@@ -2,9 +2,9 @@
   <ul class="chat-users" *ngFor="let user of users">
     <li >
       <div class="author-thmb">
-        <img src="assets/images/resources/side-friend1.jpg" alt="">
+        <img src="{{user.image}}" alt="">
         <span class="status f-online"></span>
-        <p>{{user.name}}</p>
+        <p><a [routerLink]="['../',user.friend_id,'personal-profile']">{{user.name}}</a></p>
       </div>
     </li>
   </ul>
