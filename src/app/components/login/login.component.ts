@@ -26,11 +26,11 @@ export class LoginComponent implements OnInit {
       email: ['',[Validators.required,Validators.email]],
       password: ['',[Validators.required,Validators.minLength(6),Validators.maxLength(20)]],
     });
-    // this.socialAuthService.authState.subscribe((user) => {
-    //   this.socialUser = user;
-    //   this.isLoggedin = (user != null);
-    //   console.log(this.socialUser);
-    // });
+    this.socialAuthService.authState.subscribe((user) => {
+      this.socialUser = user;
+      this.isLoggedin = (user != null);
+      // console.log(this.socialUser);
+    });
   }
 
   onSubmit() {
@@ -40,13 +40,14 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('token', JSON.stringify(res.access_token));
       // localStorage.setItem('userLogin', JSON.stringify(res.user));
       this.router.navigate(['admin/home/posts']);
-      console.log(res);
+      // console.log(res);
     });
   }
 
   loginWithGoogle(): void {
-    let data = this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID);
-    this.loginByGoogle(data);
+    this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID).then(res => {
+      this.loginByGoogle(res.authToken);
+    });
   }
 
   loginByGoogle(accessToken: any) {
@@ -55,7 +56,6 @@ export class LoginComponent implements OnInit {
       this.userService.changeUserLogin(res.user);
       localStorage.setItem('token', JSON.stringify(res.access_token));
       this.router.navigate(['admin/home/posts']);
-      console.log(res);
     });
   }
 
