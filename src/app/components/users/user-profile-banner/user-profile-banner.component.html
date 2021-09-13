@@ -49,8 +49,8 @@
           </div>
 
           <div class="author-content">
-            <a class="h4 author-name" href="about.html">Jack Carter</a>
-            <div class="country">Ontario, CA</div>
+            <a class="h4 author-name" href="about.html">{{user.name}}</a>
+            <div class="country">{{user.address}}</div>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
               <i class="fa fa-ellipsis-h"></i>
               <ul class="more-dropdown">
                 <li>
-                  <a href="timeline-groups.html">Edit Profile</a>
+                  <a [routerLink]="['../home/'+ user.id + '/update']">Edit Profile</a>
                 </li>
                 <li>
                   <a href="statistics.html">Profile Analytics</a>

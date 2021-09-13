@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UserService} from "../../../services/user.service";
+import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-user-navbar',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserNavbarComponent implements OnInit {
 
-  constructor() { }
+  user: any
+
+  constructor(private authService: AuthService,
+              private router: Router,
+              private userService: UserService) { }
 
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser());
+    // this.userService.userCast.subscribe(user => this.user = user);
+  }
+
+
+  logout() {
+    this.authService.logout().subscribe(res => {
+      localStorage.clear()
+      this.router.navigate(['']).then(r => {
+        console.log(res)
+        // console.log('Success')
+      }).catch(error => {
+        console.log("Logout error")
+      })
+    })
   }
 
 }
