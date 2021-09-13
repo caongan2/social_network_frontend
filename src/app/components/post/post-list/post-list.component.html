@@ -42,28 +42,6 @@
                   </a>
                 </figure>
               </div>
-<!--              <div class="col-lg-6 col-md-6 col-sm-6">-->
-<!--                <figure>-->
-<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
-<!--                    <img src="assets/images/resources/album6.jpg" alt="">-->
-<!--                  </a>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
-<!--                    <img src="assets/images/resources/album6.jpg" alt="">-->
-<!--                  </a>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
-<!--                    <img src="assets/images/resources/album5.jpg" alt="">-->
-<!--                  </a>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                  <a href="#" title="" data-toggle="modal" data-target="#img-comt">-->
-<!--                    <img src="assets/images/resources/album4.jpg" alt="">-->
-<!--                  </a>-->
-<!--                </figure>-->
-<!--              </div>-->
             </div>
           </div>
         </figure>
@@ -104,10 +82,10 @@
       <div class="coment-area" style="display: block;">
         <ul class="we-comet">
           <li>
-            <div class="comet-avatar">
-              <img src="assets/images/resources/nearly3.jpg" alt="">
-            </div>
             <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
+              <div class="comet-avatar">
+                <img src="{{comment.image}}" style="width: 20px; height: 20px" alt="">
+              </div>
               <div class="friend-name">
                 <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>
                 <div class="more">
@@ -135,7 +113,7 @@
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
-              <img src="assets/images/resources/nearly1.jpg" alt="">
+              <img src="{{user.image}}" style="width: 30px; height: 30px" alt="">
             </div>
             <div class="post-comt-box">
               <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">
