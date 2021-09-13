@@ -23,11 +23,9 @@ export class UserPostComponent implements OnInit {
     this.getPostByUser();
   }
 
-  getPostByUser(){
+  getPostByUser() {
     return this.postService.getPostByUser(this.id).subscribe(res => {
       this.posts = res;
-      console.log(res);
     })
   }
-
 }

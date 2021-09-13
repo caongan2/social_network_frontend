@@ -15,6 +15,8 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
 })
 export class UserUpdateProfileComponent implements OnInit {
 
+  title = "cloudsSorage";
+  selectedFile: null = null;
   image: any
   downloadURL: Observable<string> | undefined;
   // @ts-ignore

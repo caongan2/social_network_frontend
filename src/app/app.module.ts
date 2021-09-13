@@ -20,6 +20,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegisterComponent} from './components/register/register.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {UsersModule} from "./components/users/users.module";
+import {GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule} from "angularx-social-login";
 
 
 
@@ -37,7 +38,7 @@ import {UsersModule} from "./components/users/users.module";
     SectionRightComponent,
     StoryComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -47,10 +48,26 @@ import {UsersModule} from "./components/users/users.module";
     ReactiveFormsModule,
     BrowserAnimationsModule,
     UsersModule,
+    SocialLoginModule,
     ToastrModule.forRoot(),
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: true,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '822527485321-tgkkfg7db5064ok59i2c75ev0k1jfvum.apps.googleusercontent.com'
+            )
+          }
+        ]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   exports: [
     StoryComponent,
     SidebarLeftComponent,

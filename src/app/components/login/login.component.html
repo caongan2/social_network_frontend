@@ -59,7 +59,23 @@
               </div>
               <form *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="we-form">
                 <input type="text" placeholder="Email" formControlName="email">
+                <div *ngIf="email?.invalid && (email?.dirty || email?.touched) ">
+                  <p *ngIf="email?.errors?.required" class="text-danger">
+                    Please fill your email
+                  </p>
+                  <p *ngIf="email?.errors?.email" class="text-danger">
+                    It's not format of email !
+                  </p>
+                </div>
                 <input type="password" placeholder="Password" formControlName="password">
+                <div *ngIf="password?.invalid && (password?.dirty || password?.touched) ">
+                  <p *ngIf="password?.errors?.required" class="text-danger">
+                    Please fill your email
+                  </p>
+                  <p *ngIf="password?.errors?.minlength" class="text-danger">
+                    It's not format of email !
+                  </p>
+                </div>
                 <input type="checkbox"><label>remember me</label>
                 <button type="submit" data-ripple="">sign in</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
@@ -67,7 +83,7 @@
               <a class="with-smedia facebook" href="#" title="" data-ripple=""><i class="fa fa-facebook"></i></a>
               <a class="with-smedia twitter" href="#" title="" data-ripple=""><i class="fa fa-twitter"></i></a>
               <a class="with-smedia instagram" href="#" title="" data-ripple=""><i class="fa fa-instagram"></i></a>
-              <a class="with-smedia google" href="#" title="" data-ripple=""><i class="fa fa-google-plus"></i></a>
+              <a class="with-smedia google" (click)='loginWithGoogle()' title="" data-ripple=""><i class="fa fa-google-plus"></i></a>
               <span>don't have an account? <a class="we-account underline" routerLink="/register" title="">register now</a></span>
             </div>
           </div>

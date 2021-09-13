@@ -26,6 +26,7 @@ export class NarbarComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.id)
     this.user = JSON.parse(<string>this.authService.getUser());
+    console.log(this.user);
     this.userService.userCast.subscribe(user => this.user = user);
     this.getRequest();
   }
@@ -43,13 +44,12 @@ export class NarbarComponent implements OnInit {
   }
 
 
-  seachUser(event:any){
+  searchUser(event:any){
     let value = event.target.value;
     this.name.emit(value);
     this.postService.searchPostByUser(value).subscribe(res=>{
       console.log(res);
-    })
-
+    });
   }
 
   requestFriend(event:any){
@@ -66,8 +66,4 @@ export class NarbarComponent implements OnInit {
       this.request = res;
     })
   }
-
-
-
-
 }
