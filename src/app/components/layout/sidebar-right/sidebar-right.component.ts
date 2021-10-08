@@ -19,14 +19,12 @@ export class SidebarRightComponent implements OnInit {
   id =+ this.activatedRoute.snapshot.paramMap.get('id');
   ngOnInit(): void {
     this.user = JSON.parse(<string>this.authService.getUser());
-    console.log(this.user)
     this.listFriend();
   }
 
 
   listFriend(){
     return this.userService.listFriend(this.user.id).subscribe(res=>{
-      console.log(res)
       this.users = res;
     })
   }

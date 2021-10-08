@@ -9,16 +9,11 @@
     <app-narbar (name)="searchUser($event)" (friend)="requestFriend($event)"></app-narbar>
   </div><!-- narbar -->
   <div class="fixed-sidebar right">
-<!--    <table class="table" style="width: 200px">-->
-<!--      <tr  *ngFor="let requestFriend of requestFriends">-->
-<!--        <td><a>{{requestFriend.name}}</a></td>-->
-<!--      </tr>-->
-<!--    </table>-->
     <app-sidebar-right></app-sidebar-right>
   </div><!-- right sidebar users chat -->
   <div class="fixed-sidebar left">
 
-    <app-sidebar-left></app-sidebar-left>
+<!--    <app-sidebar-left></app-sidebar-left>-->
     <div class="left-menu-full">
       <app-left-menu></app-left-menu>
     </div>
@@ -38,28 +33,28 @@
                     </tr>
                   </table>
                 </div>
-                <app-section-left></app-section-left>
+<!--                <app-section-left></app-section-left>-->
               </div><!-- sidebar -->
               <div class="col-lg-6">
-                <app-story></app-story>
+<!--                <app-story></app-story>-->
                 <div class="loadMore">
                   <router-outlet></router-outlet>
                 </div>
               </div><!-- centerl meta -->
               <div class="col-lg-3">
                 <div class="widget">
-                  <table class="table" style="width: 200px;background-color: skyblue">
+                  <table class="table" style="width: 260px;background-color: #ffffff">
                     <tr>
-                      <th style="color: black">Friend request</th>
+<!--                      <th style="color: black">Friend request</th>-->
                     </tr>
                     <tr  *ngFor="let requestFriend of requestFriends">
                       <td><a>{{requestFriend.friend_name}}</a></td>
                       <td><a id="requestFriend-{{requestFriend.user_id}}" (click)="acceptRequest(requestFriend.user_id)" class="active btn btn-secondary" style="background-color: #2a62bc" data-toggle="tab" data-ripple="">Accept</a> </td>
-                      <td><a id="deleteRequest-{{requestFriend.user_id}}" (click)="deleteRequest(requestFriend.user_id)" class="active btn btn-secondary " style="background-color: red" data-toggle="tab" data-ripple="">Cancel</a> </td>
+                      <td><a id="deleteRequest-{{requestFriend.user_id}}" (click)="deleteRequest(requestFriend.user_id)" class="active btn btn-secondary " style="background-color: red" data-toggle="tab" data-ripple="">Delete</a> </td>
                     </tr>
                   </table>
                 </div>
-                <app-section-right></app-section-right>
+                <app-section-left></app-section-left>
               </div><!-- sidebar -->
             </div>
           </div>

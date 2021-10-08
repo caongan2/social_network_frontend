@@ -12,6 +12,7 @@ import {ToastrService} from "ngx-toastr";
 export class UserProfileBannerComponent implements OnInit {
   is_accept:any = true;
   user: any;
+  userLogin: any
   // @ts-ignore
   id = +this.activatedRoute.snapshot.paramMap.get('id');
   constructor(private userService: UserService,
@@ -20,7 +21,7 @@ export class UserProfileBannerComponent implements OnInit {
               private toastr: ToastrService) { }
 
   ngOnInit(): void {
-    // this.user = JSON.parse(<string>this.authService.getUser())
+    this.userLogin = JSON.parse(<string>this.authService.getUser())
     this.getUser(this.id)
     this.getIsAccept();
   }

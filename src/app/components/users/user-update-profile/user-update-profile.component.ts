@@ -7,6 +7,7 @@ import {ToastrService} from "ngx-toastr";
 import {Observable} from "rxjs";
 import {finalize} from "rxjs/operators";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-user-update-profile',
@@ -15,6 +16,7 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
 })
 export class UserUpdateProfileComponent implements OnInit {
 
+  user: any
   title = "cloudsSorage";
   selectedFile: null = null;
   image: any
@@ -28,19 +30,22 @@ export class UserUpdateProfileComponent implements OnInit {
               private activatedRoute: ActivatedRoute,
               private location: Location,
               private toastr: ToastrService,
-              private storage: AngularFireStorage) { }
+              private storage: AngularFireStorage,
+              private authService: AuthService) { }
 
   ngOnInit(): void {
+    this.user = JSON.parse(<string>this.authService.getUser());
     this.userService.getById(this.id).subscribe(res => {
       this.formEditProfile = this.formBuilder.group({
-        name: [res.name,[Validators.minLength(2),Validators.maxLength(50)]],
+        name: [res.name],
         phone: [res.phone,[Validators.pattern(/^0[1-9][0-9]{8}$/)]],
         address: [res.address,[Validators.minLength(2),Validators.maxLength(50)]],
         interest: [res.interest,[Validators.minLength(2),Validators.maxLength(50)]],
         birth_date: [res.birth_date],
+        avatar: [res.avatar]
       });
     });
-    this.image = this.formEditProfile?.value.image
+    this.image = this.formEditProfile?.value.avatar
   }
 
   onFileSelected(event: any) {
@@ -75,8 +80,14 @@ export class UserUpdateProfileComponent implements OnInit {
   submit() {
     let data = this.formEditProfile?.value;
     console.log(data)
-    // @ts-ignore
-    this.formEditProfile?.value.image = this.image
+    if (!this.image){
+      this.userService.getById(this.id).subscribe(res => {
+        // @ts-ignore
+        this.formEditProfile?.value.avatar = [res.avatar]
+      })
+    }
+      // @ts-ignore
+    this.formEditProfile?.value.avatar = this.image
     this.userService.update(data,this.id).subscribe(res => {
         this.toastr.success('Change profile success');
         this.userService.changeUserLogin({...data, id: this.id});

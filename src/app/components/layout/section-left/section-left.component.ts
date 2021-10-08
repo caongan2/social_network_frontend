@@ -12,6 +12,7 @@ import {ToastrService} from "ngx-toastr";
 export class SectionLeftComponent implements OnInit {
   user:any;
   users:any = [];
+  showMoreFriend: boolean = false
   constructor(private userService: UserService,
               private activatedRoute: ActivatedRoute,
               private authService: AuthService,
@@ -40,6 +41,10 @@ export class SectionLeftComponent implements OnInit {
 
   refresh(): void {
     window.location.reload();
+  }
+
+  showMoreFriends() {
+    this.showMoreFriend = !this.showMoreFriend
   }
 
 }

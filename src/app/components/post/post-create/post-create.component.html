@@ -1,11 +1,11 @@
 <div class="central-meta postbox">
   <div class="new-postbox">
     <figure>
-      <img src="{{user.image}}" style="width: 30px; height: 30px" alt="">
+      <img src="{{user.avatar}}" style="width: 30px; height: 30px" alt="">
     </figure>
     <div class="newpst-input">
     <div class="attachments">
-      <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (ngSubmit)="submit()">
+      <form   *ngIf="formCreatePost" [formGroup]="formCreatePost" (click)="submit()">
         <div>
           <p style="color: #0e0e0e"><strong>{{user.name}}</strong></p>
           <span ><i class="fa fa-globe"> </i></span>
@@ -27,37 +27,38 @@
             Can not be blank
           </p>
         </div>
+        <img src="{{image}}" alt="" (click)="deleteImage()">
         <div class="attachments">
           <ul>
-            <li>
-													<span class="add-loc">
-														<i class="fa fa-map-marker"></i>
-													</span>
-            </li>
-            <li>
-              <i class="fa fa-music"></i>
-              <label class="fileContainer">
-                <input type="file">
-              </label>
-            </li>
+<!--            <li>-->
+<!--													<span class="add-loc">-->
+<!--														<i class="fa fa-map-marker"></i>-->
+<!--													</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="fa fa-music"></i>-->
+<!--              <label class="fileContainer">-->
+<!--                <input type="file">-->
+<!--              </label>-->
+<!--            </li>-->
             <li>
               <i class="fa fa-image"></i>
               <label class="fileContainer">
                 <input type="file" [src]="image" (change)="onFileSelected($event)">
               </label>
             </li>
-            <li>
-              <i class="fa fa-video-camera"></i>
-              <label class="fileContainer">
-                <input type="file">
-              </label>
-            </li>
-            <li>
-              <i class="fa fa-camera"></i>
-              <label class="fileContainer">
-                <input type="file">
-              </label>
-            </li>
+<!--            <li>-->
+<!--              <i class="fa fa-video-camera"></i>-->
+<!--              <label class="fileContainer">-->
+<!--                <input type="file">-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="fa fa-camera"></i>-->
+<!--              <label class="fileContainer">-->
+<!--                <input type="file">-->
+<!--              </label>-->
+<!--            </li>-->
 <!--            <li class="preview-btn">-->
 <!--              <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>-->
 <!--            </li>-->

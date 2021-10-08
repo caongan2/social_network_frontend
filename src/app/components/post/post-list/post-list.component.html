@@ -1,33 +1,24 @@
 <div>
   <app-post-create></app-post-create>
 </div>
-<!-- add post new box -->
-<div class="central-meta">
-  <span class="create-post">Recent Stories <a href="#" title="">See All</a></span>
-</div><!-- top stories -->
 
 <div class="central-meta">
-  <div class="create-post" *ngFor="let post of posts">
+  <div class="create-post" *ngFor="let post of posts" id="post-{{post.id}}">
     <div class="friend-info">
       <figure>
-        <img src="" alt="">
+        <img src="{{post.avatar}}" style="width: 30px" alt="">
       </figure>
       <div class="friend-name">
-        <div class="more">
-          <div class="more-post-optns"><i class="ti-more-alt"></i>
+        <div class="more" id="post">
+          <div *ngIf="user.name == post.name" class="more-post-optns"><i class="ti-more-alt"></i>
             <ul>
               <li [hidden]="post.name != user.name"><i class="fa fa-pencil-square-o"></i><a routerLink="/admin/home/posts/{{post.id}}/update">Edit
                 Post</a></li>
               <li [hidden]="post.name != user.name"><i class="fa fa-trash-o"></i><a (click)="deletePost(post.id)">Delete Post</a></li>
-              <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-              <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-              <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-              <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-              <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
             </ul>
           </div>
         </div>
-        <ins><a [routerLink]="['../../',post.userId,'personal-profile']" title="">{{post.name}}</a> Post Album</ins>
+        <ins><a [routerLink]="['../../',post.userId,'personal-profile']" title="">{{post.name}}</a></ins>
         <span><i class="fa fa-globe"></i> published: {{post.created_at}} </span>
       </div>
       <div class="post-meta">
@@ -52,47 +43,28 @@
               ><span id="countLike-{{post.id}}">{{post.like.length}}</span></div>
             </li>
             <li>
-																<span class="comment" title="Comments">
+																<span title="Comments">
 																	<i [hidden]="!post.showComment" (click)="showMoreComment(post.id)"  class="fa fa-commenting"></i>
-																	<ins>{{post.comment.length}}</ins>
+																	<ins class="comment" id="count-comment-{{post.id}}">{{post.comment.length}}</ins>
 																</span>
             </li>
           </ul>
-          <div class="users-thumb-list">
-            <a data-toggle="tooltip" title="Anderw" href="#">
-              <img alt="" src="assets/images/resources/userlist-1.jpg">
-            </a>
-            <a data-toggle="tooltip" title="frank" href="#">
-              <img alt="" src="assets/images/resources/userlist-2.jpg">
-            </a>
-            <a data-toggle="tooltip" title="Sara" href="#">
-              <img alt="" src="assets/images/resources/userlist-3.jpg">
-            </a>
-            <a data-toggle="tooltip" title="Amy" href="#">
-              <img alt="" src="assets/images/resources/userlist-4.jpg">
-            </a>
-            <a data-toggle="tooltip" title="Ema" href="#">
-              <img alt="" src="assets/images/resources/userlist-5.jpg">
-            </a>
-            <span><strong>You</strong>, <b>Sarah</b> and <a href="#"
-                                                            title="">24+ more</a> liked</span>
-          </div>
         </div>
       </div>
       <div class="coment-area" style="display: block;">
         <ul class="we-comet">
           <li>
-            <div  *ngFor="let comment of post.comment" class="we-comment" [hidden]="post.showComment">
+            <div  *ngFor="let comment of post.comment" class="we-comment" id="comment-{{comment.id}}" [hidden]="post.showComment">
               <div class="comet-avatar">
-                <img src="{{comment.image}}" style="width: 20px; height: 20px" alt="">
+                <img src="{{comment.avatar}}" style="width: 20px; height: 20px" alt="">
               </div>
               <div class="friend-name">
                 <h5><a href="time-line.html" title="">{{comment.name}}</a></h5>
                 <div class="more">
-                  <div class="more-post-optns"><i class="ti-more-alt"></i>
+                  <div [hidden]="comment.name != user.name" class="more-post-optns"><i class="ti-more-alt"></i>
                     <ul>
                       <li [hidden]="comment.name != user.name"><i class="fa fa-pencil-square-o"></i><a [routerLink]="['/admin/home/posts/update-comment', comment.id]">Edit Comment</a></li>
-                      <li [hidden]="comment.name != user.name"><i class="fa fa-trash-o"></i><a (click)="deleteComment(comment.id)">Delete Comment</a></li>
+                      <li [hidden]="comment.name != user.name"><i class="fa fa-trash-o"></i><a id="deleteComment-{{comment.id}}" (click)="deleteComment(comment.id)">Delete Comment</a></li>
                     </ul>
                   </div>
                 </div>
@@ -113,7 +85,7 @@
           </li>
           <li class="post-comment">
             <div class="comet-avatar">
-              <img src="{{user.image}}" style="width: 30px; height: 30px" alt="">
+              <img src="{{user.avatar}}" style="width: 30px; height: 30px" alt="">
             </div>
             <div class="post-comt-box">
               <form *ngIf="formComment" [formGroup]="formComment" (ngSubmit)="submitComment(post.id)">

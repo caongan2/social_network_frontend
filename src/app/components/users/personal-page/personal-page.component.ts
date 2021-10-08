@@ -4,6 +4,7 @@ import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthService} from "../../../services/auth.service";
 import {ToastrService} from "ngx-toastr";
+import {CommentService} from "../../../services/comment.service";
 
 @Component({
   selector: 'app-personal-page',
@@ -20,7 +21,8 @@ export class PersonalPageComponent implements OnInit {
               private activatedRoute: ActivatedRoute,
               private authService: AuthService,
               private router: Router,
-              private toastr: ToastrService) { }
+              private toastr: ToastrService,
+              private commentService: CommentService) { }
 
   ngOnInit(): void {
     this.getUser(this.id);
@@ -28,9 +30,18 @@ export class PersonalPageComponent implements OnInit {
   }
 
   getPostByUser(){
-    return this.postService.getPostByUser(this.id).subscribe(res => {
-      console.log(res)
-      this.posts = res;
+    return this.postService.getPostByUser(this.id).subscribe(posts => {
+      for (const post of posts) {
+        post.propertyLike = false;
+        post.showComment = true
+        this.postService.getCountLikeByPost(post.id).subscribe(likes=>{
+          post['like'] = likes;
+          this.commentService.getCommentByPost(post.id).subscribe(comments => {
+            post['comment'] = comments
+            this.posts.push(post)
+          })
+        });
+      }
     })
   }
 
