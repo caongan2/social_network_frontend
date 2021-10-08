@@ -1547,7 +1547,7 @@ header.sticky {
     line-height: 15px;
     margin-bottom: 20px;
     padding-bottom: 12px;
-    text-transform: capitalize;
+    text-transform: initial;
     width: 100%;
     color: #515365;
     position: relative;

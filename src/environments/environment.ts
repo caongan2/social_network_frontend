@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_api: "http://localhost:8000/api/",
+  url_api: "http://127.0.0.1:8000/api/",
   firebaseConfig : {
     apiKey: "AIzaSyD_N0pwDl6XUwEnyIMoB3HYFfIjiJiaS9o",
     databaseURL :'https://axial-serenity-322216-default-rtdb.firebaseio.com/',

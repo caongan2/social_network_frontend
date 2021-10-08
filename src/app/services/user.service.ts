@@ -38,7 +38,7 @@ export class UserService {
   }
 
   findUser():Observable<any>{
-    return this.http.get(environment.url_api + 'findUser',{headers:this.authService.setHeader()});
+    return this.http.get(environment.url_api + '/findUser',{headers:this.authService.setHeader()});
   }
 
   listFriend(id:number):Observable<any>{

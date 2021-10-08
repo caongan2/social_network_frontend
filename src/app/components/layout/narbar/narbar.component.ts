@@ -26,7 +26,6 @@ export class NarbarComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.id)
     this.user = JSON.parse(<string>this.authService.getUser());
-    console.log(this.user);
     this.userService.userCast.subscribe(user => this.user = user);
     this.getRequest();
   }
@@ -36,7 +35,7 @@ export class NarbarComponent implements OnInit {
     this.authService.logout().subscribe(res => {
       localStorage.clear()
       this.router.navigate(['']).then(r => {
-        console.log(res)
+        console.log("Welcome")
       }).catch(error => {
         console.log("Logout error")
       })

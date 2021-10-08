@@ -3,25 +3,26 @@
     <h5>Edit Profile</h5>
     <span>People on Pitnik will get to know you with the info below</span>
   </div>
-  <div class="setting-meta">
-    <div class="change-photo">
-      <figure><img src="assets/images/resources/admin2.jpg" alt=""></figure>
-      <div class="edit-img">
-        <form class="edit-phto">
-
-          <label class="fileContainer">
-            <i class="fa fa-camera-retro"></i>
-
-            Chage DP
-
-            <input type="file">
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
   <div class="stg-form-area">
     <form *ngIf="formEditProfile" [formGroup]="formEditProfile" (ngSubmit)="submit()" class="c-form">
+      <div class="setting-meta">
+        <div class="change-photo">
+          <figure><img src="{{user.avatar}}" style="width: 50px" alt=""></figure>
+          <div class="edit-img">
+<!--            <form class="edit-phto">-->
+
+              <label class="fileContainer">
+                <i class="fa fa-camera-retro"></i>
+
+                Chage DP
+
+                <input type="file" class="form-control" (change)="onFileSelected($event)" id="image">
+                <img src="{{image}}" alt="">              </label>
+<!--            </form>-->
+          </div>
+        </div>
+      </div>
+
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control " formControlName="name" id="name">
@@ -78,10 +79,10 @@
         <label for="birthdate">Birthdate</label>
         <input type="date" formControlName="birth_date" class="form-control" id="birthdate">
       </div>
-      <div class="form-group">
-        <label for="image">Avatar</label>
-        <input type="file" [src]="image" class="form-control" (change)="onFileSelected($event)" id="image">
-      </div>
+<!--      <div class="form-group">-->
+<!--        <label for="image">Avatar</label>-->
+<!--        -->
+<!--      </div>-->
       <div>
         <button type="submit" (click)="back()" data-ripple="">Back</button>
         <button type="submit" [disabled]="formEditProfile?.invalid" data-ripple="">Save</button>

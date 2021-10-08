@@ -13,11 +13,13 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 })
 export class PostListComponent implements OnInit {
   posts: any = [];
+  allComments = []
   user: any;
   isLike: boolean = false;
   formComment: FormGroup | undefined;
   post: any;
   showComment: boolean = false
+  comments = []
 
   constructor(private postService: PostService,
               private authService: AuthService,
@@ -48,6 +50,7 @@ export class PostListComponent implements OnInit {
         this.postService.getCountLikeByPost(post.id).subscribe(likes=>{
           post['like'] = likes;
           this.commentService.getCommentByPost(post.id).subscribe(comments => {
+            this.allComments = comments
             post['comment'] = comments
             this.posts.push(post)
           })
@@ -59,8 +62,10 @@ export class PostListComponent implements OnInit {
   deletePost(id: number) {
     if (confirm('Are you sure?')) {
       this.postService.delete(id).subscribe(res => {
+        // @ts-ignore
+        document.getElementById('post-' + id ).remove();
         this.toastr.success('Delete Post successfully','Delete Post');
-        this.refresh();
+        // this.refresh();
       })
     }
   }
@@ -68,9 +73,8 @@ export class PostListComponent implements OnInit {
   deleteComment(id: number) {
     if (confirm('Are you sure?')) {
       this.commentService.delete(id).subscribe(res => {
-        console.log(res)
-        this.refresh()
-        this.router.navigate(['admin/home/posts']);
+        // @ts-ignore
+        document.getElementById('comment-' + id ).remove();
       })
     }
   }
@@ -82,11 +86,16 @@ export class PostListComponent implements OnInit {
     })
   }
 
+  // getCommentByPost(id: any) {
+  //   return this.commentService.getCommentByPost({...id, post_id:id}).subscribe(res => {
+  //     this.comments = res
+  //   })
+  // }
+
   submitComment(id: number) {
 
     let data = this.formComment?.value
     this.commentService.comment({...data, post_id:id}).subscribe(res => {
-      console.log(res)
       this.getAll()
       this.refresh()
     })
