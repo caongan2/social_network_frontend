@@ -1,7 +1,16 @@
 <div>
-  <app-post-create></app-post-create>
+  <app-post-create (data)="logPosts($event)"></app-post-create>
 </div>
-
+<div style="color: #00ccff" *ngFor="let item of array[0]; let i = index">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="">{{item.name}}</a>
+    </div>
+    <div class="col-md-6">
+      <a href="">{{item.content}}</a>
+    </div>
+  </div>
+</div>
 <div class="central-meta">
   <div class="create-post" *ngFor="let post of posts" id="post-{{post.id}}">
     <div class="friend-info">

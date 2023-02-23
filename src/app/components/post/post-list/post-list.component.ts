@@ -12,6 +12,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
+  array: any = []
   posts: any = [];
   allComments = []
   user: any;
@@ -41,6 +42,14 @@ export class PostListComponent implements OnInit {
       content: ['']
     })
   }
+
+  logPosts(data:any) {
+    this.array = data
+    // @ts-ignore
+    console.log(this.array[0].length)
+  }
+
+
 
   getAll() {
     return this.postService.getAll().subscribe(posts => {

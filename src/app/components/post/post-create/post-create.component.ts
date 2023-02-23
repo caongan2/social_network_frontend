@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {PostService} from "../../../services/post.service";
 import {Router} from "@angular/router";
@@ -14,7 +14,8 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
   styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent implements OnInit {
-
+  array: any = []
+  @Output() data = new EventEmitter()
   image: any
   downloadURL: Observable<string> | undefined;
 
@@ -42,9 +43,12 @@ export class PostCreateComponent implements OnInit {
     });
     this.getAll();
     this.image = this.formCreatePost.value.image
+    this.senData()
   }
 
-
+  senData() {
+    this.data.emit(this.array)
+  }
   onFileSelected(event: any) {
     var n = Date.now();
     const file = event.target.files[0];
@@ -78,19 +82,21 @@ export class PostCreateComponent implements OnInit {
 
   getAll() {
     return this.postService.getAll().subscribe(res => {
-      this.posts = res;
+      this.posts.push(res);
+      this.array.push(res)
     });
   }
 
   submit() {
     let data = this.formCreatePost?.value;
-    console.log(data)
     // @ts-ignore
     this.formCreatePost?.value.image = this.image
     return this.postService.create(data).subscribe(res => {
        this.toastr.success('Create Post successfully','Create Post');
        this.getAll();
-       this.refresh();
+        this.array[0].push(data)
+      console.log(this.array[0])
+       // this.refresh();
     })
 
   }
